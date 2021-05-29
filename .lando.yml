@@ -1,0 +1,36 @@
+name: axelify
+recipe: drupal8
+
+services:
+  appserver:
+    type: php:7.4
+    via: nginx
+    config:
+      php: .lando/php.ini
+  database:
+    type: mariadb:10.4
+    app_mount: disabled
+    overrides:
+      image: bitnami/mariadb:10.4
+  node:
+    type: 'node:custom'
+    globals:
+      gulp-cli: latest
+    overrides:
+      image: node:lts
+tooling:
+  drush:
+    service: appserver
+    cmd: /app/vendor/bin/drush
+  drupal:
+    service: appserver
+    cmd: /app/vendor/bin/drupal
+  node:
+    service: node
+  npm:
+    service: node
+  gulp:
+    service: node
+config:
+  webroot: web
+  via: nginx
