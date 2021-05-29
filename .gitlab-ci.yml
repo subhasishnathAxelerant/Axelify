@@ -35,6 +35,8 @@ frontend_codequality:
   stage: lint
   variables:
     CYPRESS_CACHE_FOLDER: $CI_PROJECT_DIR/web/themes/custom/drupalastic/node_modules/CYPRESS_CACHE
+    CYPRESS_INSTALL_BINARY: 0
+    PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 0
   script:
     - cd web/themes/custom/drupalastic
     - npm ci --prefer-offline
