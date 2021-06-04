@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "gulp watch",
+    "build": "gulp",
+    "watch": "gulp watch",
     "lint": "CI=true gulp lint"
   },
   "devDependencies": {
