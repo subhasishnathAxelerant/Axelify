@@ -46,7 +46,7 @@ grumphp:
       ruleset: ["phpmd.xml.dist"]
       triggered_by: ["php"]
     npm_script:
-      script: lint
+      script: landolint
       triggered_by: [js, jsx, ts, scss, css]
       working_directory: web/themes/custom/drupalastic
       is_run_task: true
