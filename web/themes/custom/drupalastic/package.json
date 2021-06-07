@@ -1,7 +1,9 @@
 {
   "scripts": {
-    "build": "gulp watch",
-    "lint": "CI=true gulp lint"
+    "build": "gulp",
+    "watch": "gulp watch",
+    "lint": "CI=true gulp lint",
+    "landolint": "lando npm run lint"
   },
   "devDependencies": {
     "@percy/cypress": "^3.1.0",
