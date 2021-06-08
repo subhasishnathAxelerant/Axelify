@@ -1,0 +1,4 @@
+card: 
+  css:
+    component:
+      dist/css/components/card.css: {} 

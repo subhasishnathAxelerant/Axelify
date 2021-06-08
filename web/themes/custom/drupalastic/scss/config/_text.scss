@@ -1,0 +1,20 @@
+// Text utilities
+
+%text {
+  font-family: var(--f-primary);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+%text-bold {
+  @extend %text;
+  font-weight: 700;
+}
+
+%text-black {
+  color: black;
+}
+
+%text-black-50 {
+  color: rgba(0, 0, 0, 0.5);
+}

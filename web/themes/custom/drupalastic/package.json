@@ -2,6 +2,7 @@
   "scripts": {
     "build": "gulp",
     "watch": "gulp watch",
+    "scss": "gulp scss",
     "lint": "CI=true gulp lint",
     "landolint": "lando npm run lint"
   },

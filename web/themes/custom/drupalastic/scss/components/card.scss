@@ -1,0 +1,58 @@
+@import '../_settings.all.scss';
+
+// Card list
+.card-list {
+  display: flex;
+  @include container();
+
+  .card-wrapper:not(:last-child) {
+    padding-right: 20px;
+  }
+}
+
+// Individual card
+.card {
+  width: 370px;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.297017);
+  border-radius: 5px;
+  padding: 64px 32px 21px;
+  box-sizing: border-box;
+}
+
+.card__title {
+  @extend %heading-4;
+  @extend %text-black;
+  margin-top: 54px;
+  margin-bottom: 15px;
+}
+
+.card__description {
+  @extend %text;
+  @extend %text-black-50;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1011);
+}
+
+.card__links {
+  @extend %text-bold;
+  @extend %text-black;
+  padding-top: 18px;
+
+  .links {
+    @extend %list-clear-all;
+  }
+
+  a {
+    @extend %link-clear;
+    @extend %text-black;
+    @include icon-after;
+  }
+}
+
+.card__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+}
