@@ -4,24 +4,28 @@
   font-family: 'dm-sans';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/dm-sans-v6-latin-regular.eot');
-  src: url('../fonts/dm-sans-v6-latin-regular.woff') format('woff'),
-    url('../fonts/dm-sans-v6-latin-regular.woff2') format('woff2'),
-    url('../fonts/dm-sans-v6-latin-regular.eot?#iefix')
+  src: url('../../../fonts/dm-sans/dm-sans-v6-latin-regular.eot');
+  src: url('../../../fonts/dm-sans/dm-sans-v6-latin-regular.woff')
+      format('woff'),
+    url('../../../fonts/dm-sans/dm-sans-v6-latin-regular.woff2') format('woff2'),
+    url('../../../fonts/dm-sans/dm-sans-v6-latin-regular.eot?#iefix')
       format('embedded-opentype'),
-    url('../fonts/dm-sans-v6-latin-regular.ttf') format('truetype'),
-    url('../fonts/dm-sans-v6-latin-regular.svg#DMSans') format('svg');
+    url('../../../fonts/dm-sans/dm-sans-v6-latin-regular.ttf')
+      format('truetype'),
+    url('../../../fonts/dm-sans/dm-sans-v6-latin-regular.svg#DMSans')
+      format('svg');
 }
 
 @font-face {
   font-family: 'dm-serif';
-  src: url('../DMSerifDisplay-Regular.woff') format('woff'),
-    url('../DMSerifDisplay-Regular.woff2') format('woff2'),
-    url('../DMSerifDisplay-Regular.svg#DMSerifDisplay-Regular') format('svg'),
-    url('../DMSerifDisplay-Regular.eot'),
-    url('../DMSerifDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../DMSerifDisplay-Regular.ttf') format('truetype');
-
+  src: url('../../../fonts/dm-serif/DMSerifDisplay-Regular.woff') format('woff'),
+    url('../../../fonts/dm-serif/DMSerifDisplay-Regular.woff2') format('woff2'),
+    url('../../../fonts/dm-serif/DMSerifDisplay-Regular.svg#DMSerifDisplay-Regular')
+      format('svg'),
+    url('../../../fonts/dm-serif/DMSerifDisplay-Regular.eot'),
+    url('../../../fonts/dm-serif/DMSerifDisplay-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../../fonts/dm-serif/DMSerifDisplay-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

@@ -30,12 +30,11 @@
  * @see template_preprocess_views_view()
  */
 #}
-{%
-  set classes = [
+{% set classes = [
     dom_id ? 'js-view-dom-id-' ~ dom_id,
     'card-list',
-  ]
-%}
+  ] %}
+
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {{ title }}
