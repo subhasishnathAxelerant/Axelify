@@ -1,4 +1,4 @@
-%link-clear {
+@mixin link-clear {
   text-decoration: none;
 
   &:hover {

@@ -1,20 +1,26 @@
 // Text utilities
 
-%text {
+@mixin text {
   font-family: var(--f-primary);
   font-size: 16px;
   line-height: 1.5;
 }
 
-%text-bold {
-  @extend %text;
+@mixin text-big {
+  font-family: var(--f-primary);
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+@mixin text-bold {
+  @include text();
   font-weight: 700;
 }
 
-%text-black {
-  color: black;
+@mixin text-black {
+  color: var(--c-black);
 }
 
-%text-black-50 {
-  color: rgba(0, 0, 0, 0.5);
+@mixin text-black-50 {
+  color: var(--c-black-50);
 }

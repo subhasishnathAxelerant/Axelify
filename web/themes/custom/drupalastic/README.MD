@@ -7,5 +7,10 @@
 
 
 ## Working with SVG
-- for embedding place the svg in the svg directory.[add more details]
-- for using it in css please place it in the images directory [add more details]
+- right now we are not using sprites so nothing to be done in the svg directory
+- please place even svg images and logo's in the `images` directory [add more details]
+
+base => common utilites & css vars [will be loaded once globally]
+config => scss variables / mixins & extends [will be included in multiple files]
+
+We use mixins every where: https://csswizardry.com/2016/02/mixins-better-for-performance/

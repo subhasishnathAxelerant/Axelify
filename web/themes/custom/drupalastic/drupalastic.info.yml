@@ -13,3 +13,4 @@ regions:
 
 libraries:
   - core/normalize
+  - drupalastic/base

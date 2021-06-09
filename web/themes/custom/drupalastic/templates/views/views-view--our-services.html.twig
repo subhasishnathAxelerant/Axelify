@@ -36,34 +36,43 @@
   ] %}
 
 <div{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {{ title }}
-  {{ title_suffix }}
+  <div class="card-list__container">
 
-  {% if header %}
-    <header>
-      {{ header }}
-    </header>
-  {% endif %}
+    <div class="card-list__header">
+      <h1 class="card-list__title">{{ 'Vivendo omnesque'|t }}</h1>
+      <div class="card-list__subtitle">{{ 'Eu minim movet quodsi eum. Et vim dolore epicurei, ut aeque postea nam, at posse dicta est'|t }}</div>
+    </div>
 
-  {{ exposed }}
-  {{ attachment_before }}
+    {{ title_prefix }}
+    {{ title }}
+    {{ title_suffix }}
 
-  {% if rows -%}
-    {{ rows }}
-  {% elseif empty -%}
-    {{ empty }}
-  {% endif %}
-  {{ pager }}
+    {% if header %}
+      <header>
+        {{ header }}
+      </header>
+    {% endif %}
 
-  {{ attachment_after }}
-  {{ more }}
+    {{ exposed }}
+    {{ attachment_before }}
 
-  {% if footer %}
-    <footer>
-      {{ footer }}
-    </footer>
-  {% endif %}
+    {% if rows -%}
+      {{ rows }}
+    {% elseif empty -%}
+      {{ empty }}
+    {% endif %}
+    {{ pager }}
 
-  {{ feed_icons }}
+    {{ attachment_after }}
+    {{ more }}
+
+    {% if footer %}
+      <footer>
+        {{ footer }}
+      </footer>
+    {% endif %}
+
+    {{ feed_icons }}
+
+  </div>
 </div>

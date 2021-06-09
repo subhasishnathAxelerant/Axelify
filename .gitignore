@@ -28,3 +28,9 @@
 
 # Theme
 node_modules
+/web/themes/custom/drupalastic/dist/
+/web/themes/custom/drupalastic/node_modules/
+
+# Misc
+grumphp.yml.dist
+/config/sync/.htaccess
