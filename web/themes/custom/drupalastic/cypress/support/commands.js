@@ -24,4 +24,10 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-import '@percy/cypress';
+Cypress.Commands.add('screenshots', (key) => {
+  cy.screenshot(`${key} Desktop`);
+  cy.viewport('ipad-2');
+  cy.screenshot(`${key} Tablet`);
+  cy.viewport('iphone-x');
+  cy.screenshot(`${key} Mobile`);
+});

@@ -28,3 +28,5 @@
 
 # Theme
 node_modules
+**/cypress/screenshots/*
+**/cypress/videos/*

@@ -1,5 +1,5 @@
 stages:
-  - build
+  - lint
   - test
   - deploy
 
@@ -9,10 +9,16 @@ stages:
     - tags
     - merge_requests
 
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - /root/.cache/Cypress
+    - web/themes/custom/drupalastic/node_modules/
+
 drupal_codequality:
   <<: *default-pipelines
   image: hussainweb/drupalqa:php7.4
-  stage: test
+  stage: lint
   script:
     - composer validate
     - phplint --no-cache -v web/modules/custom/
@@ -23,43 +29,12 @@ drupal_codequality:
   except:
     - schedule
 
-# drupal_tests:
-#   <<: *default-pipelines
-#   image: hussainweb/drupal-base:php7.4
-#   services:
-#     - name: bitnami/mariadb:10.4
-#       alias: mariadb
-#   stage: test
-#   tags:
-#     - docker
-#   variables:
-#     SITE_BASE_URL: "http://localhost"
-#     ALLOW_EMPTY_PASSWORD: "yes"
-
-#   before_script:
-#     - ./.gitlab/ci.sh
-
-#   script:
-#     - composer install -o
-
-#     # Clearing drush cache and importing configs
-#     - ./vendor/drush/drush/drush cr
-#     - ./vendor/drush/drush/drush -y updatedb
-#     - ./vendor/drush/drush/drush -y config-import
-
-#     # Run PHPUnit tests
-#     - ./vendor/bin/phpunit --testsuite unit
-#     - ./vendor/bin/phpunit --bootstrap=./vendor/weitzman/drupal-test-traits/src/bootstrap-fast.php --configuration ./phpunit.xml --testsuite existing-site
-#   except:
-#     - schedule
-
 frontend_codequality:
   <<: *default-pipelines
   image: node:lts
-  stage: test
+  stage: lint
   variables:
-    CYPRESS_INSTALL_BINARY: 0
-    PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 0
+    CYPRESS_CACHE_FOLDER: $CI_PROJECT_DIR/web/themes/custom/drupalastic/node_modules/CYPRESS_CACHE
   script:
     - cd web/themes/custom/drupalastic
     - npm ci --prefer-offline
@@ -68,3 +43,40 @@ frontend_codequality:
     - docker
   except:
     - schedule
+
+
+frontend_vr:
+  <<: *default-pipelines
+  image: skippednote/drupal-cypress:1.0.5
+  tags:
+    - docker
+  services:
+    - name: registry.gitorious.xyz/svc-area-frontend/trainings/axelify/db:main
+      alias: mariadb
+  stage: test
+  variables:
+    CYPRESS_CACHE_FOLDER: $CI_PROJECT_DIR/web/themes/custom/drupalastic/node_modules/CYPRESS_CACHE
+    SITE_BASE_URL: "http://localhost"
+    ALLOW_EMPTY_PASSWORD: "yes"
+  before_script:
+    - .gitlab/ci.sh
+  script:
+    - composer install -o
+    - vendor/bin/drush -y updb
+    - vendor/bin/drush -y cim
+    - vendor/bin/drush cr
+    - cd web/themes/custom/drupalastic
+    - npm run build
+    - npm run vr
+  artifacts:
+    expire_in: 1 week
+    when: always
+    paths:
+      - $CI_PROJECT_DIR/web/themes/custom/drupalastic/cypress/screenshots
+      - $CI_PROJECT_DIR/web/themes/custom/drupalastic/cypress/videos
+  tags:
+    - docker
+  except:
+    - schedule
+  needs:
+    - frontend_codequality

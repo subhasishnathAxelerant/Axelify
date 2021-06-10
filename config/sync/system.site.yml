@@ -1,0 +1,14 @@
+uuid: 5a1ef750-9128-4a7d-8dde-6f4182afc2d3
+name: Axelify
+mail: admin@admin
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

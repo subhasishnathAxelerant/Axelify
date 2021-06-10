@@ -9,11 +9,10 @@ services:
       php: .lando/php.ini
   database:
     type: mariadb:10.4
-    app_mount: disabled
     overrides:
-      image: bitnami/mariadb:10.4
+      image: registry.gitorious.xyz/svc-area-frontend/trainings/axelify/db:main
   node:
-    type: 'node:custom'
+    type: "node:custom"
     globals:
       gulp-cli: latest
     overrides:

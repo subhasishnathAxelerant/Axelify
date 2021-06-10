@@ -1,3 +1,5 @@
 {
-  "baseUrl": ""
+  "baseUrl": "http://axelify.lndo.site",
+  "viewportHeight": 900,
+  "viewportWidth": 1440
 }

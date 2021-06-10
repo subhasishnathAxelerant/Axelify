@@ -1,12 +1,12 @@
 {
   "scripts": {
     "build": "gulp",
+    "vr": "cypress run",
     "watch": "gulp watch",
     "lint": "CI=true gulp lint",
     "landolint": "lando npm run lint"
   },
   "devDependencies": {
-    "@percy/cypress": "^3.1.0",
     "@types/autoprefixer": "^10.2.0",
     "@types/gulp": "^4.0.8",
     "@types/gulp-sass": "^4.0.0",
