@@ -34,3 +34,9 @@ dependencyGraph.json
 **/cypress/screenshots/*
 **/cypress/videos/*
 *.mustache
+/web/themes/custom/drupalastic/dist/*
+/web/themes/custom/*/node_modules/
+
+# Misc
+grumphp.yml.dist
+/config/sync/.htaccess
