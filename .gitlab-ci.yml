@@ -69,7 +69,7 @@ frontend_vr:
     - vendor/bin/drush cr
     - cd web/themes/custom/drupalastic
     - npm run build
-    - npm run vr
+    # - npm run vr
   artifacts:
     expire_in: 1 week
     when: always
