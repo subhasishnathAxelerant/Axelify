@@ -47,38 +47,38 @@ frontend_codequality:
     - schedule
 
 
-frontend_vr:
-  <<: *default-pipelines
-  image: skippednote/drupal-cypress:1.0.5
-  tags:
-    - docker
-  services:
-    - name: registry.gitorious.xyz/svc-area-frontend/trainings/axelify/db:main
-      alias: mariadb
-  stage: test
-  variables:
-    CYPRESS_CACHE_FOLDER: $CI_PROJECT_DIR/web/themes/custom/drupalastic/node_modules/CYPRESS_CACHE
-    SITE_BASE_URL: "http://localhost"
-    ALLOW_EMPTY_PASSWORD: "yes"
-  before_script:
-    - .gitlab/ci.sh
-  script:
-    - composer install -o
-    - vendor/bin/drush -y updb
-    - vendor/bin/drush -y cim
-    - vendor/bin/drush cr
-    - cd web/themes/custom/drupalastic
-    - npm run build
-    # - npm run vr
-  artifacts:
-    expire_in: 1 week
-    when: always
-    paths:
-      - $CI_PROJECT_DIR/web/themes/custom/drupalastic/cypress/screenshots
-      - $CI_PROJECT_DIR/web/themes/custom/drupalastic/cypress/videos
-  tags:
-    - docker
-  except:
-    - schedule
-  needs:
-    - frontend_codequality
+# frontend_vr:
+#   <<: *default-pipelines
+#   image: skippednote/drupal-cypress:1.0.5
+#   tags:
+#     - docker
+#   services:
+#     - name: registry.gitorious.xyz/svc-area-frontend/trainings/axelify/db:main
+#       alias: mariadb
+#   stage: test
+#   variables:
+#     CYPRESS_CACHE_FOLDER: $CI_PROJECT_DIR/web/themes/custom/drupalastic/node_modules/CYPRESS_CACHE
+#     SITE_BASE_URL: "http://localhost"
+#     ALLOW_EMPTY_PASSWORD: "yes"
+#   before_script:
+#     - .gitlab/ci.sh
+#   script:
+#     - composer install -o
+#     - vendor/bin/drush -y updb
+#     - vendor/bin/drush -y cim
+#     - vendor/bin/drush cr
+#     - cd web/themes/custom/drupalastic
+#     - npm run build
+#     # - npm run vr
+#   artifacts:
+#     expire_in: 1 week
+#     when: always
+#     paths:
+#       - $CI_PROJECT_DIR/web/themes/custom/drupalastic/cypress/screenshots
+#       - $CI_PROJECT_DIR/web/themes/custom/drupalastic/cypress/videos
+#   tags:
+#     - docker
+#   except:
+#     - schedule
+#   needs:
+#     - frontend_codequality
