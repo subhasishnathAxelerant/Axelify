@@ -2,3 +2,13 @@ base:
   css:
     base:
       dist/css/global.css: {}
+
+card:
+  css:
+    theme:
+      dist/css/components/card.css: {}
+
+card-list:
+  css:
+    theme:
+      dist/css/components/card-list.css: {}
