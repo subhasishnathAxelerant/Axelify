@@ -1,15 +1,19 @@
+const nodeSassGlobbing = require('node-sass-globbing');
+
 module.exports = {
   scss: {
-    source: ['scss/**/[^_]*.scss'],
-    all: ['scss/**/*.scss'],
+    source: ['source/_patterns/**/[^_]*.scss'],
+    all: ['source/_patterns/**/*.scss'],
     destination: 'dist/css',
     options: {
       outputStyle: 'expanded',
-      includePaths: ['./node_modules'],
+      includePaths: ['./node_modules', './scss'],
+      errLogToConsole: true,
+      importer: nodeSassGlobbing,
     },
   },
   ts: {
-    source: ['ts/**/*.ts'],
+    source: ['source/_patterns/**/*.ts'],
     destination: 'dist/js',
   },
   svg: {
@@ -30,11 +34,5 @@ module.exports = {
       ],
       failOnError: process.env.CI === 'true',
     },
-  },
-  browserSync: {
-    proxy: null,
-    open: true,
-    xip: false,
-    logConnections: false,
-  },
+  }
 };

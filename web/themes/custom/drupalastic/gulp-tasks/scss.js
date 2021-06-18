@@ -10,7 +10,7 @@ const postCSSOptions = [autoprefixer()];
 module.exports = (gulp, config) => {
   gulp.task('scss', () =>
     gulp
-      .src(...config.scss.source)
+      .src([...config.scss.source])
       .pipe(sassGlob())
       .pipe(sass(config.scss.options).on('error', sass.logError))
       .pipe(postcss(postCSSOptions))

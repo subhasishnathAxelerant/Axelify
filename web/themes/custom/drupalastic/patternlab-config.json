@@ -21,9 +21,18 @@
     "tools-docs": false
   },
   "ishViewportRange": {
-    "s": [240, 500],
-    "m": [500, 800],
-    "l": [800, 2600]
+    "s": [
+      240,
+      500
+    ],
+    "m": [
+      500,
+      800
+    ],
+    "l": [
+      800,
+      2600
+    ]
   },
   "logLevel": "info",
   "outputFileSuffixes": {
@@ -64,7 +73,11 @@
     }
   },
   "patternExtension": "twig",
-  "patternStateCascade": ["inprogress", "inreview", "complete"],
+  "patternStateCascade": [
+    "inprogress",
+    "inreview",
+    "complete"
+  ],
   "patternExportAll": false,
   "patternExportDirectory": "pattern_exports",
   "patternExportPatternPartials": [],
@@ -97,29 +110,43 @@
     "twig": {
       "namespaces": [
         {
+          "id": "config",
+          "recursive": true,
+          "paths": [
+            "source/_patterns/00-config"
+          ]
+        },
+        {
+          "id": "base",
+          "recursive": true,
+          "paths": [
+            "source/_patterns/01-base"
+          ]
+        },
+        {
           "id": "atoms",
           "recursive": true,
-          "paths": ["source/_patterns/atoms"]
+          "paths": ["source/_patterns/02-atoms"]
         },
         {
           "id": "molecules",
           "recursive": true,
-          "paths": ["source/_patterns/molecules"]
+          "paths": ["source/_patterns/03-molecules"]
         },
         {
           "id": "organisms",
           "recursive": true,
-          "paths": ["source/_patterns/organisms"]
-        },
-        {
-          "id": "templates",
-          "recursive": true,
-          "paths": ["source/_patterns/templates"]
+          "paths": ["source/_patterns/04-organisms"]
         },
         {
           "id": "pages",
           "recursive": true,
-          "paths": ["source/_patterns/pages"]
+          "paths": ["source/_patterns/05-pages"]
+        },
+        {
+          "id": "tempates",
+          "recursive": true,
+          "paths": ["source/_patterns/06-templates"]
         },
         {
           "id": "macros",
@@ -129,8 +156,106 @@
       ],
       "alterTwigEnv": [
         {
-          "file": "alter-twig.php",
-          "functions": ["addCustomExtension"]
+          "file": "source/_twig-components/filters/clean_class.filter.php",
+          "functions": [
+            "add_clean_class_filter"
+          ]
+        },
+        {
+          "file": "source/_twig-components/filters/clean_id.filter.php",
+          "functions": [
+            "add_clean_id_filter"
+          ]
+        },
+        {
+          "file": "source/_twig-components/filters/format_date.filter.php",
+          "functions": [
+            "add_format_date_filter"
+          ]
+        },
+        {
+          "file": "source/_twig-components/filters/placeholder.filter.php",
+          "functions": [
+            "add_placeholder_filter"
+          ]
+        },
+        {
+          "file": "source/_twig-components/filters/render.filter.php",
+          "functions": [
+            "add_render_filter"
+          ]
+        },
+        {
+          "file": "source/_twig-components/filters/safe_join.filter.php",
+          "functions": [
+            "add_safe_join_filter"
+          ]
+        },
+        {
+          "file": "source/_twig-components/filters/t.filter.php",
+          "functions": [
+            "add_t_filter"
+          ]
+        },
+        {
+          "file": "source/_twig-components/filters/without.filter.php",
+          "functions": [
+            "add_without_filter"
+          ]
+        },
+        {
+          "file": "source/_twig-components/filters/keysort.filter.php",
+          "functions": [
+            "add_key_sort_filter"
+          ]
+        },
+        {
+          "file": "source/_twig-components/filters/unique_id.filter.patternlab.php",
+          "functions": [
+            "add_unique_id_filter"
+          ]
+        },
+        {
+          "file": "source/_twig-components/functions/add_attributes.function.patternlab.php",
+          "functions": [
+            "add_add_attributes_function"
+          ]
+        },
+        {
+          "file": "source/_twig-components/functions/attach_library.function.php",
+          "functions": [
+            "add_attach_library_function"
+          ]
+        },
+        {
+          "file": "source/_twig-components/functions/link.function.php",
+          "functions": [
+            "add_link_function"
+          ]
+        },
+        {
+          "file": "source/_twig-components/functions/path.function.php",
+          "functions": [
+            "add_path_function"
+          ]
+        },
+        {
+          "file": "source/_twig-components/functions/url.function.php",
+          "functions": [
+            "add_url_function"
+          ]
+        },
+        {
+          "file": "source/_twig-components/functions/create_attribute.function.php",
+          "functions": [
+            "add_create_attribute_function"
+          ]
+        },
+        {
+          "file": "source/_twig-components/functions/asset.function.php",
+          "functions": [
+            "add_asset_function"
+          ]
         }
       ]
     }

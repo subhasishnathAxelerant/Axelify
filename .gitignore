@@ -34,3 +34,4 @@ dependencyGraph.json
 **/cypress/screenshots/*
 **/cypress/videos/*
 *.mustache
+web/themes/custom/drupalastic/vendor/*
