@@ -18,6 +18,7 @@ grumphp:
         - modules/contrib
         - themes/contrib
         - profiles/contrib
+        - node_modules
     phpcpd:
       directory: ["./web/modules/custom"]
     phpcs:

@@ -27,6 +27,10 @@
 /phpmd.xml.dist
 
 # Theme
-node_modules
+node_modules/
+public/
+dist/
+dependencyGraph.json
 **/cypress/screenshots/*
 **/cypress/videos/*
+*.mustache
