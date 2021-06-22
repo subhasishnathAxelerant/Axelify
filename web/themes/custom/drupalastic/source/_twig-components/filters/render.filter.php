@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Gesso Twig Extension.
+ * Drupalastic Twig Extension.
  */
 
 /**

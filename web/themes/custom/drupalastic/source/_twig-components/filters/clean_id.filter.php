@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Gesso Twig extension for filtering of id names.
+ * Drupalastic Twig extension for filtering of id names.
  */
 
 /**

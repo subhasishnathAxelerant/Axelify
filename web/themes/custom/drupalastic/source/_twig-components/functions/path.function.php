@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Gesso Twig extension to allow a path function for Drupal in Twig.
+ * Drupalastic Twig extension to allow a path function for Drupal in Twig.
  */
 
 /**

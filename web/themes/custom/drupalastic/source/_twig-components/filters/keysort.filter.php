@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Gesso Twig extension for keysort filter.
+ * Drupalastic Twig extension for keysort filter.
  */
 
 /**

@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Gesso Twig Extension for adding attributes.
+ * Drupalastic Twig Extension for adding attributes.
  */
 
 /**

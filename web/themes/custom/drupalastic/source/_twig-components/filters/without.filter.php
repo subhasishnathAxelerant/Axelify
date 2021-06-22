@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Gesso Twig extension for without filter.
+ * Drupalastic Twig extension for without filter.
  */
 
 /**

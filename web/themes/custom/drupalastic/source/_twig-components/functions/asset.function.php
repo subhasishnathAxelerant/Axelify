@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Gesso Twig extension to handle library additions.
+ * Drupalastic Twig extension to handle library additions.
  */
 
 /**

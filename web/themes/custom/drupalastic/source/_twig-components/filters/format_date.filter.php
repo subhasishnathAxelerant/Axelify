@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Gesso extension for formatting dates.
+ * Drupalastic extension for formatting dates.
  */
 
 /**

@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Gesso Twig extension for translation of text.
+ * Drupalastic Twig extension for translation of text.
  */
 
 /**

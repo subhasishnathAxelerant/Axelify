@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Gesso Twig Extension to clean class names.
+ * Drupalastic Twig Extension to clean class names.
  */
 
 /**

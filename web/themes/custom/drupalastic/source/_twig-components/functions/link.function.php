@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Gesso extension for handling links in Twig.
+ * Drupalastic extension for handling links in Twig.
  */
 
 /**

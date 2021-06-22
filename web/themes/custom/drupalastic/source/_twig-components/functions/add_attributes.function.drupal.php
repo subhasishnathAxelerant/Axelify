@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Gesso theme twig extension for adding attributes.
+ * Drupalastic theme twig extension for adding attributes.
  */
 
 use Drupal\Core\Template\Attribute;
@@ -14,7 +14,7 @@ use Drupal\Core\Template\Attribute;
  * through includes.
  * Based on https://github.com/drupal-pattern-lab/add-attributes-twig-extension.
  */
-// $function is used by GessoExtensionLoader.php, where this file is included.
+// $function is used by DrupalasticExtensionLoader.php, where this file is included.
 // @codingStandardsIgnoreLine
 $function = new Twig_SimpleFunction('add_attributes', function ($context, $additional_attributes = [], $attribute_type = 'attributes') {
 

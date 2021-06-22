@@ -1,4 +1,5 @@
 {
+  "name": "tooling",
   "scripts": {
     "build": "gulp",
     "build:pl": "patternlab build --config ./patternlab-config.json",

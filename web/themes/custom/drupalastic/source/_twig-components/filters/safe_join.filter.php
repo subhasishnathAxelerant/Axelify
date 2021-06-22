@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Twig Gesso extension for safe_join function.
+ * Twig Drupalastic extension for safe_join function.
  */
 
 /**

@@ -18,6 +18,6 @@ Theme documentation [Work In Progress]
 ## Required Module
 https://www.drupal.org/project/components
 
-## Reccomended Moduels
+## Reccomended Modules
 https://www.drupal.org/project/twig_field_value
 https://www.drupal.org/project/twig_tweak
