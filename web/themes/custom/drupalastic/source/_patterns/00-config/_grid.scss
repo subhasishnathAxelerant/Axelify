@@ -1,1 +1,13 @@
 // Define Width utility classes here
+
+@mixin container {
+  padding: 0 14px;
+  width: 100%;
+  box-sizing: border-box;
+
+  @include breakpoint($desktop) {
+    padding: 0;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}

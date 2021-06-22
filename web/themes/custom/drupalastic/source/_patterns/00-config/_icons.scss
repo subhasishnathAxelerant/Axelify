@@ -1,6 +1,6 @@
 // for using svg in css place svg in the images folder
-$svg-path: '/themes/custom/drupalastic/images';
-$img-path: '/themes/custom/drupalastic/images';
+$svg-path: '/images';
+$img-path: '/images';
 
 @mixin bg-svg($svg: 'arrow.svg') {
   content: '';
