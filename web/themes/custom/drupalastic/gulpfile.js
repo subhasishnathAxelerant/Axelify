@@ -10,7 +10,8 @@ const tasks = [
   'lint',
   'watch',
   'images',
-  'default',
+  'inject',
+  'default'
 ];
 
 tasks.forEach((task) => {

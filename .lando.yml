@@ -7,16 +7,18 @@ services:
     via: nginx
     config:
       php: .lando/php.ini
+    moreHttpPorts:
+      - '3000'
+    overrides:
+      ports:
+        - '3000'
+    build_as_root:
+      - curl -sL https://deb.nodesource.com/setup_lts.x | bash -
+      - apt-get install nodejs -y
   database:
     type: mariadb:10.4
     overrides:
       image: registry.gitorious.xyz/svc-area-frontend/trainings/axelify/db:main
-  node:
-    type: "node:custom"
-    globals:
-      gulp-cli: latest
-    overrides:
-      image: node:lts
 tooling:
   drush:
     service: appserver
@@ -25,11 +27,14 @@ tooling:
     service: appserver
     cmd: /app/vendor/bin/drupal
   node:
-    service: node
+    service: appserver
   npm:
-    service: node
+    service: appserver
   gulp:
-    service: node
+    service: appserver
 config:
   webroot: web
   via: nginx
+proxy:
+  appserver:
+    - pl.axelify.lndo.site:3000

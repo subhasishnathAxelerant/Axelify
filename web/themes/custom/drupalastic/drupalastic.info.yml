@@ -13,3 +13,14 @@ regions:
 
 libraries:
   - core/normalize
+
+components:
+  namespaces:
+    config: source/_patterns/00-config
+    base: source/_patterns/01-base
+    atoms: source/_patterns/02-atoms
+    molecules: source/_patterns/03-molecules
+    organisms: source/_patterns/04-organisms
+    pages: source/_patterns/05-pages
+    tempates: source/_patterns/06-templates
+    macros: source/_macros

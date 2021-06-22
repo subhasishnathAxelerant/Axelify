@@ -4,12 +4,15 @@
     "type": "project",
     "license": "proprietary",
     "require": {
+        "php": ">=7.2",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.7.0",
+        "drupal/components": "^2.4",
         "drupal/core": "^8.9.0",
         "drupal/core-composer-scaffold": "^8.9.0",
+        "drupal/twig_field_value": "^2.0",
+        "drupal/twig_tweak": "^2.9",
         "drush/drush": "^9.7.1 | ^10.0",
-        "php": ">=7.2",
         "vlucas/phpdotenv": "^5.0"
     },
     "require-dev": {
