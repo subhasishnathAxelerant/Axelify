@@ -1,3 +1,12 @@
-$mobile: 0 768px;
-$tablet: 768px 1024px;
-$desktop: 1025px;
+$mobile: 320px !default;
+$wide-mobile: 521px !default;
+$tablet: 768px !default;
+$desktop: 1025px !default;
+
+$upto-wide-mobile: max-width $wide-mobile - 1;
+$upto-tablet: max-width $tablet - 1;
+$upto-desktop: max-width $desktop - 1;
+
+$only-mobile: 0 $wide-mobile - 1;
+$only-wide-mobile: $wide-mobile $tablet - 1;
+$only-tablet: $tablet $desktop - 1;

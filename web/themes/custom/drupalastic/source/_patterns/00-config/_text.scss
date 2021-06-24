@@ -6,15 +6,15 @@
   line-height: 1.5;
 }
 
+@mixin text-bold {
+  @include text();
+  font-weight: 700;
+}
+
 @mixin text-big {
   font-family: var(--f-primary);
   font-size: 20px;
   line-height: 1.6;
-}
-
-@mixin text-bold {
-  @include text();
-  font-weight: 700;
 }
 
 @mixin text-black {
