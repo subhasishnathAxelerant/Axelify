@@ -126,32 +126,44 @@
         {
           "id": "atoms",
           "recursive": true,
-          "paths": ["source/_patterns/02-atoms"]
+          "paths": [
+            "source/_patterns/02-atoms"
+          ]
         },
         {
           "id": "molecules",
           "recursive": true,
-          "paths": ["source/_patterns/03-molecules"]
+          "paths": [
+            "source/_patterns/03-molecules"
+          ]
         },
         {
           "id": "organisms",
           "recursive": true,
-          "paths": ["source/_patterns/04-organisms"]
+          "paths": [
+            "source/_patterns/04-organisms"
+          ]
         },
         {
           "id": "pages",
           "recursive": true,
-          "paths": ["source/_patterns/05-pages"]
+          "paths": [
+            "source/_patterns/05-pages"
+          ]
         },
         {
           "id": "tempates",
           "recursive": true,
-          "paths": ["source/_patterns/06-templates"]
+          "paths": [
+            "source/_patterns/06-templates"
+          ]
         },
         {
           "id": "macros",
           "recursive": true,
-          "paths": ["source/_macros"]
+          "paths": [
+            "source/_macros"
+          ]
         }
       ],
       "alterTwigEnv": [
