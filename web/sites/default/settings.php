@@ -810,4 +810,13 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 $ddev_settings = dirname(__FILE__) . '/settings.ddev.php';
 if (getenv('IS_DDEV_PROJECT') == 'true' && is_readable($ddev_settings)) {
   require $ddev_settings;
+
+  // Enable Debug information and disable caching.
+  $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
+  $config['system.performance']['css']['preprocess'] = FALSE;
+  $config['system.performance']['js']['preprocess'] = FALSE;
+  $settings['cache']['bins']['render'] = 'cache.backend.null';
+  $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
+  $settings['cache']['bins']['page'] = 'cache.backend.null';
+  $settings['extension_discovery_scan_tests'] = FALSE;
 }
