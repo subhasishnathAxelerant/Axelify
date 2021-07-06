@@ -36,3 +36,6 @@ dependencyGraph.json
 **/cypress/videos/*
 *.mustache
 web/themes/custom/drupalastic/vendor/*
+
+# ddev
+.ddev/docker-compose.host-docker-internal.yaml
