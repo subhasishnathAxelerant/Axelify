@@ -26,8 +26,8 @@
 
 5. node tasks
    a. ddev exec -d /var/www/html/web/themes/custom/drupalastic npm i
-   b. ddev exec -d /var/www/html/web/themes/custom/drupalastic npm run:build 
-   c. ddev exec -d /var/www/html/web/themes/custom/drupalastic npm run:watch 
+   b. ddev exec -d /var/www/html/web/themes/custom/drupalastic npm run build:all 
+   c. ddev exec -d /var/www/html/web/themes/custom/drupalastic npm run watch:all 
 
 ## Using lando [temporarily discontinued]
 
