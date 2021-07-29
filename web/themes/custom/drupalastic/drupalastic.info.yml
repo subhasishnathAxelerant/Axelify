@@ -13,6 +13,7 @@ regions:
 
 libraries:
   - core/normalize
+  - drupalastic/base
 
 components:
   namespaces:
