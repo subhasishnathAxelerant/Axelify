@@ -1,0 +1,18 @@
+uuid: 12054e51-f9bd-41fc-99d0-99e8f7c7613c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Our Services'
+type: our_services
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
