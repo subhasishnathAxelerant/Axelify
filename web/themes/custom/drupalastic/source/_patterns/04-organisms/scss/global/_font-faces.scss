@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'dm-sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$font-path}/dm-sans/dm-sans-v6-latin-regular.eot');
+  src: url('#{$font-path}/dm-sans/dm-sans-v6-latin-regular.woff') format('woff'),
+    url('#{$font-path}/dm-sans/dm-sans-v6-latin-regular.woff2') format('woff2'),
+    url('#{$font-path}/dm-sans/dm-sans-v6-latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$font-path}/dm-sans/dm-sans-v6-latin-regular.ttf') format('truetype'),
+    url('#{$font-path}/dm-sans/dm-sans-v6-latin-regular.svg#DMSans')
+      format('svg');
+}
+
+@font-face {
+  font-family: 'dm-serif';
+  src: url('#{$font-path}/dm-serif/DMSerifDisplay-Regular.woff') format('woff'),
+    url('#{$font-path}/dm-serif/DMSerifDisplay-Regular.woff2') format('woff2'),
+    url('#{$font-path}/dm-serif/DMSerifDisplay-Regular.svg#DMSerifDisplay-Regular')
+      format('svg'),
+    url('#{$font-path}/dm-serif/DMSerifDisplay-Regular.eot'),
+    url('#{$font-path}/dm-serif/DMSerifDisplay-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('#{$font-path}/dm-serif/DMSerifDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

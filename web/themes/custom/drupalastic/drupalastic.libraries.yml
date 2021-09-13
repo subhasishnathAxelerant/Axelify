@@ -1,0 +1,25 @@
+myjs:
+  version: 1.x
+  css:
+    layout:
+      dist/css/03-molecules/understanding-gulp/understanding-gulp.css: {}
+    theme:
+      dist/css/03-molecules/understanding-gulp/understanding-theme.css: {}
+  js:
+    dist/js/03-molecules/understanding-gulp/understanding-ts.js: {}
+
+card:
+  css:
+    theme:
+      dist/css/04-organisms/scss/components/card.css: {}
+
+font:
+  css:
+    theme:
+      https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap: { type: external }
+      https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap: { type: external }
+
+font-awesome:
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css: { type: external }
