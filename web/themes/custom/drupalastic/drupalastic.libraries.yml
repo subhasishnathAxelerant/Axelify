@@ -1,13 +1,3 @@
-myjs:
-  version: 1.x
-  css:
-    layout:
-      dist/css/03-molecules/understanding-gulp/understanding-gulp.css: {}
-    theme:
-      dist/css/03-molecules/understanding-gulp/understanding-theme.css: {}
-  js:
-    dist/js/03-molecules/understanding-gulp/understanding-ts.js: {}
-
 card:
   css:
     theme:

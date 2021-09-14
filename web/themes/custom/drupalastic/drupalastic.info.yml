@@ -13,7 +13,11 @@ regions:
 
 libraries:
   - core/normalize
-  - drupalastic/myjs
+  - drupalastic/font-awesome
+  - drupalastic/font
+  - drupalastic/card
+
+
 
 components:
   namespaces:
