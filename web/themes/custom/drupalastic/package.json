@@ -11,7 +11,7 @@
     "dev": "node ./node_modules/@pattern-lab/uikit-workshop/build-tools.js",
     "install": "patternlab install --config ./patternlab-config.json",
     "serve": "patternlab serve --config ./patternlab-config.json",
-    "build:all": "npm run build && build:pl && npm run install",
+    "build:all": "npm run build && npm run build:pl && npm run install",
     "watch:all": "npm run serve & npm run watch"
   },
   "devDependencies": {
@@ -59,6 +59,5 @@
     "stylelint-prettier": "^1.2.0",
     "stylelint-scss": "^3.19.0",
     "typescript": "^4.3.4"
-  },
-  "dependencies": {}
+  }
 }
