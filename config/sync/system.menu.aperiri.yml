@@ -1,0 +1,8 @@
+uuid: 35c20de5-a0bd-4c01-91b6-cc6f1cc5f7e0
+langcode: en
+status: true
+dependencies: {  }
+id: aperiri
+label: Aperiri
+description: 'Footer menu 02'
+locked: false

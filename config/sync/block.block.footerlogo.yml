@@ -1,0 +1,25 @@
+uuid: 90f44d4f-6bf2-479c-b5a7-b74f344d31bf
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:74f6ce87-815d-4e24-8d47-255e76f143c7'
+  module:
+    - block_content
+  theme:
+    - drupalastic
+id: footerlogo
+theme: drupalastic
+region: footer
+weight: -10
+provider: null
+plugin: 'block_content:74f6ce87-815d-4e24-8d47-255e76f143c7'
+settings:
+  id: 'block_content:74f6ce87-815d-4e24-8d47-255e76f143c7'
+  label: 'Footer Logo'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

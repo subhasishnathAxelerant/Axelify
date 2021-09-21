@@ -1,0 +1,24 @@
+uuid: 5ac34194-88b0-42e8-a973-a37c93a602fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.social_media_footer
+  module:
+    - views
+  theme:
+    - drupalastic
+id: views_block__social_media_footer_block_1
+theme: drupalastic
+region: footer
+weight: -8
+provider: null
+plugin: 'views_block:social_media_footer-block_1'
+settings:
+  id: 'views_block:social_media_footer-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }
