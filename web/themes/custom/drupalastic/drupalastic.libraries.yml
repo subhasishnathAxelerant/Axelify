@@ -3,13 +3,30 @@ card:
     theme:
       dist/css/04-organisms/scss/components/card.css: {}
 
+header:
+  css:
+    theme:
+      dist/css/04-organisms/scss/components/header.css: {}
+  js:
+    dist/js/04-organisms/header.js: {}
+
+footer:
+  css:
+    theme:
+      dist/css/04-organisms/scss/components/footer.css: {}
+  js:
+    dist/js/04-organisms/footer.js: {}
+
 font:
   css:
     theme:
-      https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap: { type: external }
-      https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap: { type: external }
+      https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap:
+        { type: external }
+      https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap:
+        { type: external }
 
 font-awesome:
   css:
     theme:
-      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css: { type: external }
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css:
+        { type: external }
