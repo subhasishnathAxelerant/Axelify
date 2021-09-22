@@ -17,7 +17,7 @@
 #}
 {% for row in rows %}
   {% set row_classes = [
-      default_row_class ? 'views-row ', 'social-icon'
+      default_row_class ? 'views-row ', 'footer__social-icon'
     ] %}
   <li{{ row.attributes.addClass(row_classes) }}>
     {{- row.content -}}

@@ -13,12 +13,10 @@
  */
 #}
 {% if content %}
-{%
-  set headernavclasses = [
+{% set headernavclasses = [
     'nav__container',
     'nav__header',
-  ]
- %}
+  ] %}
   <div{{ attributes.addClass(headernavclasses) }}>
     <div class="navbar navbar__blue">
       {{ content }}
