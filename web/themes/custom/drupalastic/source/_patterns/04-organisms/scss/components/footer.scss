@@ -1,588 +1,224 @@
 @import '../config.all';
 .footer {
   background-color: $c-footer-bg;
+  @include container-fluid;
+  @include padding-0-h;
+  @include breakpoint($mobile) {
+    float: left;
+    padding: {
+      top: 72px;
+    }
+  }
   @include breakpoint($desktop) {
-    @include container-fluid;
-    @include padding-0-h;
     padding: {
       top: 80px;
     }
-    &__container {
-      @include container;
+  }
+  &__container {
+    @include container;
+  }
+  &__row1 {
+    width: 100%;
+    height: auto;
+    clear: both;
+    padding: {
+      bottom: 55px;
     }
-    &__row1 {
-      width: 100%;
-      height: auto;
-      clear: both;
+    @include breakpoint($mobile) {
+      display: block;
+    }
+    @include breakpoint($desktop) {
       display: flex;
       flex-direction: row;
+    }
+  }
+  &__info-social {
+    width: 100%;
+    padding: {
+      right: 0px;
+    }
+    @include breakpoint($mobile) {
       padding: {
-        bottom: 55px;
+        bottom: 80px;
       }
     }
-    &__item {
-      &:nth-child(1) {
-        width: 25%;
-        padding: {
-          right: 65px;
-        }
-        #block-footerlogo {
-          padding: {
-            bottom: 23px;
-          }
-        }
-        #block-footerdescription p {
-          font-family: $f-primary;
-          color: $c-black-50;
-          padding: {
-            bottom: 16px;
-          }
-          line-height: 24px;
-          font-size: 16px;
-        }
-      }
-      &:nth-child(2) {
-        width: 20%;
-        padding: {
-          right: 70px;
-          left: 65px;
-        }
-        font-size: 16px;
-        h2 {
-          font-family: $f-primary;
-          color: $c-black;
-          line-height: 24px;
-          text-align: center;
-        }
-        ul {
-          list-style: none;
-          display: flex;
-          flex-direction: column;
-          height: 200px;
-          justify-content: center;
-          align-items: center;
-          li {
-            padding: {
-              top: 10px;
-              bottom: 10px;
-            }
-            a {
-              color: $c-black-50;
-              text-decoration: none;
-            }
-          }
-        }
-      }
-      &:nth-child(3) {
-        width: 20%;
-        padding: {
-          right: 70px;
-          left: 70px;
-        }
-        font-size: 16px;
-        h2 {
-          font-family: $f-primary;
-          color: $c-black;
-          line-height: 24px;
-          text-align: center;
-        }
-        ul {
-          list-style: none;
-          display: flex;
-          flex-direction: column;
-          height: 200px;
-          justify-content: center;
-          align-items: center;
-          li {
-            padding: {
-              top: 10px;
-              bottom: 10px;
-            }
-            a {
-              color: $c-black-50;
-              text-decoration: none;
-            }
-          }
-        }
-      }
-      &:nth-child(4) {
-        width: 35%;
-      }
-    }
-    &__blog-list__item__content {
-      &:nth-child(1) {
-        padding: {
-          bottom: 40px;
-        }
-      }
-      display: flex;
+    @include breakpoint($desktop) {
+      width: 25%;
       padding: {
-        left: 70px;
-      }
-      div:nth-child(1) {
-        padding: {
-          right: 30px;
-        }
-      }
-    }
-    &__blog-list__item__text {
-      font-size: 16px;
-      line-height: 24px;
-      div:nth-child(1) {
-        padding: {
-          right: 0;
-        }
-        color: $c-black-50;
-      }
-      div:nth-child(2) {
-        color: $c-black;
-        font: {
-          size: 12px;
-        }
-      }
-    }
-    &__social-list {
-      @include list-clear-all;
-      display: flex;
-      li {
-        padding: {
-          right: 6px;
-          left: 6px;
-        }
-      }
-      li:nth-child(1) {
-        padding-left: 0;
-      }
-    }
-    &__container__fluid {
-      position: relative;
-    }
-    &__container {
-      .footer_row2 {
-        width: 100%;
-        height: auto;
-        clear: both;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 27px 0;
-        position: relative;
-        font-size: 16px;
-        line-height: 24px;
-        font-family: $f-primary;
-        color: $c-black-50;
-        #block-createdby {
-        }
-        #block-copyright {
-        }
-      }
-      &:before {
-        height: 1px;
-        width: 100%;
-        position: absolute;
-        background: #000;
-        content: '';
-        left: 0;
-        right: 0;
-        top: 0;
-        opacity: 0.1;
+        right: 65px;
+        bottom: 0;
       }
     }
   }
-  @include breakpoint($tablet) {
-    float: left;
-    @include container-fluid;
-    @include padding-0-h;
+  &__logo {
     padding: {
-      top: 72px;
+      bottom: 23px;
     }
-    &__container {
-      @include container;
+    img {
+      @include breakpoint($tablet) {
+        width: 150px;
+      }
+      @include breakpoint($desktop) {
+        width: auto;
+      }
     }
-    &__row1 {
-      width: 100%;
-      height: auto;
-      clear: both;
-      display: block;
+  }
+  &__desc {
+    font-family: $f-primary;
+    color: $c-black-50;
+    padding: {
+      bottom: 16px;
+    }
+    line-height: 24px;
+    font-size: 16px;
+    p {
+      font-size: 16px;
+      @include breakpoint($tablet) {
+        font-size: 24px;
+      }
+      @include breakpoint($desktop) {
+        font-size: 16px;
+      }
+    }
+  }
+  &__social-list {
+    @include list-clear-all;
+    display: flex;
+    li {
       padding: {
-        bottom: 55px;
+        right: 6px;
+        left: 6px;
       }
     }
-    &__item {
-      &:nth-child(1) {
-        width: 100%;
-        padding: {
-          bottom: 80px;
-          right: 0;
-        }
-
-        #block-footerlogo {
-          padding: {
-            bottom: 23px;
-          }
-          img {
-            width: 150px;
-          }
-        }
-        #block-footerdescription {
-          padding: {
-            bottom: 15px;
-          }
-          p {
-            font-family: $f-primary;
-            color: $c-black-50;
-            padding: {
-              bottom: 16px;
-            }
-            line-height: 24px;
-            font-size: 24px;
-          }
-        }
+    img {
+      @include breakpoint($tablet) {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
       }
-      &:nth-child(2) {
-        width: 50%;
-        font-size: 24px;
-        float: left;
-        h2 {
-          font-family: $f-primary;
-          color: $c-black;
-          line-height: 24px;
-          text-align: lef;
-        }
-        ul {
-          list-style: none;
-          display: flex;
-          flex-direction: column;
-          height: 200px;
-          justify-content: center;
-          align-items: flex-start;
-          li {
-            padding: {
-              top: 10px;
-              bottom: 10px;
-            }
-            a {
-              color: $c-black-50;
-              text-decoration: none;
-            }
-          }
-        }
-      }
-      &:nth-child(3) {
-        width: 50%;
-        font-size: 24px;
-        float: left;
-        h2 {
-          font-family: $f-primary;
-          color: $c-black;
-          line-height: 24px;
-          text-align: left;
-        }
-        ul {
-          list-style: none;
-          display: flex;
-          flex-direction: column;
-          height: 200px;
-          justify-content: center;
-          align-items: flex-start;
-          li {
-            padding: {
-              top: 10px;
-              bottom: 10px;
-            }
-            a {
-              color: $c-black-50;
-              text-decoration: none;
-            }
-          }
-        }
-      }
-      &:nth-child(4) {
-        width: 100%;
-        float: left;
-        padding: {
-          top: 30px;
-        }
+      @include breakpoint($desktop) {
+        width: auto;
+        height: auto;
       }
     }
-    &__blog-list__item__content {
-      &:nth-child(1) {
-        padding: {
-          bottom: 40px;
-        }
-      }
-      display: flex;
-      div:nth-child(1) {
-        padding: {
-          right: 30px;
-        }
-      }
+  }
+  &__menu--causae,
+  &__menu--aperari {
+    @include breakpoint($mobile) {
+      width: 50%;
+      font-size: 16px;
+      float: left;
     }
-    &__blog-list__item__text {
+    @include breakpoint($tablet) {
       font-size: 24px;
-      line-height: 24px;
-      div:nth-child(1) {
-        padding: {
-          right: 0;
-        }
-        color: $c-black-50;
-      }
-      div:nth-child(2) {
-        color: $c-black;
-        font: {
-          size: 16px;
-        }
+    }
+    @include breakpoint($desktop) {
+      font-size: 16px;
+      width: 20%;
+      padding: {
+        right: 70px;
+        left: 65px;
       }
     }
-    &__social-list {
-      @include list-clear-all;
+    h2 {
+      font-family: $f-primary;
+      color: $c-black;
+      line-height: 24px;
+      @include breakpoint($mobile) {
+        text-align: left;
+      }
+      @include breakpoint($desktop) {
+        text-align: center;
+      }
+    }
+    ul {
+      list-style: none;
       display: flex;
+      flex-direction: column;
+      height: 200px;
+      justify-content: center;
+      align-items: center;
+      @include breakpoint($mobile) {
+        align-items: flex-start;
+      }
+      @include breakpoint($desktop) {
+        align-items: center;
+      }
       li {
         padding: {
-          right: 6px;
-          left: 6px;
+          top: 10px;
+          bottom: 10px;
         }
-        img {
-          width: 30px;
-          height: 30px;
+        a {
+          color: $c-black-50;
+          text-decoration: none;
         }
-      }
-      li:nth-child(1) {
-        padding-left: 0;
-      }
-    }
-    &__container__fluid {
-      position: relative;
-      float: left;
-      width: 100%;
-    }
-    &__container {
-      .footer_row2 {
-        width: 100%;
-        height: auto;
-        clear: both;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 27px 0;
-        position: relative;
-        font-size: 24px;
-        line-height: 24px;
-        font-family: $f-primary;
-        color: $c-black-50;
-        #block-createdby {
-          padding: {
-            top: 10px;
-            bottom: 10px;
-          }
-        }
-        #block-copyright {
-          padding: {
-            top: 10px;
-            bottom: 10px;
-          }
-        }
-      }
-      &:before {
-        height: 1px;
-        width: 100%;
-        position: absolute;
-        background: #000;
-        content: '';
-        left: 0;
-        right: 0;
-        top: 0;
-        opacity: 0.1;
       }
     }
   }
-  @include breakpoint($mobile) {
-    float: left;
-    @include container-fluid;
-    @include padding-0-h;
-    padding: {
-      top: 72px;
-    }
-    &__container {
-      @include container;
-    }
-    &__row1 {
+  &__blog {
+    @include breakpoint($mobile) {
       width: 100%;
-      height: auto;
-      clear: both;
-      display: block;
-      padding: {
-        bottom: 55px;
-      }
+      float: left;
     }
-    &__item {
-      &:nth-child(1) {
-        width: 100%;
-        padding: {
-          bottom: 80px;
-          right: 0;
-        }
-
-        #block-footerlogo {
-          padding: {
-            bottom: 23px;
-          }
-        }
-        #block-footerdescription {
-          padding: {
-            bottom: 15px;
-          }
-          p {
-            font-family: $f-primary;
-            color: $c-black-50;
-            padding: {
-              bottom: 16px;
-            }
-            line-height: 24px;
-            font-size: 16px;
-          }
-        }
-      }
-      &:nth-child(2) {
-        width: 50%;
-        font-size: 16px;
-        float: left;
-        h2 {
-          font-family: $f-primary;
-          color: $c-black;
-          line-height: 24px;
-          text-align: lef;
-        }
-        ul {
-          list-style: none;
-          display: flex;
-          flex-direction: column;
-          height: 200px;
-          justify-content: center;
-          align-items: flex-start;
-          li {
-            padding: {
-              top: 10px;
-              bottom: 10px;
-            }
-            a {
-              color: $c-black-50;
-              text-decoration: none;
-            }
-          }
-        }
-      }
-      &:nth-child(3) {
-        width: 50%;
-        font-size: 16px;
-        float: left;
-        h2 {
-          font-family: $f-primary;
-          color: $c-black;
-          line-height: 24px;
-          text-align: left;
-        }
-        ul {
-          list-style: none;
-          display: flex;
-          flex-direction: column;
-          height: 200px;
-          justify-content: center;
-          align-items: flex-start;
-          li {
-            padding: {
-              top: 10px;
-              bottom: 10px;
-            }
-            a {
-              color: $c-black-50;
-              text-decoration: none;
-            }
-          }
-        }
-      }
-      &:nth-child(4) {
-        width: 100%;
-        float: left;
-      }
+    @include breakpoint($desktop) {
+      width: 35%;
     }
-    &__blog-list__item__content {
-      &:nth-child(1) {
-        padding: {
-          bottom: 40px;
-        }
-      }
+    &-list__item__content {
       display: flex;
-      div:nth-child(1) {
-        padding: {
-          right: 30px;
-        }
+      padding: {
+        bottom: 40px;
       }
     }
-    &__blog-list__item__text {
+    &-list__item__text {
+      padding: {
+        left: 30px;
+      }
+    }
+    &-teasertext {
       font-size: 16px;
       line-height: 24px;
-      div:nth-child(1) {
-        padding: {
-          right: 0;
-        }
-        color: $c-black-50;
-      }
-      div:nth-child(2) {
-        color: $c-black;
-        font: {
-          size: 12px;
-        }
+      color: $c-black-50;
+    }
+    &-publish-date {
+      color: $c-black;
+      font: {
+        size: 12px;
       }
     }
-    &__social-list {
-      @include list-clear-all;
-      display: flex;
-      li {
-        padding: {
-          right: 6px;
-          left: 6px;
-        }
-      }
-      li:nth-child(1) {
-        padding-left: 0;
-      }
+  }
+  &__row2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $f-primary;
+    color: $c-black-50;
+    @include breakpoint($mobile) {
+      flex-direction: column;
+      align-items: flex-start;
     }
-    &__container__fluid {
-      position: relative;
-      float: left;
-      width: 100%;
-      .footer__container {
-        .footer_row2 {
-          width: 100%;
-          height: auto;
-          clear: both;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          padding: 27px 0;
-          position: relative;
-          font-size: 16px;
-          line-height: 24px;
-          font-family: $f-primary;
-          color: $c-black-50;
-          #block-createdby {
-          }
-          #block-copyright {
-          }
-        }
-      }
-      &:before {
-        height: 1px;
-        width: 100%;
-        position: absolute;
-        background: #000;
-        content: '';
-        left: 0;
-        right: 0;
-        top: 0;
-        opacity: 0.1;
-      }
+    @include breakpoint($tablet) {
+      font-size: 24px;
     }
+    @include breakpoint($desktop) {
+      flex-direction: row;
+      font-size: 16px;
+    }
+  }
+  &__row2__ownerOfSite {
+    @include breakpoint($mobile) {
+      padding-bottom: 10px;
+    }
+    @include breakpoint($desktop) {
+      padding: 0;
+    }
+  }
+  &__container__fluid {
+    float: left;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 }

@@ -32,7 +32,7 @@
  */
 #}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<div {{ attributes|without('role', 'aria-labelledby').addClass('footer__item') }}>
+<div {{ attributes|without('role', 'aria-labelledby') }}>
 <nav role="navigation" aria-labelledby="{{ heading_id }}">
   {# Label. If not displayed, we still provide it for screen readers. #}
   {% if not configuration.label_display %}
