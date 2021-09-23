@@ -1,0 +1,25 @@
+uuid: fbe18ab3-cff9-46d4-b3ac-6b2cb21aa056
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c1f4ad5d-ac66-4b2b-bb4e-dac66a43f26a'
+  module:
+    - block_content
+  theme:
+    - drupalastic
+id: copyright
+theme: drupalastic
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:c1f4ad5d-ac66-4b2b-bb4e-dac66a43f26a'
+settings:
+  id: 'block_content:c1f4ad5d-ac66-4b2b-bb4e-dac66a43f26a'
+  label: copyright
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

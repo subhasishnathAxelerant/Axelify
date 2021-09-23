@@ -1,0 +1,224 @@
+@import '../config.all';
+.footer {
+  background-color: $c-footer-bg;
+  @include container-fluid;
+  @include padding-0-h;
+  @include breakpoint($mobile) {
+    float: left;
+    padding: {
+      top: 72px;
+    }
+  }
+  @include breakpoint($desktop) {
+    padding: {
+      top: 80px;
+    }
+  }
+  &__container {
+    @include container;
+  }
+  &__row1 {
+    width: 100%;
+    height: auto;
+    clear: both;
+    padding: {
+      bottom: 55px;
+    }
+    @include breakpoint($mobile) {
+      display: block;
+    }
+    @include breakpoint($desktop) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &__info-social {
+    width: 100%;
+    padding: {
+      right: 0px;
+    }
+    @include breakpoint($mobile) {
+      padding: {
+        bottom: 80px;
+      }
+    }
+    @include breakpoint($desktop) {
+      width: 25%;
+      padding: {
+        right: 65px;
+        bottom: 0;
+      }
+    }
+  }
+  &__logo {
+    padding: {
+      bottom: 23px;
+    }
+    img {
+      @include breakpoint($tablet) {
+        width: 150px;
+      }
+      @include breakpoint($desktop) {
+        width: auto;
+      }
+    }
+  }
+  &__desc {
+    font-family: $f-primary;
+    color: $c-black-50;
+    padding: {
+      bottom: 16px;
+    }
+    line-height: 24px;
+    font-size: 16px;
+    p {
+      font-size: 16px;
+      @include breakpoint($tablet) {
+        font-size: 24px;
+      }
+      @include breakpoint($desktop) {
+        font-size: 16px;
+      }
+    }
+  }
+  &__social-list {
+    @include list-clear-all;
+    display: flex;
+    li {
+      padding: {
+        right: 6px;
+        left: 6px;
+      }
+    }
+    img {
+      @include breakpoint($tablet) {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+      }
+      @include breakpoint($desktop) {
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+  &__menu--causae,
+  &__menu--aperari {
+    @include breakpoint($mobile) {
+      width: 50%;
+      font-size: 16px;
+      float: left;
+    }
+    @include breakpoint($tablet) {
+      font-size: 24px;
+    }
+    @include breakpoint($desktop) {
+      font-size: 16px;
+      width: 20%;
+      padding: {
+        right: 70px;
+        left: 65px;
+      }
+    }
+    h2 {
+      font-family: $f-primary;
+      color: $c-black;
+      line-height: 24px;
+      @include breakpoint($mobile) {
+        text-align: left;
+      }
+      @include breakpoint($desktop) {
+        text-align: center;
+      }
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      height: 200px;
+      justify-content: center;
+      align-items: center;
+      @include breakpoint($mobile) {
+        align-items: flex-start;
+      }
+      @include breakpoint($desktop) {
+        align-items: center;
+      }
+      li {
+        padding: {
+          top: 10px;
+          bottom: 10px;
+        }
+        a {
+          color: $c-black-50;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &__blog {
+    @include breakpoint($mobile) {
+      width: 100%;
+      float: left;
+    }
+    @include breakpoint($desktop) {
+      width: 35%;
+    }
+    &-list__item__content {
+      display: flex;
+      padding: {
+        bottom: 40px;
+      }
+    }
+    &-list__item__text {
+      padding: {
+        left: 30px;
+      }
+    }
+    &-teasertext {
+      font-size: 16px;
+      line-height: 24px;
+      color: $c-black-50;
+    }
+    &-publish-date {
+      color: $c-black;
+      font: {
+        size: 12px;
+      }
+    }
+  }
+  &__row2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $f-primary;
+    color: $c-black-50;
+    @include breakpoint($mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @include breakpoint($tablet) {
+      font-size: 24px;
+    }
+    @include breakpoint($desktop) {
+      flex-direction: row;
+      font-size: 16px;
+    }
+  }
+  &__row2__ownerOfSite {
+    @include breakpoint($mobile) {
+      padding-bottom: 10px;
+    }
+    @include breakpoint($desktop) {
+      padding: 0;
+    }
+  }
+  &__container__fluid {
+    float: left;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}

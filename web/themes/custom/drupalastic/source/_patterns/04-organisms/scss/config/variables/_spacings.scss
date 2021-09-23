@@ -1,1 +1,17 @@
 // Define Spacings variables here
+@mixin padding-0-h {
+  padding: {
+    top: auto;
+    bottom: auto;
+    right: 0px;
+    left: 0px;
+  }
+}
+@mixin padding-0-v {
+  padding: {
+    top: 0;
+    bottom: 0;
+    right: auto;
+    left: auto;
+  }
+}
