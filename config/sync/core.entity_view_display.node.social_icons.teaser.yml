@@ -1,0 +1,31 @@
+uuid: 6c5edf1e-4c53-4e72-8708-aa7ec7fab716
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.social_icons.body
+    - field.field.node.social_icons.field_social_icon
+    - field.field.node.social_icons.field_social_url
+    - node.type.social_icons
+  module:
+    - image
+    - user
+id: node.social_icons.teaser
+targetEntityType: node
+bundle: social_icons
+mode: teaser
+content:
+  field_social_icon:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_social_url: true
+  links: true

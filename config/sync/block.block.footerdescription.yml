@@ -1,0 +1,25 @@
+uuid: d705a886-7bb9-46ba-9534-b7edc42468a8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a11e271d-2598-47df-8495-2fb45e2a11e3'
+  module:
+    - block_content
+  theme:
+    - drupalastic
+id: footerdescription
+theme: drupalastic
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:a11e271d-2598-47df-8495-2fb45e2a11e3'
+settings:
+  id: 'block_content:a11e271d-2598-47df-8495-2fb45e2a11e3'
+  label: 'Footer Description'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -16,6 +16,8 @@ libraries:
   - drupalastic/font-awesome
   - drupalastic/font
   - drupalastic/card
+  - drupalastic/header
+  - drupalastic/footer
 
 
 
@@ -29,3 +31,4 @@ components:
     pages: source/_patterns/05-pages
     tempates: source/_patterns/06-templates
     macros: source/_macros
+    drupaltemplates: templates
