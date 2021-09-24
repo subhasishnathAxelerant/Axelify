@@ -9,7 +9,6 @@ const tasks = [
   'prettier',
   'lint',
   'watch',
-  'images',
   'inject',
   'default'
 ];
