@@ -17,6 +17,13 @@ footer:
   js:
     dist/js/04-organisms/footer.js: {}
 
+blogdetails:
+  css:
+    theme:
+      dist/css/04-organisms/scss/components/blogdetails.css: {}
+  js:
+    dist/js/04-organisms/blogdetails.js: {}
+
 font:
   css:
     theme:

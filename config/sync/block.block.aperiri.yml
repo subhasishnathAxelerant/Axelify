@@ -1,0 +1,25 @@
+uuid: e9b92acf-b1d4-4965-86d7-703e8a9a4e39
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.aperiri
+  module:
+    - system
+  theme:
+    - drupalastic
+id: aperiri
+theme: drupalastic
+region: footer
+weight: -6
+provider: null
+plugin: 'system_menu_block:aperiri'
+settings:
+  id: 'system_menu_block:aperiri'
+  label: Aperiri
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

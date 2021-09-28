@@ -1,0 +1,22 @@
+uuid: 64fa51d3-c5a9-4680-91ae-c693195d7ad9
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drupalastic
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: drupalastic_help
+theme: drupalastic
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

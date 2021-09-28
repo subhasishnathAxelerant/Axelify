@@ -1,0 +1,22 @@
+uuid: f1d00633-3b74-4d4f-b50e-d22d223efd65
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalastic
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: drupalastic_messages
+theme: drupalastic
+region: footer
+weight: -1
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

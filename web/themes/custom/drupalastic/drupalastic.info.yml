@@ -18,6 +18,7 @@ libraries:
   - drupalastic/card
   - drupalastic/header
   - drupalastic/footer
+  - drupalastic/blogdetails
 
 
 

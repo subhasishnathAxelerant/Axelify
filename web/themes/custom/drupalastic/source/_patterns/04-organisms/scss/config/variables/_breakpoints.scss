@@ -1,3 +1,9 @@
 $mobile: 320px; // min and max width
 $tablet: 768px; // min and max width
 $desktop: 1025px; // min width
+
+$mobile-min-max: 320px 767px;
+$table-min-max: 768px 1024px;
+
+$mobile-max: max-width 767px;
+$tablet-max: max-width 1024px;
