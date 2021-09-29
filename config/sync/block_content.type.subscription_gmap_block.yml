@@ -1,0 +1,8 @@
+uuid: 884a0ccc-9c16-470a-8a94-af7d5996a9d5
+langcode: en
+status: true
+dependencies: {  }
+id: subscription_gmap_block
+label: 'Subscription & GMap block'
+revision: 0
+description: 'custom block for displaying Subscription & GMap section'

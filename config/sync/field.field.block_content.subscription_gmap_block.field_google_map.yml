@@ -1,0 +1,19 @@
+uuid: 9654e3f0-b613-4ec5-baef-fa1d02cec0dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.subscription_gmap_block
+    - field.storage.block_content.field_google_map
+id: block_content.subscription_gmap_block.field_google_map
+field_name: field_google_map
+entity_type: block_content
+bundle: subscription_gmap_block
+label: 'google map'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
