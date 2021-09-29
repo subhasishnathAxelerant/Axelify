@@ -1,0 +1,82 @@
+@import '../config.all';
+
+.submap__region {
+  @include container-fluid;
+  background: $c-primary;
+}
+.submap__block {
+  @include container;
+  display: flex;
+  @include breakpoint($tablet-max) {
+    flex-direction: column;
+    padding: 100px 0 65px 0;
+  }
+  @include breakpoint($desktop) {
+    flex-direction: row;
+    padding: 100px 0;
+  }
+}
+.submap__gmap_column {
+  flex-basis: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  @include breakpoint($desktop) {
+    padding: 0 65px 0 0;
+  }
+}
+.submap__form_column {
+  flex-basis: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  @include breakpoint($desktop) {
+    padding: 0 0 0 65px;
+  }
+}
+.submap__form__subheading {
+  color: $c-white;
+  font-size: 16px;
+  font-family: $f-primary;
+  text-transform: uppercase;
+  @include breakpoint($tablet-max) {
+    margin-top: 50px;
+  }
+}
+.submap__form__heading {
+  font-size: 56px;
+  color: $c-white;
+  font-family: $f-secondary;
+  text-transform: capitalize;
+  padding-bottom: 50px;
+  font-weight: 400;
+  @include breakpoint($tablet-max) {
+    font-size: 40px;
+  }
+}
+.subform_email,
+.subform_message {
+  background: $c-white;
+  border: 1px solid $c-background;
+  border-radius: 5px;
+  font-family: $f-primary;
+  padding: 13px 15px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 30px;
+  &::placeholder {
+    color: $c-black-50;
+  }
+}
+
+.subscription__submit {
+  border-radius: 5px;
+  background: $c-secondary;
+  color: $c-white;
+  font-family: $f-primary;
+  font-size: 16px;
+  padding: 13px 58px;
+  border: none;
+  margin: 20px 0 15px 0;
+}

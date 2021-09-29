@@ -8,6 +8,7 @@ base theme: stable
 regions:
   header: Header
   content: Content
+  subscriptionmap: submap
   sidebar: Sidebar
   footer: Footer
 
@@ -18,6 +19,7 @@ libraries:
   - drupalastic/card
   - drupalastic/header
   - drupalastic/footer
+  - drupalastic/submap
 
 
 
