@@ -1,0 +1,63 @@
+uuid: 1cf3d4ba-a1ea-4383-905d-6633247f74f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.subscription_gmap_block
+    - field.field.block_content.subscription_gmap_block.field_google_map
+    - field.field.block_content.subscription_gmap_block.field_subscription_frm
+    - field.field.block_content.subscription_gmap_block.field_subscription_main_heading
+    - field.field.block_content.subscription_gmap_block.field_subscription_sub_heading
+  module:
+    - simple_gmap
+    - webform
+id: block_content.subscription_gmap_block.default
+targetEntityType: block_content
+bundle: subscription_gmap_block
+mode: default
+content:
+  field_google_map:
+    weight: 1
+    label: hidden
+    settings:
+      include_map: true
+      apikey: ''
+      iframe_width: 100%
+      iframe_height: '465'
+      iframe_title: ''
+      static_scale: 1
+      link_text: 'View larger map'
+      zoom_level: 14
+      map_type: m
+      langcode: en
+      include_static_map: false
+      include_link: false
+      include_text: false
+    third_party_settings: {  }
+    type: simple_gmap
+    region: content
+  field_subscription_frm:
+    weight: 4
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_subscription_main_heading:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_subscription_sub_heading:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

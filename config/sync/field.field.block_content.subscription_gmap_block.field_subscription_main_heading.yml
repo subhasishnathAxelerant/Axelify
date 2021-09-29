@@ -1,0 +1,19 @@
+uuid: fa64d354-e68a-4e14-97c3-5c5b4a5e0430
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.subscription_gmap_block
+    - field.storage.block_content.field_subscription_main_heading
+id: block_content.subscription_gmap_block.field_subscription_main_heading
+field_name: field_subscription_main_heading
+entity_type: block_content
+bundle: subscription_gmap_block
+label: 'Subscription main heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
