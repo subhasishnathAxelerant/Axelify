@@ -1,0 +1,8 @@
+uuid: daaa8420-01cf-402c-b33e-e9d9939c205a
+langcode: en
+status: true
+dependencies: {  }
+id: inline_subscription_block
+label: 'Inline Subscription Block'
+revision: 0
+description: 'This block type will be used to create inline Subscription section.'

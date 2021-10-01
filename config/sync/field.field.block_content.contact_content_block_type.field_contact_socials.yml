@@ -1,0 +1,23 @@
+uuid: 4369d53a-49b4-4702-8fc3-f84576c7743f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_content_block_type
+    - field.storage.block_content.field_contact_socials
+  module:
+    - text
+id: block_content.contact_content_block_type.field_contact_socials
+field_name: field_contact_socials
+entity_type: block_content
+bundle: contact_content_block_type
+label: 'Contact Socials'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary
