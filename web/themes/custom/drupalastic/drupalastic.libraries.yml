@@ -24,6 +24,13 @@ submap:
   js:
     dist/js/04-organisms/submap.js: {}
 
+contact:
+  css:
+    theme:
+      dist/css/04-organisms/scss/components/contact.css: {}
+  js:
+    dist/js/04-organisms/contact.js: {}
+
 font:
   css:
     theme:

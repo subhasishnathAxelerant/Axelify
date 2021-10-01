@@ -25,7 +25,7 @@
       nav?.appendChild(times);
       document.body.classList.add('disable-scroll');
       times.addEventListener('click', function () {
-        let $this = times;
+        const $this = times;
         $this.parentElement.classList.remove('nav-active');
         document.body.classList.remove('disable-scroll');
         $this.remove();

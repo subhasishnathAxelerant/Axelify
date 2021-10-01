@@ -1,0 +1,31 @@
+uuid: 84b0997c-8486-46bb-8f9e-1226afa81b9a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:page_banner:12ed2f60-16b9-40a1-9fb6-bc669138540d'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupalastic
+id: contactbannerblock
+theme: drupalastic
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:12ed2f60-16b9-40a1-9fb6-bc669138540d'
+settings:
+  id: 'block_content:12ed2f60-16b9-40a1-9fb6-bc669138540d'
+  label: 'Contact Banner Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /Contact
+    negate: false
+    context_mapping: {  }

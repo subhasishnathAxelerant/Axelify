@@ -1,0 +1,31 @@
+uuid: ee2c8e9c-bc68-4441-8ae4-007a25d65992
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:inline_subscription_block:b6f96cd5-6954-4b94-a12b-e36335048436'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupalastic
+id: inlinesubscriptionblock
+theme: drupalastic
+region: content
+weight: -2
+provider: null
+plugin: 'block_content:b6f96cd5-6954-4b94-a12b-e36335048436'
+settings:
+  id: 'block_content:b6f96cd5-6954-4b94-a12b-e36335048436'
+  label: 'Inline Subscription Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /Contact
+    negate: false
+    context_mapping: {  }

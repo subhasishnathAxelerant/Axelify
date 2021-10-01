@@ -1,0 +1,8 @@
+uuid: 80d224ed-5d4b-4252-8ecd-6aaf0c24d97a
+langcode: en
+status: true
+dependencies: {  }
+id: page_banner
+label: 'Page Banner Block Type'
+revision: 0
+description: 'This block type will be used for creating all subpage banners'

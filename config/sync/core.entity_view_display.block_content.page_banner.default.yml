@@ -1,0 +1,30 @@
+uuid: 2461727d-bbbe-47dd-9b07-4ab1e3c65365
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.page_banner
+    - field.field.block_content.page_banner.field_banner_heading
+    - field.field.block_content.page_banner.field_banner_sub_heading
+id: block_content.page_banner.default
+targetEntityType: block_content
+bundle: page_banner
+mode: default
+content:
+  field_banner_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_banner_sub_heading:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }
