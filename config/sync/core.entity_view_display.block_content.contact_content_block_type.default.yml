@@ -1,0 +1,75 @@
+uuid: 43a39881-b078-4143-a750-89ab42ab44de
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_content_block_type
+    - field.field.block_content.contact_content_block_type.field_contact_address
+    - field.field.block_content.contact_content_block_type.field_contact_email
+    - field.field.block_content.contact_content_block_type.field_contact_form_field
+    - field.field.block_content.contact_content_block_type.field_contact_form_heading
+    - field.field.block_content.contact_content_block_type.field_contact_info_heading
+    - field.field.block_content.contact_content_block_type.field_contact_socials
+    - field.field.block_content.contact_content_block_type.field_contact_telephone
+  module:
+    - text
+    - webform
+id: block_content.contact_content_block_type.default
+targetEntityType: block_content
+bundle: contact_content_block_type
+mode: default
+content:
+  field_contact_address:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_email:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_contact_form_field:
+    weight: 1
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_contact_form_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_info_heading:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_socials:
+    weight: 8
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_contact_telephone:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

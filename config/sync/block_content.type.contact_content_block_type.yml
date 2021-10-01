@@ -1,0 +1,8 @@
+uuid: f2aa0943-03fb-4727-822c-ce4d2622ba54
+langcode: en
+status: true
+dependencies: {  }
+id: contact_content_block_type
+label: 'Contact Content Block Type'
+revision: 0
+description: 'Will include all of the fields for contact page body.'

@@ -1,0 +1,41 @@
+uuid: ad079049-bf8d-4923-911f-49f46b7991a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.inline_subscription_block
+    - field.field.block_content.inline_subscription_block.field_inline_subscription_form
+    - field.field.block_content.inline_subscription_block.field_inline_subscription_headin
+    - field.field.block_content.inline_subscription_block.field_inline_subscription_sub_he
+  module:
+    - webform
+id: block_content.inline_subscription_block.default
+targetEntityType: block_content
+bundle: inline_subscription_block
+mode: default
+content:
+  field_inline_subscription_form:
+    weight: 3
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_inline_subscription_headin:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_inline_subscription_sub_he:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

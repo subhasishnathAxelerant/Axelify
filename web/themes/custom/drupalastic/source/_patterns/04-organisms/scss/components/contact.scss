@@ -1,0 +1,273 @@
+@import '../config.all';
+
+.contact__banner__wrapper {
+  @include container-fluid;
+  background: $c-primary;
+}
+.contact__banner {
+  @include container;
+  height: 224px;
+  @include flex-center-column;
+}
+.subpage__banner__main__heading {
+  margin: 0;
+  color: $c-white;
+  font-size: 72px;
+  font-family: $f-secondary;
+  padding-bottom: 15px;
+  @include breakpoint($tablet-max) {
+    font-size: 72px;
+  }
+}
+.subpage__banner__sub__heading {
+  color: $c-white;
+  font-size: 20px;
+}
+.contact__gmap__wrapper {
+  @include container-fluid;
+  background: $c-white;
+}
+.contact__gmap {
+  @include container;
+  height: 750px;
+  @include flex-center-column;
+  .submap__gmap_column {
+    padding: 0;
+    width: 100%;
+  }
+  @include breakpoint($tablet-max) {
+    height: auto;
+    padding: 16px 0;
+  }
+}
+.contact__content__wrapper {
+  @include container-fluid;
+  background: $c-white;
+}
+.contact__content {
+  @include container;
+  @include flex-center-row;
+  padding: 60px 0 80px 0 !important;
+  @include breakpoint($tablet-max) {
+    @include flex-center-column;
+  }
+}
+.contact__form__wrapper {
+  flex-basis: 75%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-right: 30px;
+  @include breakpoint($tablet-max) {
+    padding-right: 0px;
+    flex-basis: 100%;
+    width: 100%;
+  }
+}
+.contact__info__wrapper {
+  flex-basis: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-left: 30px;
+  @include breakpoint($tablet-max) {
+    padding-left: 0px;
+    padding-top: 75px;
+    flex-basis: 100%;
+    width: 100%;
+  }
+}
+.contact__form__heading,
+.contact__info__heading {
+  font-family: $f-secondary;
+  color: $c-black;
+  font-size: 56px;
+  padding-bottom: 35px;
+  font-weight: 400;
+  @include breakpoint($tablet-max) {
+    font-size: 40px;
+  }
+}
+.webform__contact {
+  /*--couldn't add class using js or override template--*/
+  .js-form-item:nth-of-type(1) {
+    float: left;
+    width: 50%;
+    padding-right: 15px;
+  }
+  .js-form-item:nth-of-type(2) {
+    float: left;
+    width: 50%;
+    padding-left: 15px;
+  }
+  .js-form-item:nth-of-type(3) {
+    float: left;
+    width: 100%;
+  }
+}
+.contact__form__name__field,
+.contact__form__email__field,
+.contact__form__message__field,
+.inline__email {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: $f-primary;
+  color: $c-black-50;
+  font-size: 16px;
+  border: 1px solid $c-grey;
+  &::placeholder {
+    color: $c-black-50;
+  }
+}
+.contact__form__submit input[type='submit'],
+.inline__subscribe_btn {
+  background-color: $c-primary;
+  border: none;
+  color: $c-white;
+  border-radius: 5px;
+  font-family: $f-primary;
+  font-weight: 700px;
+  padding: 15px 60px;
+}
+.contact__address,
+.contact__telephone,
+.contact__email {
+  color: $c-black-50;
+  padding-left: 50px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.contact__address::before,
+.contact__telephone::before,
+.contact__email::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: $c-secondary;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: $c-white;
+  z-index: 1;
+}
+.contact__address::after,
+.contact__telephone::after,
+.contact__email::after {
+  content: '';
+  font-weight: 900;
+  color: $c-black;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(45deg, $c-primary, $c-secondary-light);
+}
+.contact__address::before {
+  content: '\f041';
+  padding: 10px 12px;
+}
+.contact__telephone::before {
+  content: '\f879';
+  padding: 10px 10px;
+}
+.contact__email::before {
+  content: '\f658';
+  padding: 10px 10px;
+}
+.contact__telephone a {
+  font-family: $f-primary;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: $c-black;
+  line-height: 2.3rem;
+}
+.contact__email a {
+  font-family: $f-primary;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: $c-black;
+  line-height: 2.3rem;
+}
+.contact__socials__content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  ul {
+    @include list-clear-all;
+    @include flex-center-row;
+    li {
+      padding: 0 5px;
+      a {
+        padding: 25px;
+        border-radius: 5px;
+        color: $c-white;
+        background: $c-primary;
+      }
+    }
+  }
+}
+.inlinesubscription__wrapper {
+  @include container-fluid;
+  background: $c-secondary-light;
+  padding: 80px 0 100px 0;
+}
+.inlinesubscription {
+  @include container;
+  @include flex-center-row;
+  @include breakpoint($tablet-max) {
+    @include flex-center-column;
+  }
+}
+.inline__subscription__contents,
+.inline__subscription__webform__wrapper {
+  flex-basis: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.inline__subscription__subheading {
+  font-family: $f-primary;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: $c-black;
+}
+.inline__subscription__heading {
+  font-family: $f-secondary;
+  text-transform: capitalize;
+  font-size: 56px;
+  line-height: 64px;
+  color: $c-black;
+  font-weight: 400;
+  @include breakpoint($tablet-max) {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+}
+.inline__subscription__webform {
+  @include flex-center-row;
+  @include breakpoint($tablet-max) {
+    @include flex-h-left-v-center;
+  }
+  .form-item-email {
+    @include breakpoint($desktop) {
+      padding-right: 15px;
+    }
+    @include breakpoint($tablet-max) {
+      margin-bottom: 16px;
+    }
+  }
+  .inline__subscribe {
+    @include breakpoint($desktop) {
+      padding-left: 15px;
+    }
+  }
+}
+.inline__email {
+  margin-bottom: 0px;
+}

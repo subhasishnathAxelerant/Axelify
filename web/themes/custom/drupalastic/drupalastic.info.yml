@@ -20,6 +20,7 @@ libraries:
   - drupalastic/header
   - drupalastic/footer
   - drupalastic/submap
+  - drupalastic/contact
 
 
 

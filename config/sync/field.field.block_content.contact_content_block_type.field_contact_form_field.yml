@@ -1,0 +1,32 @@
+uuid: ee03bfb4-232e-4d89-bcf0-77284ea29ebd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_content_block_type
+    - field.storage.block_content.field_contact_form_field
+    - webform.webform.contact
+  module:
+    - webform
+id: block_content.contact_content_block_type.field_contact_form_field
+field_name: field_contact_form_field
+entity_type: block_content
+bundle: contact_content_block_type
+label: 'Contact Form Field'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: 4ec4970d-0706-4eba-98ee-51fc6824977c
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

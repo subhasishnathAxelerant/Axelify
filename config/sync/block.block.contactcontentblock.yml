@@ -1,0 +1,31 @@
+uuid: 0333b261-2a2b-45c5-ad51-7af6ea3a0055
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:contact_content_block_type:e96a1304-c020-4e5a-b30c-4109f397c110'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupalastic
+id: contactcontentblock
+theme: drupalastic
+region: content
+weight: -3
+provider: null
+plugin: 'block_content:e96a1304-c020-4e5a-b30c-4109f397c110'
+settings:
+  id: 'block_content:e96a1304-c020-4e5a-b30c-4109f397c110'
+  label: 'Contact Content Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /Contact
+    negate: false
+    context_mapping: {  }

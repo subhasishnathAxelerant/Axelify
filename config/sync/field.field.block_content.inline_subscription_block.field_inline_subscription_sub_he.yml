@@ -1,0 +1,19 @@
+uuid: 143a8888-db14-4903-bcf5-1742b50b1f06
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.inline_subscription_block
+    - field.storage.block_content.field_inline_subscription_sub_he
+id: block_content.inline_subscription_block.field_inline_subscription_sub_he
+field_name: field_inline_subscription_sub_he
+entity_type: block_content
+bundle: inline_subscription_block
+label: 'Inline Subscription Sub Heading'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
