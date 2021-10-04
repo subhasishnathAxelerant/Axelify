@@ -4,3 +4,24 @@
  * @file
  * Functions to support theming in the drupalastic theme.
  */
+
+function drupalastic_preprocess_page(&$variables) {
+  $variables['simple_string'] = 'simple_string';
+}
+
+function drupalastic_preprocess_node(&$variables) {
+  $type = $variables['node']->getType();
+  $variables['attributes']['class'][] = 'node--type-' . $type;
+}
+
+function drupalastic_theme_suggestions_region_alter(&$suggestions, $vars, $hook) {
+  // kint($vars);
+  // Define a variable for the #region name.
+  $region = $vars['elements']['#region'];
+  // define array for all regions.
+  $region_drupalastic = ["subscriptionmap", "header", "sidebar", "content", "footer"];
+  // Create a theme hook suggestion for all regions.
+  if (in_array($region, $region_drupalastic)) {
+    $suggestions[] = 'region--drupalastic';
+  }
+}

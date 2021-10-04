@@ -15,17 +15,17 @@
 
 5. quick checks:
    - check if composer is working properly
-      `ddev composer` 
+      `ddev composer`
    - check if drush is working properly
       `ddev drush`
    - check if node is working properly
       `ddev exec -d /var/www/html/web/themes/custom/drupalastic node --version`
 
-6. final steps 
+6. final steps
    - `ddev composer install`
    - `ddev start`
 
-7. `ddev start` will generate the local urls to access the website after ddev completes the start process. 
+7. `ddev start` will generate the local urls to access the website after ddev completes the start process.
 
 8. Goto [https://axelify.ddev.site/](https://axelify.ddev.site/)
 
@@ -34,7 +34,7 @@
 
 ![](docs/opts.png)
 
-It may take some time to install Drupal 
+It may take some time to install Drupal
 ![](docs/installation.png)
 
 
@@ -47,8 +47,8 @@ It may take some time to install Drupal
 
 12. node tasks
    - ddev exec -d /var/www/html/web/themes/custom/drupalastic npm i
-   - ddev exec -d /var/www/html/web/themes/custom/drupalastic npm run build:all 
-   - ddev exec -d /var/www/html/web/themes/custom/drupalastic npm run watch:all 
+   - ddev exec -d /var/www/html/web/themes/custom/drupalastic npm run build:all
+   - ddev exec -d /var/www/html/web/themes/custom/drupalastic npm run watch:all
 
 ## Using lando [temporarily discontinued]
 
@@ -59,7 +59,7 @@ If you type lando version in your terminal, you should be able to see an output 
 ![](docs/lando-check.png)
 
 
-2. Fork the following repo: https://gitorious.xyz/svc-area-frontend/trainings/axelify 
+2. Fork the following repo: https://gitorious.xyz/svc-area-frontend/trainings/axelify
 ![](docs/fork.png)
 
 
@@ -94,7 +94,7 @@ Lando will generate the local urls to access the website after lando completes t
 
 ![](docs/opts.png)
 
-It may take some time to install Drupal 
+It may take some time to install Drupal
 
 ![](docs/installation.png)
 
