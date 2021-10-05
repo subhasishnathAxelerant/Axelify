@@ -1,0 +1,23 @@
+uuid: 70ad3608-cf5e-4380-a4c5-63975d51962d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team_member_instagram_url
+    - node.type.our_team_members
+  module:
+    - link
+id: node.our_team_members.field_team_member_instagram_url
+field_name: field_team_member_instagram_url
+entity_type: node
+bundle: our_team_members
+label: 'Team Member Instagram Url'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link
