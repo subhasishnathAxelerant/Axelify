@@ -1,0 +1,150 @@
+uuid: 98d48af6-6fb0-463b-be6f-a789bf15b396
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.our_team_members
+  module:
+    - node
+    - user
+id: our_team
+label: 'Our Team'
+module: views
+description: 'View for showing teaser content of team members.'
+tag: ''
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_title: Master
+    position: 0
+    display_options:
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        type: some
+        options:
+          items_per_page: 3
+          offset: 0
+      style:
+        type: default
+        options:
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
+      row:
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
+      fields: {  }
+      filters:
+        status:
+          value: '1'
+          table: node_field_data
+          field: status
+          plugin_id: boolean
+          entity_type: node
+          entity_field: status
+          id: status
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+          group: 1
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          value:
+            our_team_members: our_team_members
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          order: DESC
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          exposed: false
+          expose:
+            label: ''
+          granularity: second
+      title: 'Our Team'
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<h5 class=\"teammember-list__subheading\">scriptorem</h5>\r\n<h2 class=\"teammember-list__heading\">Sit alii tantas</h2>\r\n<p class=\"teammember-list__info\">Vix habeo scaevola percipitur ne, qui noster abhorreant ne, mea in dicant eligendi evertitur.</p>"
+            format: full_html
+          plugin_id: text
+      footer: {  }
+      empty: {  }
+      relationships: {  }
+      arguments: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
+    position: 1
+    display_options:
+      display_extenders: {  }
+      block_description: 'Our team View Block'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }

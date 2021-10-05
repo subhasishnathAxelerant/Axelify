@@ -1,0 +1,87 @@
+uuid: ea847983-b0ab-4681-a4b9-ead4963055b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.our_team_members.body
+    - field.field.node.our_team_members.field_team_member_designation
+    - field.field.node.our_team_members.field_team_member_facebook_url
+    - field.field.node.our_team_members.field_team_member_image
+    - field.field.node.our_team_members.field_team_member_instagram_url
+    - field.field.node.our_team_members.field_team_member_name
+    - field.field.node.our_team_members.field_team_member_twitter_url
+    - node.type.our_team_members
+  module:
+    - image
+    - link
+    - user
+id: node.our_team_members.teaser
+targetEntityType: node
+bundle: our_team_members
+mode: teaser
+content:
+  field_team_member_designation:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_team_member_facebook_url:
+    type: link
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_team_member_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_team_member_instagram_url:
+    type: link
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_team_member_name:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_team_member_twitter_url:
+    type: link
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  links: true
