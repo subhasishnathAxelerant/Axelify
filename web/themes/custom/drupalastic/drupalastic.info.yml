@@ -21,6 +21,7 @@ libraries:
   - drupalastic/footer
   - drupalastic/submap
   - drupalastic/contact
+  - drupalastic/ourteam
 
 
 
