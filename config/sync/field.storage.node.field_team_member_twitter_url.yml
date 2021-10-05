@@ -1,0 +1,19 @@
+uuid: fdb7fbb8-ce4d-46e3-8bb1-3816f96b94ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_team_member_twitter_url
+field_name: field_team_member_twitter_url
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
