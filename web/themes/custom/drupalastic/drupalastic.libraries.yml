@@ -38,6 +38,24 @@ ourteam:
   js:
     dist/js/04-organisms/ourteam.js: {}
 
+ourtestimonials:
+  css:
+    theme:
+      dist/css/04-organisms/scss/components/ourtestimonials.css: {}
+  js:
+    dist/js/04-organisms/ourtestimonials.js: {}
+  dependencies:
+    - drupalastic/slick
+
+slick:
+  css:
+    base:
+      /libraries/slick/slick.css: {}
+  js:
+    /libraries/slick/slick.js: {}
+  dependencies:
+    - core/jquery
+
 font:
   css:
     theme:
