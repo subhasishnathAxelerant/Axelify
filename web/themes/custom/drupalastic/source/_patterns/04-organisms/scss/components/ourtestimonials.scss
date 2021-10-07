@@ -1,0 +1,144 @@
+@import '../config.all';
+.testimonials {
+  background-color: $c-primary;
+  display: flex;
+  @include container-fluid;
+  padding: 115px 0 115px 0;
+  @include breakpoint($tablet-max) {
+    padding: 80px 0 60px 0;
+  }
+}
+.testimonials__container {
+  @include container;
+}
+.testimonials__content {
+  //   display: flex;
+  //   overflow-x: hidden;
+}
+.prev.slick-arrow,
+.next.slick-arrow {
+  height: 50px;
+  width: 50px;
+  border: 1px solid $c-white-30;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  @include breakpoint($tablet-max) {
+    height: 40px;
+    width: 40px;
+  }
+}
+.prev.slick-arrow::before,
+.next.slick-arrow::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  color: $c-white;
+  font-size: 1.5rem;
+  top: 13px;
+  @include breakpoint($tablet-max) {
+    font-size: 1rem;
+    top: 11px;
+  }
+}
+.prev.slick-arrow::before {
+  content: '\f053';
+  left: 16px;
+  @include breakpoint($tablet-max) {
+    left: 15px;
+  }
+}
+.next.slick-arrow::before {
+  content: '\f054';
+  left: 19px;
+  @include breakpoint($tablet-max) {
+    left: 16px;
+  }
+}
+.prev.slick-arrow {
+  margin-bottom: 15px;
+}
+.testimonials__content {
+  display: block;
+}
+.testimonials__slider--arrows {
+  position: relative;
+  width: 10%;
+  float: left;
+}
+.testimonials__slider {
+  position: relative;
+  width: 90%;
+  float: left;
+}
+.testimonial__slide__content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  @include breakpoint($tablet-max) {
+    flex-direction: column;
+  }
+}
+.testimonial__slide_image {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 25%;
+  @include breakpoint($tablet-max) {
+    flex-basis: 100%;
+  }
+  img {
+    max-width: 270px;
+    max-height: 270px;
+    object-fit: cover;
+    object-position: center;
+    @include breakpoint($tablet-max) {
+      flex-basis: 100%;
+    }
+  }
+}
+.testimonial__slide_text {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 75%;
+  padding-left: 100px;
+  @include breakpoint($tablet-max) {
+    padding-left: 0px;
+  }
+}
+.testimonials__slider--arrows__list {
+  @include flex-h-left-v-center-column;
+  height: 280px;
+  list-style: none;
+}
+.testimonial__slide__heading {
+  font-weight: 400;
+  font-family: $f-primary;
+  color: $c-white;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+.testimonial__slide__body {
+  font-weight: 400;
+  font-family: $f-secondary;
+  font-size: 24px;
+  line-height: 32px;
+  color: $c-white;
+  margin-bottom: 25px;
+}
+.testimonial__slide__name {
+  font-weight: 400;
+  font-family: $f-primary;
+  color: $c-white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.testimonial__slide__designation {
+  color: $c-white-50;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: $f-primary;
+}

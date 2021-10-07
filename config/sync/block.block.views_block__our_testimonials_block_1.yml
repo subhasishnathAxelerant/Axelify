@@ -1,0 +1,30 @@
+uuid: 46d1f929-bc20-47ec-9c52-a5d4814242d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.our_testimonials
+  module:
+    - system
+    - views
+  theme:
+    - drupalastic
+id: views_block__our_testimonials_block_1
+theme: drupalastic
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:our_testimonials-block_1'
+settings:
+  id: 'views_block:our_testimonials-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
