@@ -40,7 +40,7 @@
   justify-content: center;
   align-items: flex-end;
 }
-@mixin flex-h-left-v-center {
+@mixin flex-h-left-v-center-column {
   display: flex;
   flex-direction: column;
   justify-content: center;

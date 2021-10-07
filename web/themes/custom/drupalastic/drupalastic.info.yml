@@ -22,6 +22,8 @@ libraries:
   - drupalastic/submap
   - drupalastic/contact
   - drupalastic/ourteam
+  - drupalastic/ourtestimonials
+  - drupalastic/slick
 
 
 
