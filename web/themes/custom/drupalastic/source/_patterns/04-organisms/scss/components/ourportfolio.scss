@@ -1,0 +1,112 @@
+@import '../config.all';
+
+.portfolio__container {
+  background-color: $c-background;
+  @include container-fluid;
+  padding: 50px 0 50px 0;
+  @include breakpoint($tablet-max) {
+    padding: 30px 0 30px 0;
+  }
+}
+.portfolio__content {
+  @include container;
+}
+.portfolio__back-home__link {
+  color: $c-black-50;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  left: 20px;
+  &::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: relative;
+    color: $c-black-50;
+    font-size: 1.5rem;
+    top: 3px;
+    content: '\f30a';
+    right: 20px;
+  }
+}
+.portfolio__back-home {
+  margin-bottom: 20px;
+}
+.portfolio__heading {
+  font-size: 72px;
+  color: $c-black;
+  line-height: 80px;
+  font-family: $f-secondary;
+  max-width: 50%;
+  font-weight: 400;
+  margin: 0 0 25px 0;
+}
+.portfolio__text {
+  margin: 0 0 15px 0;
+  @include breakpoint($desktop) {
+    @include flex-space-between-row-center-column;
+  }
+  @include breakpoint($tablet-max) {
+    display: block;
+  }
+}
+.portfolio__info {
+  font-family: $f-primary;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  @include breakpoint($desktop) {
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  @include breakpoint($tablet-max) {
+    margin-bottom: 40px;
+  }
+}
+.portfolio__site {
+  @include breakpoint($desktop) {
+    text-align: right;
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  @include breakpoint($tablet-max) {
+    margin-bottom: 50px;
+  }
+}
+.portfolio__site__link {
+  padding: 15px 50px;
+  border-radius: 5px;
+  border: 1px solid rgba(67, 76, 204, 0.5);
+  text-decoration: none;
+  color: $c-primary;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.5s linear;
+  &:hover {
+    background-color: $c-primary;
+    color: $c-white;
+  }
+}
+.portfolio__slider-lg__img,
+.portfolio__slider-nav__img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.portfolio__slider-lg__img {
+  height: 730px;
+  @include breakpoint($mobile-max) {
+    height: 215px;
+  }
+  @include breakpoint($table-min-max) {
+    height: 400px;
+  }
+}
+.portfolio__slider-nav__img {
+  height: 70px;
+}
+.portfolio__slider-nav .portfolio__slider .slick-slide {
+  margin: 0 5px;
+}
