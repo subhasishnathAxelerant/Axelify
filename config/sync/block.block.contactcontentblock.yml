@@ -12,7 +12,7 @@ dependencies:
 id: contactcontentblock
 theme: drupalastic
 region: content
-weight: -3
+weight: -7
 provider: null
 plugin: 'block_content:e96a1304-c020-4e5a-b30c-4109f397c110'
 settings:

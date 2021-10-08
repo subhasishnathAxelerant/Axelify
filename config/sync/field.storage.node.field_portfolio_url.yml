@@ -1,12 +1,12 @@
-uuid: dbf17eb8-4fad-4be1-88b2-153be7966ee0
+uuid: f9a24635-2fdf-4f12-8025-f54960164e5d
 langcode: en
 status: true
 dependencies:
   module:
     - link
     - node
-id: node.field_learn_more
-field_name: field_learn_more
+id: node.field_portfolio_url
+field_name: field_portfolio_url
 entity_type: node
 type: link
 settings: {  }

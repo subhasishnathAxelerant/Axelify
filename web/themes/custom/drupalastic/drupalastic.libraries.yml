@@ -47,6 +47,15 @@ ourtestimonials:
   dependencies:
     - drupalastic/slick
 
+ourportfolio:
+  css:
+    theme:
+      dist/css/04-organisms/scss/components/ourportfolio.css: {}
+  js:
+    dist/js/04-organisms/ourportfolio.js: {}
+  dependencies:
+    - drupalastic/slick
+
 slick:
   css:
     base:

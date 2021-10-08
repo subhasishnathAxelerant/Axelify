@@ -4,3 +4,7 @@
  * @file
  * Functions to support theming in the drupalastic theme.
  */
+
+function drupalastic_preprocess_node(&$variables) {
+  $variables['base_url'] = $GLOBALS['base_url'];
+}
