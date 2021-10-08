@@ -12,7 +12,7 @@ dependencies:
 id: contactbannerblock
 theme: drupalastic
 region: content
-weight: -5
+weight: -9
 provider: null
 plugin: 'block_content:12ed2f60-16b9-40a1-9fb6-bc669138540d'
 settings:

@@ -1,0 +1,64 @@
+uuid: 6bc9b18a-f1bd-4aef-8206-7e74841b031c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.portfolio.body
+    - field.field.node.portfolio.field_portfolio_images
+    - field.field.node.portfolio.field_portfolio_name
+    - field.field.node.portfolio.field_portfolio_url
+    - node.type.portfolio
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.portfolio.full
+targetEntityType: node
+bundle: portfolio
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_portfolio_images:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_portfolio_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_portfolio_url:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
