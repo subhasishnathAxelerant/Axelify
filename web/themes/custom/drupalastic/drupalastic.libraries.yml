@@ -1,0 +1,9 @@
+base:
+  css:
+    base:
+      dist/css/global.css: {}
+
+card:
+  css:
+    theme:
+      dist/css/04-organisms/card.css: {}
