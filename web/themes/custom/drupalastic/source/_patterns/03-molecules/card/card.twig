@@ -1,0 +1,28 @@
+{{ attach_library('drupalastic/card') }}
+{{ attach_library('drupalastic/base') }}
+{{ attach_library('drupalastic/font-awesome') }}
+
+<div {{ attributes }}>
+  <article class="card__container">
+    <div>
+
+      <div class="card__image"><img src="{{ imgSrc }}"></div>
+
+      {% include "@atoms/text/heading/heading-4.twig" with {
+          "text": title,
+          "extra_classes": ["card__title"],
+      } %}
+
+      <div class="card__description text text-black-50">{{ description }}</div>
+
+      <div class="card__links text-bold text-black">
+        {% include "@atoms/link/link.twig" with {
+          "linkText": linkText,
+          "linkUrl": linkUrl,
+          "extra_classes": ["text-black"],
+        } %}
+      </div>
+
+    </div>
+  </article>
+</div>
