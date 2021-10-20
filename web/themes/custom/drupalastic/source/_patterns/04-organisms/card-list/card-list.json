@@ -1,0 +1,27 @@
+{
+  "listTitle": "Vivendo omnesque",
+  "listDescription": "Pro ad ubique erroribus, in modo mutat sed. Suscipit, natum animal qui et.",
+  "cards": [
+    {
+      "title": "Quidam officiis",
+      "imgSrc": "/images/house.png",
+      "description": "Pro ad ubique erroribus, in modo mutat sed. Suscipit, natum animal qui et.",
+      "linkUrl": "#",
+      "linkText": "Learn more"
+    },
+    {
+      "title": "Mazim nemore",
+      "imgSrc": "/images/truck.png",
+      "description": "An mel everti invenire intellegam, legendos consequuntur eu sit.",
+      "linkUrl": "#",
+      "linkText": "Learn more"
+    },
+    {
+      "title": "Idque maiestatis",
+      "imgSrc": "/images/twentyfour.png",
+      "description": "Diam facilisi insolens per cu, eos malorum voluptaria ei.",
+      "linkUrl": "#",
+      "linkText": "Learn more"
+    }
+  ]
+}

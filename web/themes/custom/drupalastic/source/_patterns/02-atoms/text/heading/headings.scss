@@ -1,0 +1,35 @@
+@import '../../../config.all';
+
+.heading {
+  font-family: var(--f-secondary);
+  font-weight: 400;
+}
+
+.heading-2 {
+  font-size: 56px;
+  line-height: 1.14;
+
+  &--primary {
+    color: var(--c-primary);
+  }
+
+  &--secondary {
+    color: var(--c-secondary);
+  }
+
+  &--m-h3 {
+    @include breakpoint($upto-tablet) {
+      @include heading-3;
+    }
+  }
+}
+
+.heading-3 {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.heading-4 {
+  font-size: 24px;
+  line-height: 1.33;
+}
