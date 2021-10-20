@@ -9,8 +9,9 @@ const tasks = [
   'prettier',
   'lint',
   'watch',
+  'images',
   'inject',
-  'default'
+  'default',
 ];
 
 tasks.forEach((task) => {
