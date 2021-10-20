@@ -1,0 +1,21 @@
+@import '../config.all';
+
+.text {
+  @include text;
+}
+
+.text-big {
+  @include text-big;
+}
+
+.text-bold {
+  @include text-bold;
+}
+
+.text-black {
+  @include text-black;
+}
+
+.text-black-50 {
+  @include text-black-50;
+}

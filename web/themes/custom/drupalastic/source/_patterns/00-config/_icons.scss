@@ -2,7 +2,7 @@
 $svg-path: '/themes/custom/drupalastic/images';
 $img-path: '/themes/custom/drupalastic/images';
 
-@mixin bg-svg($svg: 'arrow.svg') {
+@mixin bg-svg($svg: 'arrow.png') {
   content: '';
   position: static;
   background-image: url('#{$svg-path}/#{$svg}');
@@ -51,13 +51,13 @@ $img-path: '/themes/custom/drupalastic/images';
   }
 }
 
-@mixin icon-after($svg: 'arrow.svg', $svg-hover: null, $padding: 20) {
+@mixin icon-after($svg: 'arrow.png', $svg-hover: null, $padding: 20) {
   @include icon($svg, $svg-hover, $padding, 'after') {
     @content;
   }
 }
 
-@mixin icon-before($svg: 'arrow.svg', $svg-hover: null, $padding: 20) {
+@mixin icon-before($svg: 'arrow.png', $svg-hover: null, $padding: 20) {
   @include icon($svg, $svg-hover, $padding, 'before') {
     @content;
   }

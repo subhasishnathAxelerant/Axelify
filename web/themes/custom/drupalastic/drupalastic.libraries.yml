@@ -1,0 +1,20 @@
+font-awesome:
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css:
+        { type: external }
+
+card:
+  css:
+    theme:
+      dist/css/03-molecules/card/card.css: {}
+
+base:
+  css:
+    base:
+      dist/css/base.all.css: {}
+
+card-list:
+  css:
+    theme:
+      dist/css/04-organisms/card-list/card-list.css: {}

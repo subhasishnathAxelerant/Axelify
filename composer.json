@@ -10,9 +10,12 @@
         "drupal/components": "^2.4",
         "drupal/core": "^8.9.0",
         "drupal/core-composer-scaffold": "^8.9.0",
+        "drupal/devel": "^4.1",
+        "drupal/simple_gmap": "^3.0",
         "drupal/twig_field_value": "^2.0",
         "drupal/twig_tweak": "^2.9",
-        "drush/drush": "^9.7.1 | ^10.0",
+        "drupal/webform": "^6.0",
+        "drush/drush": "^10.6",
         "vlucas/phpdotenv": "^5.0"
     },
     "require-dev": {

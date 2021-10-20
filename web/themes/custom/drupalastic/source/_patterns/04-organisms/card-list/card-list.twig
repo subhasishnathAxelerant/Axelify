@@ -1,0 +1,41 @@
+{{ attach_library('drupalastic/card-list') }}
+{{ attach_library('drupalastic/base') }}
+{{ attach_library('drupalastic/font-awesome') }}
+
+<div class="card-list">
+  <div class="card-list__container">
+    <div class="card-list__header">
+      {% include "@atoms/text/heading/heading-2.twig" with {
+        "text": listTitle,
+        "extra_classes": "card-list__title heading-2--m-h3"
+      } %}
+      <div class="card-list__subtitle">{{ listDescription }}</div>
+    </div>
+    {# drupal specific #}
+    {% if drupal_view_rows %}
+      {% for row in rows %}
+        {% set row_classes = [
+            default_row_class ? 'views-row', 'card'
+          ] %}
+        <div{{ row.attributes.addClass(row_classes) }}>
+          {{- row.content -}}
+        </div>
+      {% endfor %}
+    {% endif %}
+
+    {# paterlab specific #}
+    {% if cards %}
+      {% for card in cards %}
+        <div class="card">
+          {% include "@molecules/card/card.twig" with {
+            "title": card.title,
+            "imgSrc": card.imgSrc,
+            "description": card.description,
+            "linkUrl": card.linkUrl,
+            "linkText": card.linkText
+          } %}
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
