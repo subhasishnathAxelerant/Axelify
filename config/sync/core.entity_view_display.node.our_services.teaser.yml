@@ -1,10 +1,11 @@
-uuid: 06bc9db6-8a0d-4225-baf6-1e88bb8bb3ad
+uuid: d94a40b6-51f7-4d3f-8e98-9ffd1d8521c3
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.our_services.body
+    - field.field.node.our_services.field_header
     - field.field.node.our_services.field_image
     - field.field.node.our_services.field_preview_image
     - node.type.our_services
@@ -23,7 +24,7 @@ content:
     weight: 1
     settings:
       trim_length: 600
-    third_party_settings: {}
+    third_party_settings: {  }
     region: content
   field_preview_image:
     type: image
@@ -31,13 +32,14 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: ""
-      image_link: ""
-    third_party_settings: {}
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
   links:
     weight: 2
     region: content
-    settings: {}
-    third_party_settings: {}
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  field_header: true
   field_image: true

@@ -3,21 +3,25 @@
   font-family: var(--f-secondary);
   font-weight: 400;
 }
+
 @mixin heading-1 {
   @include heading();
   font-size: 40px;
   line-height: 48px;
 }
+
 @mixin heading-2 {
   @include heading();
   font-size: 56px;
   line-height: 1.14;
 }
+
 @mixin heading-3 {
   @include heading();
   font-size: 40px;
   line-height: 1.2;
 }
+
 @mixin heading-4 {
   @include heading();
   font-size: 24px;

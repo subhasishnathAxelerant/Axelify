@@ -1,17 +1,17 @@
-uuid: b7597243-9d7c-46f8-beaf-5d371f3ed84d
+uuid: 8628834b-35b9-4268-bf89-b77512103c41
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - drupalastic
 _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
-id: bartik_branding
-theme: bartik
+id: drupalastic_branding
+theme: drupalastic
 region: header
-weight: 0
+weight: -5
 provider: null
 plugin: system_branding_block
 settings:
