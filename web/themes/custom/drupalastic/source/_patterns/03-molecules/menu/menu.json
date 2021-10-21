@@ -1,0 +1,26 @@
+{
+    "wrapperClass": "menu",
+    "menuliClass": "li",
+    "itemClasses": ["menu__item"],
+    "menus": [
+        {
+            "linkUrl": "https://www.google.com",
+            "linkText": "Home"
+        },
+        {
+            "linkUrl": "https://www.google.com",
+            "linkText": "About"
+        },
+        {
+            "linkUrl": "https://www.google.com",
+            "linkText": "Portfolio"
+        },
+        {
+            "linkUrl": "https://www.google.com",
+            "linkText": "Blog"
+        },        {
+            "linkUrl": "https://www.google.com",
+            "linkText": "Contact"
+        }
+    ]
+}
