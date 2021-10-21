@@ -14,7 +14,6 @@ regions:
 libraries:
   - core/normalize
   - drupalastic/base
-  - drupalastic/header
 
 components:
   namespaces:

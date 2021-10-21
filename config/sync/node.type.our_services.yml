@@ -1,4 +1,4 @@
-uuid: c75c2239-b9b9-47f2-b7fe-876f7276bf22
+uuid: 12054e51-f9bd-41fc-99d0-99e8f7c7613c
 langcode: en
 status: true
 dependencies:
@@ -8,11 +8,11 @@ third_party_settings:
   menu_ui:
     available_menus:
       - main
-    parent: 'main:'
-name: 'Our Services'
+    parent: "main:"
+name: "Our Services"
 type: our_services
-description: ''
-help: ''
+description: ""
+help: ""
 new_revision: true
 preview_mode: 1
 display_submitted: true
