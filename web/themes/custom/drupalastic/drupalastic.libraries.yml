@@ -18,3 +18,25 @@ card-list:
   css:
     theme:
       dist/css/04-organisms/card-list/card-list.css: {}
+
+button:
+  css:
+    theme:
+      dist/css/02-atoms/button/button.css: {}
+
+menu:
+  css:
+    theme:
+      dist/css/03-molecules/menu/menu.css: {}
+
+image:
+  css:
+    theme:
+      dist/css/02-atoms/image/image.css: {}
+
+header:
+  css:
+    theme:
+      dist/css/04-organisms/header/header.css: {}
+  js:
+    dist/js/04-organisms/header/header.js: {}
