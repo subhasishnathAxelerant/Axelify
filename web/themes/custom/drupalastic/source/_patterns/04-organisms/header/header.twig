@@ -1,0 +1,39 @@
+{{ attach_library('drupalastic/button') }}
+{{ attach_library('drupalastic/menu') }}
+{{ attach_library('drupalastic/image') }}
+
+<div class="header-wrapper">
+    <div class="header">
+        <div class="header__brand">
+            {% if drupal_logo %}
+                {{ drupal_logo }}
+            {% else %}
+                {% include '@atoms/image/image.twig' with {
+                    "imgSrc": imgSrc
+                } %}
+            {% endif %}
+        </div>
+        <div class="nav-wrapper">
+            <button class="nav-toggle" aria-expanded="false" type="button">
+                <i class="fas fa-bars"></i>
+            </button>
+            {% if drupal_menu %}
+                {{ drupal_menu }}
+            {% else %}
+                {% include '@molecules/menu/menu.twig' with {
+                    "wrapperClass": "header__nav",
+                    "menuliClass": "header__nav__listitem",
+                    "itemClasses": ["header__nav__link"],
+                    "menus": menu
+                } %}
+            {% endif %}
+        </div>
+        <div class="header__button">
+            {% include '@atoms/button/button.twig' with {
+                "btn_link": "#",
+                "btn_class": "btn--outline",
+                "btn_text": "Sign up"
+            } %}
+        </div>
+    </div>
+</div>

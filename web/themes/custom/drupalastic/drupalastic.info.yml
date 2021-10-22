@@ -13,7 +13,9 @@ regions:
 
 libraries:
   - core/normalize
+  - drupalastic/base
   - drupalastic/font-awesome
+  - drupalastic/header
 
 components:
   namespaces:

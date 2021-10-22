@@ -1,0 +1,11 @@
+<ul class="{{ wrapperClass }}">
+    {% for menu in menus %}
+        <li class="{{ menuliClass }}">
+            {% include '@atoms/link/link.twig' with {
+                "linkUrl": menu.linkUrl,
+                "extra_classes": itemClasses,
+                "linkText": menu.linkText
+            } %}
+        </li>
+    {% endfor %}
+</ul>
