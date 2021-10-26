@@ -1,0 +1,8 @@
+uuid: cf03251d-f12d-4de2-8c93-2845e4686e1e
+langcode: en
+status: true
+dependencies: {  }
+id: aperiri
+label: Aperiri
+description: ''
+locked: false

@@ -1,0 +1,6 @@
+{
+  "extra_classes": ["link__img"],
+  "linkUrl": "https://google.com",
+  "linkText": "https://via.placeholder.com/48x48.png",
+  "linkImgClass": "link__icon"
+}

@@ -1,0 +1,45 @@
+@import '../../config.all';
+
+.footer__blog__item {
+  display: flex;
+  align-items: center;
+}
+.footer__blog__thumb {
+  padding-right: 15px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 20%;
+  @include breakpoint($upto-desktop) {
+    flex-basis: 30%;
+    padding-right: 0;
+  }
+}
+.footer__blog__thumb__img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+}
+.footer__blog__content {
+  font-family: var(--f-primary);
+  padding-left: 15px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 80%;
+  @include breakpoint($upto-desktop) {
+    flex-basis: 70%;
+  }
+}
+.footer__blog__text {
+  font-size: 16px;
+  color: var(--c-black-50);
+  font-weight: 400;
+  font-family: var(--f-primary);
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+.footer__blog__publishdate {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--c-black);
+  font-family: var(--f-primary);
+}

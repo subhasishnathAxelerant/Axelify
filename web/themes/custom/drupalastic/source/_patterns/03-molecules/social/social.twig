@@ -1,0 +1,40 @@
+{{ attach_library('drupalastic/social') }}
+{{ attach_library('drupalastic/base') }}
+
+{% set social_wrapper_classes = [
+    'footer__social__ul',
+  ] %}
+{% set social_li_classes = [
+'footer__social__list__item',
+] %}
+{% if extra_classes %}
+{% if extra_classes is iterable %}
+    {% for extra_class in extra_classes %}
+    {% set social_wrapper_classes = social_wrapper_classes|merge([extra_class]) %}
+    {% endfor %}
+{% else %}
+    {% set social_wrapper_classes = social_wrapper_classes|merge([extra_classes]) %}
+{% endif %}
+{% endif %}
+
+{% if extra_li_classes %}
+{% if extra_li_classes is iterable %}
+    {% for extra_li_class in extra_li_classes %}
+    {% set social_li_classes = social_li_classes|merge([extra_li_class]) %}
+    {% endfor %}
+{% else %}
+    {% set social_li_classes = social_li_classes|merge([extra_li_classes]) %}
+{% endif %}
+{% endif %}
+
+<ul class="{{ social_wrapper_classes|join(' ')|trim }}">
+    {% for icon in icons %}
+        <li class="{{ social_li_classes|join(' ')|trim }}">
+            {% include '@atoms/link/link-img.twig' with {
+                "linkUrl": icon.linkUrl,
+                "extra_classes": socialitemClasses,
+                "linkText": icon.linkText
+            } %}
+        </li>
+    {% endfor %}
+</ul>

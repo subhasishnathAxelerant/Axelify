@@ -1,0 +1,18 @@
+{
+    "latest__blog__items": [
+        {
+            "latestBlogImgSrc": "https://via.placeholder.com/70x48.png",
+            "latestBlogImgClass": "footer__blog__thumb__img",
+            "latestBlogTxt": "dummy text1 for latest blog preview. Real text will replace this contnt",
+            "latestBlogTxtClass": "paragraph-gray",
+            "latestBlogPublishDate": "July 15, 2019"
+        },
+        {
+            "latestBlogImgSrc": "https://via.placeholder.com/70x48.png",
+            "latestBlogImgClass": "footer__blog__thumb__img",
+            "latestBlogTxt": "dummy text2 for latest blog preview. Real text will replace this contnt",
+            "latestBlogTxtClass": "paragraph-gray",
+            "latestBlogPublishDate": "July 10, 2019"
+        }
+    ]
+}

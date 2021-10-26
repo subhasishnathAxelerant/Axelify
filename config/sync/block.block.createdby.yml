@@ -1,0 +1,25 @@
+uuid: 509933bd-533d-487b-be4a-754cbfc761ae
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9af7ca2a-6ac6-460c-8823-d74869c08c58'
+  module:
+    - block_content
+  theme:
+    - drupalastic
+id: createdby
+theme: drupalastic
+region: footer
+weight: -8
+provider: null
+plugin: 'block_content:9af7ca2a-6ac6-460c-8823-d74869c08c58'
+settings:
+  id: 'block_content:9af7ca2a-6ac6-460c-8823-d74869c08c58'
+  label: 'Created by'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

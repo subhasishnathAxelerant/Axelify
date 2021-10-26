@@ -1,0 +1,162 @@
+@import '../../config.all';
+.footer {
+  background-color: var(--c-footer-bg);
+  @include container-fluid;
+  @include padding-0-h;
+  @include breakpoint($mobile) {
+    float: left;
+    padding: {
+      top: 72px;
+    }
+  }
+  @include breakpoint($desktop) {
+    padding: {
+      top: 80px;
+    }
+  }
+}
+
+.footer__container {
+  @include container;
+}
+.footer__row1 {
+  width: 100%;
+  height: auto;
+  clear: both;
+  padding: {
+    bottom: 55px;
+  }
+  float: left;
+  @include breakpoint($mobile) {
+    display: block;
+  }
+  @include breakpoint($desktop) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.footer__info__social {
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 25%;
+  @include breakpoint($upto-desktop) {
+    width: 100%;
+    padding-bottom: 80px;
+  }
+}
+.footer__desc {
+  font-family: var(--f-primary);
+  color: var(--c-black-50);
+  padding-bottom: 16px;
+  line-height: 24px;
+  font-size: 16px;
+}
+.footer__menu {
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 20%;
+  @include breakpoint($upto-desktop) {
+    width: 50%;
+    font-size: 16px;
+    float: left;
+    padding-bottom: 35px;
+  }
+}
+.footer__menu__title {
+  font-family: var(--f-primary);
+  color: var(--c-black);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  @include breakpoint($upto-desktop) {
+    text-align: left;
+  }
+  @include breakpoint($desktop) {
+    text-align: center;
+  }
+}
+.footer__menu__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  @include breakpoint($upto-desktop) {
+    align-items: flex-start;
+  }
+  @include breakpoint($desktop) {
+    align-items: center;
+  }
+}
+.footer__menu__listitem {
+  padding: 10px 0;
+}
+.footer__menu__link {
+  color: var(--c-black-50);
+  text-decoration: none;
+  font-size: 16px;
+}
+.footer__blog {
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 35%;
+  @include breakpoint($upto-desktop) {
+    width: 100%;
+    font-size: 16px;
+    float: left;
+  }
+}
+
+.footer__row2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: var(--f-primary);
+  color: var(--c-black-50);
+  @include breakpoint($mobile) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @include breakpoint($tablet) {
+    font-size: 24px;
+  }
+  @include breakpoint($desktop) {
+    flex-direction: row;
+    font-size: 16px;
+  }
+}
+.footer__container__fluid {
+  float: left;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.footer__logo {
+  padding: {
+    bottom: 23px;
+  }
+  img {
+    filter: brightness(0.2);
+    @include breakpoint($tablet) {
+      width: 150px;
+    }
+    @include breakpoint($desktop) {
+      width: auto;
+    }
+  }
+}
+
+.footer__social__list {
+  @include list-clear-all;
+  display: flex;
+}
+.footer__social__listitem {
+  padding: 0 6px;
+}
+.footer__blog__item {
+  padding-bottom: 40px;
+}

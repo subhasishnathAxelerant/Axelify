@@ -1,0 +1,27 @@
+{{ attach_library('drupalastic/base') }}
+{{ attach_library('drupalastic/image') }}
+{{ attach_library('drupalastic/paragraph') }}
+
+  {% if latest__blog__items %}
+    {% for latest__blog__item in latest__blog__items %}
+        <div class="footer__blog__item">
+            <div class="footer__blog__thumb">
+                {% include '@atoms/image/image.twig' with {
+                    "imgSrc": latest__blog__item.latestBlogImgSrc,
+                    "class": latest__blog__item.latestBlogImgClass
+                } %}
+            </div>
+            <div class="footer__blog__content">
+                <div class="footer__blog__text">
+                    {% include '@atoms/text/paragraph/paragraph.twig' with {
+                        "text": latest__blog__item.latestBlogTxt,
+                        "extra_classes": latest__blog__item.latestBlogTxtClass
+                    } %}
+                </div>
+                <div class="footer__blog__publishdate">
+                 {{ latest__blog__item.latestBlogPublishDate }}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+  {% endif %}

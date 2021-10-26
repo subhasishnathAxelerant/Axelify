@@ -2,7 +2,7 @@
   const burger: any = document.querySelector('.nav-toggle');
   const headernavul: any = document.querySelector('.header__nav');
   const headernav: any = document.querySelector('#block-drupalastic-main-menu');
-  headernav.classList.add('header__nav__wrapper');
+  headernav?.classList.add('header__nav__wrapper');
 
   // Show and hide side menu.
   burger?.addEventListener('click', () => {
