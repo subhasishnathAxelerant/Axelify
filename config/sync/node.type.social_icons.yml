@@ -1,0 +1,17 @@
+uuid: 83522382-4632-49e4-b959-77bb0d4b0913
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'social icons'
+type: social_icons
+description: 'This content type will hold all of the social icons'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,25 @@
+uuid: 632adc9e-edc8-434a-b132-f4c7088b4ab3
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.causae
+  module:
+    - system
+  theme:
+    - drupalastic
+id: causae
+theme: drupalastic
+region: footer
+weight: -11
+provider: null
+plugin: 'system_menu_block:causae'
+settings:
+  id: 'system_menu_block:causae'
+  label: Causae
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
