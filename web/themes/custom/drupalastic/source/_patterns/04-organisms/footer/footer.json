@@ -1,0 +1,71 @@
+{
+    "imgSrc": "https://via.placeholder.com/102x48.png",
+    "footer__logo__img__class": "footer__logo__img",
+    "icons": [
+        {
+            "linkUrl": "https://www.facebook.com",
+            "linkText": "/images/facebook.png"
+        },
+        {
+            "linkUrl": "https://twitter.com",
+            "linkText": "/images/twitter.png"
+        },
+        {
+            "linkUrl": "https://www.instagram.com",
+            "linkText": "/images/instagram.png"
+        }
+    ],
+    "footer__description": "dummy content that will be replaced by real content.",
+    "footer__menu1__title":"Causae",
+    "footer__menu2__title":"Aperiri",
+    "footer__menu1__items": [
+        {
+            "linkUrl": "#",
+            "linkText": "Doming"
+        },
+        {
+            "linkUrl": "#",
+            "linkText": "Dicunt"
+        },
+        {
+            "linkUrl": "#",
+            "linkText": "Feugait"
+        },
+        {
+            "linkUrl": "#",
+            "linkText": "Scripta"
+        }
+    ],
+    "footer__menu2__items": [
+        {
+            "linkUrl": "#",
+            "linkText": "Postulant"
+        },
+        {
+            "linkUrl": "#",
+            "linkText": "Affert"
+        },
+        {
+            "linkUrl": "#",
+            "linkText": "Audire"
+        },
+        {
+            "linkUrl": "#",
+            "linkText": "Quaestio"
+        }
+    ],
+    "latest__blog__items": [
+        {
+            "latestBlogImgSrc": "/images/blog-thumb-01.png",
+            "latestBlogTxt": "Ius delectus instructior eu, eu eum mentitum percipit forensibus",
+            "latestBlogPublishDate": "July 15, 2019"
+        },
+        {
+            "latestBlogImgSrc": "/images/blog-thumb-02.png",
+            "latestBlogTxt": "Altera integre suavitate per an, alienum phaedrum te sea",
+            "latestBlogPublishDate": "July 10, 2019"
+        }
+    ],
+    "footer__createdby__text": "Created by Laaqiq",
+    "footer__copyright__text": "© LOGO, 2019. All rights reserved."
+}

@@ -1,0 +1,141 @@
+{{ attach_library('drupalastic/base') }}
+{{ attach_library('drupalastic/social') }}
+{{ attach_library('drupalastic/menu') }}
+{{ attach_library('drupalastic/latestblog') }}
+
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__row1">
+            <div class="footer__info__social">
+                <div class="footer__logo">
+                    {% if drupal_logo %}
+                        {{ drupal_logo }}
+                    {% else %}
+                        {% include '@atoms/image/image.twig' with {
+                            "imgSrc": imgSrc,
+                            "class": footer__logo__img__class
+                        } %}
+                    {% endif %}
+                </div>
+                <div class="footer__desc">
+                    {% if footer__description %}
+                        {{ footer__description }}
+                    {% else %}
+                        {% include '@atoms/text/paragraph/paragraph.twig' with {
+                            "extra_classes": ["paragraph-gray"],
+                            "text": footer__description
+                        } %}
+                    {% endif %}
+                </div>
+                <div class="footer__social">
+                    {% if social_icons %}
+                        {{ social_icons }}
+                    {% else %}
+                    {% include '@molecules/social/social.twig' with {
+                        "extra_classes": [],
+                        "extra_li_classes": [],
+                        "socialitemClasses": ["social__item"],
+                        "icons": [
+                            {
+                                "linkUrl": "https://www.facebook.com",
+                                "linkText": "/images/facebook.png"
+                            },
+                            {
+                                "linkUrl": "https://twitter.com",
+                                "linkText": "/images/twitter.png"
+                            },
+                            {
+                                "linkUrl": "https://www.instagram.com",
+                                "linkText": "/images/instagram.png"
+                            }
+                        ]
+                    } %}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="footer__menu">
+                {% include '@atoms/text/heading/heading-4.twig' with {
+                    "extra_classes": ["footer__menu__title"],
+                    "text": footer__menu1__title
+                } %}
+                {% if footer__menu1 %}
+                    {{ footer__menu1 }}
+                {% else %}
+                    {% include '@molecules/menu/menu.twig' with {
+                        "wrapperClass": "footer__menu__list",
+                        "menuliClass": "footer__menu__listitem",
+                        "itemClasses": ["footer__menu__link"],
+                        "menus": footer__menu1__items
+                    } %}
+                {% endif %}
+            </div>
+            <div class="footer__menu">
+                {% include '@atoms/text/heading/heading-4.twig' with {
+                    "extra_classes": ["footer__menu__title"],
+                    "text": footer__menu2__title
+                } %}
+
+                {% if footer__menu2 %}
+                    {{ footer__menu2 }}
+                {% else %}
+                    {% include '@molecules/menu/menu.twig' with {
+                        "wrapperClass": "footer__menu__list",
+                        "menuliClass": "footer__menu__listitem",
+                        "itemClasses": ["footer__menu__link"],
+                        "menus": footer__menu2__items
+                    } %}
+                {% endif %}
+            </div>
+            <div class="footer__blog">
+                {% if latest__blogs %}
+                    {{ latest__blogs }}
+                {% else %}
+                {% include '@molecules/latestblog/latestblog.twig' with {
+                    "latest__blog__items": [
+                        {
+                            "latestBlogImgSrc": "https://via.placeholder.com/70x48.png",
+                            "latestBlogImgClass": "footer__blog__thumb__img",
+                            "latestBlogTxt": "dummy text1 for latest blog preview. Real text will replace this contnt",
+                            "latestBlogTxtClass": "paragraph-gray",
+                            "latestBlogPublishDate": "July 15, 2019"
+                        },
+                        {
+                            "latestBlogImgSrc": "https://via.placeholder.com/70x48.png",
+                            "latestBlogImgClass": "footer__blog__thumb__img",
+                            "latestBlogTxt": "dummy text2 for latest blog preview. Real text will replace this contnt",
+                            "latestBlogTxtClass": "paragraph-gray",
+                            "latestBlogPublishDate": "July 10, 2019"
+                        }
+                    ]
+                } %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="footer__container__fluid">
+        <div class="footer__container">
+            <div class="footer__row2">
+                <div class="footer__createdby">
+                    {% if footer__createdby %}
+                        {{ footer__createdby }}
+                    {% else %}
+                        {% include '@atoms/text/paragraph/paragraph.twig' with {
+                            "extra_classes": ["footer__createdby__text"],
+                            "text": footer__createdby__text
+                        } %}
+                    {% endif %}
+                </div>
+                <div class="footer__copyright">
+                    {% if footer__copyright %}
+                        {{ footer__copyright }}
+                    {% else %}
+                        {% include '@atoms/text/paragraph/paragraph.twig' with {
+                            "extra_classes": ["footer__copyright__text"],
+                            "text": footer__copyright__text
+                        } %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -9,6 +9,16 @@ card:
     theme:
       dist/css/03-molecules/card/card.css: {}
 
+latestblog:
+  css:
+    theme:
+      dist/css/03-molecules/latestblog/latestblog.css: {}
+
+social:
+  css:
+    theme:
+      dist/css/03-molecules/social/social.css: {}
+
 base:
   css:
     base:
@@ -40,3 +50,13 @@ header:
       dist/css/04-organisms/header/header.css: {}
   js:
     dist/js/04-organisms/header/header.js: {}
+
+footer:
+  css:
+    theme:
+      dist/css/04-organisms/footer/footer.css: {}
+
+paragraph:
+  css:
+    theme:
+      dist/css/02-atoms/text/paragraph/paragraph.css: {}

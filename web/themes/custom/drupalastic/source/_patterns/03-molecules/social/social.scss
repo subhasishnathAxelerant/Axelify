@@ -1,0 +1,9 @@
+@import '../../config.all';
+
+.footer__social__ul {
+  display: flex;
+  @include list-clear-all;
+}
+.footer__social__list__item {
+  padding: 0 6px;
+}
