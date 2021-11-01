@@ -1,0 +1,32 @@
+uuid: 4076c836-9ddf-46f4-acf4-20aabfea18ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.author_info
+  module:
+    - node
+    - views
+  theme:
+    - drupalastic
+id: views_block__author_info_block_1
+theme: drupalastic
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:author_info-block_1'
+settings:
+  id: 'views_block:author_info-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      blog: blog
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

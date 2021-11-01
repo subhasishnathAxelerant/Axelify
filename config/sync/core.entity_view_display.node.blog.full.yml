@@ -1,8 +1,9 @@
-uuid: b1947581-64ab-44ce-9598-5666332f0d52
+uuid: 944b84e7-104c-4713-b188-c0c63d3e7771
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.blog.body
     - field.field.node.blog.field_author_publish
     - field.field.node.blog.field_blog_large_image
@@ -17,78 +18,68 @@ dependencies:
     - image
     - text
     - user
-id: node.blog.default
+id: node.blog.full
 targetEntityType: node
 bundle: blog
-mode: default
+mode: full
 content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     region: content
   field_author_publish:
-    weight: 109
-    label: above
+    type: entity_reference_entity_view
+    weight: 3
+    region: content
+    label: hidden
     settings:
       link: true
+      view_mode: default
     third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_blog_large_image:
-    weight: 103
-    label: above
-    settings:
-      image_style: ''
-    third_party_settings: {  }
-    type: image_url
-    region: content
-  field_blog_thumb_image:
-    weight: 104
-    label: above
+    weight: 0
+    label: hidden
     settings:
       image_style: ''
     third_party_settings: {  }
     type: image_url
     region: content
   field_blog_title:
-    weight: 102
-    label: above
+    weight: 2
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
   field_categories:
-    weight: 105
-    label: above
+    weight: 1
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   field_publish_date:
-    weight: 108
-    label: above
-    settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
+    type: datetime_custom
+    weight: 4
     region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'j F Y'
+    third_party_settings: {  }
   field_tags:
-    weight: 106
-    label: above
+    weight: 6
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  links:
-    weight: 100
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_blog_thumb_image: true
+  links: true

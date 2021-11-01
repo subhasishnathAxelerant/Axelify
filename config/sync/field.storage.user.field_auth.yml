@@ -1,0 +1,19 @@
+uuid: 3ea4639a-f756-41c2-9806-8b312eef3e81
+langcode: en
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.field_auth
+field_name: field_auth
+entity_type: user
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

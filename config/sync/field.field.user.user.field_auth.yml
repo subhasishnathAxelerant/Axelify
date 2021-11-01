@@ -1,0 +1,21 @@
+uuid: b8e830e6-c1fd-4d7b-93b8-8e85d7226afc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_auth
+  module:
+    - text
+    - user
+id: user.user.field_auth
+field_name: field_auth
+entity_type: user
+bundle: user
+label: 'Author Info'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

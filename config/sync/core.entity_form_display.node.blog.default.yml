@@ -4,12 +4,17 @@ status: true
 dependencies:
   config:
     - field.field.node.blog.body
+    - field.field.node.blog.field_author_publish
     - field.field.node.blog.field_blog_large_image
     - field.field.node.blog.field_blog_thumb_image
     - field.field.node.blog.field_blog_title
+    - field.field.node.blog.field_categories
+    - field.field.node.blog.field_publish_date
+    - field.field.node.blog.field_tags
     - image.style.thumbnail
     - node.type.blog
   module:
+    - datetime
     - image
     - path
     - text
@@ -34,6 +39,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_author_publish:
+    weight: 129
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_blog_large_image:
     weight: 123
     settings:
@@ -57,6 +72,32 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_categories:
+    weight: 125
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_publish_date:
+    weight: 128
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_tags:
+    weight: 126
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   path:
     type: path
