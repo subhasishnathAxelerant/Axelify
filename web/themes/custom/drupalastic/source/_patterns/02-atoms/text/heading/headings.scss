@@ -5,6 +5,14 @@
   font-weight: 400;
 }
 
+.heading-1 {
+  font-size: 72px;
+  line-height: 80px;
+  color: var(--c-black);
+  &--primary {
+    color: var(--c-primary);
+  }
+}
 .heading-2 {
   font-size: 56px;
   line-height: 1.14;

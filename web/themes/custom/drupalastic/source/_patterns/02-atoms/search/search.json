@@ -1,0 +1,10 @@
+{
+  "extra_classes": ["search__form__sidebar"],
+  "searchforms": [
+    {
+      "searchPlaceholder": "Search",
+      "searchValue": "",
+      "searchInputClass": "search__form__input"
+    }
+  ]
+}

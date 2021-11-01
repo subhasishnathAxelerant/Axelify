@@ -1,0 +1,19 @@
+{
+  "extra_classes":[],
+  "extra_li_classes":[],
+  "tag__link__Classes": ["tag__link"],
+  "tags": [
+    {
+      "linkUrl": "#",
+      "linkText": "Porro"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Animal"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Ludus"
+    }
+  ]
+}

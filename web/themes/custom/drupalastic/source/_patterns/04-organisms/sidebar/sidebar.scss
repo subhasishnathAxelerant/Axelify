@@ -1,0 +1,26 @@
+.layout__sidebar__first {
+  float: left;
+}
+.layout__sidebar__search {
+  input[type='submit'] {
+    display: none;
+  }
+}
+.categorylist__item .category__term__item:nth-child(1) {
+  flex-basis: 80%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  a {
+    font-family: var(--f-primary);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--c-black);
+    text-decoration: none;
+  }
+}
+.categorylist__item .category__term__item:nth-child(2) {
+  flex-basis: 20%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: right;
+}

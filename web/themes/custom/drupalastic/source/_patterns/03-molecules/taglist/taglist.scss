@@ -1,0 +1,19 @@
+@import '../../config.all';
+
+.tags__ul {
+  @include list-clear-all;
+  display: flex;
+}
+.tags__item {
+  padding: 0 7px;
+}
+.tag__link {
+  font-family: var(--f-primary);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--c-primary);
+  text-decoration: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  border: 1px solid var(--c-primary);
+}

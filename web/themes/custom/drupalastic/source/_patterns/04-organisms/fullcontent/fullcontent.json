@@ -1,0 +1,88 @@
+{
+  "maincontent__categories": [
+    {
+      "linkUrl": "#",
+      "linkText": "Eloquentiam"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Nullam"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Quaerendum"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Deterruisset"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Erroribus"
+    }
+  ],
+  "maincontent__tags": [
+    {
+      "linkUrl": "#",
+      "linkText": "Porro"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Animal"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Ludus"
+    }
+  ],
+  "maincontent__authors": [
+    {
+      "author_img": "https://via.placeholder.com/112x112.png",
+      "author_designation": "Author",
+      "author_name": "Cayla Brister",
+      "author_bio":"Dicta omnes ius ut, ei atomorum voluptatum definitionem per. Zril petentium sit at, vel at quis corrumpit. At facilisi contentiones per."
+    }
+  ],
+  "maincontent__contents":[
+    {
+      "blog__text": "<h1>simply dummy</h1> <p>text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>"
+    }
+  ],
+  "maincontent__heading": "Ea cum vide impetus deserunt",
+  "sidebar__category__heading": "Categories",
+  "categories": [
+    {
+      "linkUrl": "#",
+      "linkText": "Principes",
+      "count": "7"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Nullam",
+      "count": "42"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Quaerendum",
+      "count": "73"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Deterruisset",
+      "count": "9"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Erroribus",
+      "count": "20"
+    }
+  ],
+  "searchform": [
+    {
+      "extra_classes": ["search__form__sidebar"],
+      "searchPlaceholder": "Search",
+      "searchValue": "",
+      "searchInputClass": "search__form__input"
+    }
+  ]
+}

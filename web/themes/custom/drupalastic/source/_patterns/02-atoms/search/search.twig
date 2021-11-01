@@ -1,0 +1,18 @@
+{% set element_classes = [
+    'search__form',
+  ] %}
+
+{% if extra_classes %}
+  {% if extra_classes is iterable %}
+    {% for extra_class in extra_classes %}
+      {% set element_classes = element_classes|merge([extra_class]) %}
+    {% endfor %}
+  {% else %}
+    {% set element_classes = element_classes|merge([extra_classes]) %}
+  {% endif %}
+{% endif %}
+{% for searchform in searchforms %}
+  <form class="{{ element_classes|join(' ')|trim }}">
+    <input type="text" value="{{ searchform.searchValue }}" placeholder="{{ searchform.searchPlaceholder }}" class="{{ searchform.searchInputClass }}"/>
+  </form>
+{% endfor %}

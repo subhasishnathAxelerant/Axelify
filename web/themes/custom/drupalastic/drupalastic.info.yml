@@ -17,6 +17,8 @@ libraries:
   - drupalastic/font-awesome
   - drupalastic/header
   - drupalastic/footer
+  - drupalastic/sidebar
+  - drupalastic/blogcontent
 
 components:
   namespaces:

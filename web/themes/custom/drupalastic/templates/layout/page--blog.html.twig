@@ -43,7 +43,8 @@
  * @see html.html.twig
  */
 #}
-{#{{ dsm(page) }}#}
+
+
 <div class="layout-container">
   {% include '@organisms/header/header.twig' with {
     "drupal_logo": page.header.drupalastic_branding,
@@ -60,30 +61,16 @@
   {# {{ page.help }} #}
 
   <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-    <div class="layout-content">
-      {{ page.content }}
-    </div>{# /.layout-content #}
-
-    {% if page.sidebar %}
-      {# <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar }}
-      </aside> #}
-      {% include '@organisms/sidebar/sidebar.twig' with {
-        "sidebar_categories": page.sidebar.views_block__categories_sidebar_block_1,
-        "sidebar_searchform": page.sidebar.searchform,
-      } %}
-    {% endif %}
-
-    {# {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %} #}
-
+    {#{{ dsm(page) }}#}
+    <a id="blog-single-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    {% include '@organisms/fullcontent/fullcontent.twig' with {
+      "blog__content": page.content.drupalastic_content,
+      "sidebar_categories": page.sidebar.views_block__categories_sidebar_block_1,
+      "sidebar_searchform": page.sidebar.searchform,
+      "social_icons": page.footer.views_block__social_media_footer_block_1,
+      "authors_info": page.content.views_block__author_info_block_1
+    } %}
   </main>
-
   {#{% if page.footer %}
     <footer role="contentinfo">
       {{ page.footer }}

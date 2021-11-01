@@ -1,8 +1,7 @@
 font-awesome:
   css:
     theme:
-      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css:
-        { type: external }
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css: { type: external }
 
 card:
   css:
@@ -14,10 +13,20 @@ latestblog:
     theme:
       dist/css/03-molecules/latestblog/latestblog.css: {}
 
+categorylistcount:
+  css:
+    theme:
+      dist/css/03-molecules/categorylistcount/categorylistcount.css: {}
+
 social:
   css:
     theme:
       dist/css/03-molecules/social/social.css: {}
+
+search:
+  css:
+    theme:
+      dist/css/02-atoms/search/search.css: {}
 
 base:
   css:
@@ -56,7 +65,47 @@ footer:
     theme:
       dist/css/04-organisms/footer/footer.css: {}
 
+sidebar:
+  css:
+    theme:
+      dist/css/04-organisms/sidebar/sidebar.css: {}
+
 paragraph:
   css:
     theme:
       dist/css/02-atoms/text/paragraph/paragraph.css: {}
+
+blogcontent:
+  css:
+    theme:
+      dist/css/03-molecules/blogcontent/blogcontent.css: {}
+
+maincontent:
+  css:
+    theme:
+      dist/css/04-organisms/maincontent/maincontent.css: {}
+
+fullcontent:
+  css:
+    theme:
+      dist/css/04-organisms/fullcontent/fullcontent.css: {}
+
+categorylist:
+  css:
+    theme:
+      dist/css/03-molecules/categorylist/categorylist.css: {}
+
+taglist:
+  css:
+    theme:
+      dist/css/03-molecules/taglist/taglist.css: {}
+
+headings:
+  css:
+    theme:
+      dist/css/02-atoms/text/heading/headings.css: {}
+
+authorinfo:
+  css:
+    theme:
+      dist/css/03-molecules/authorinfo/authorinfo.css: {}

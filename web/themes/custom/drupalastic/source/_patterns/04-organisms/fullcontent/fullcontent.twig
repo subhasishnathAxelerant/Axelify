@@ -1,0 +1,166 @@
+{{ attach_library('drupalastic/base') }}
+{{ attach_library('drupalastic/blogcontent') }}
+{{ attach_library('drupalastic/categorylist') }}
+{{ attach_library('drupalastic/taglist') }}
+{{ attach_library('drupalastic/authorinfo') }}
+{{ attach_library('drupalastic/fullcontent') }}
+{{ attach_library('drupalastic/image') }}
+{{ attach_library('drupalastic/headings') }}
+{{ attach_library('drupalastic/paragraph') }}
+{{ attach_library('drupalastic/font-awesome') }}
+{{ attach_library('drupalastic/categorylistcount') }}
+{{ attach_library('drupalastic/search') }}
+
+<div class="full__content__wrapper">
+  <div class="full__content">
+    <div class="full__content__main">
+      <div class="main__content">
+        <article class="main__content__node">
+          {% if blog__content %}
+            {{ blog__content }}
+          {% else %}
+          <div class="main__content__banner">
+            {% include '@atoms/image/image-banner.twig' with {
+              "imgSrc": "https://via.placeholder.com/834x432.png",
+              "extra_classes": ["img__banner"]
+            } %}
+          </div>
+          <div class="main__content__categories">
+            {% if content_categories %}
+                {{ content_categories }}
+            {% else %}
+            {% include '@molecules/categorylist/categorylist.twig' with {
+              "extra_classes": [],
+              "extra_li_classes": [],
+              "category__link__Classes": ["category__link"],
+              "categories": maincontent__categories
+            } %}
+            {% endif %}
+          </div>
+          <div class="main__content__heading">
+            {% include '@atoms/text/heading/heading-1.twig' with {
+              "extra_classes": [],
+              "text": maincontent__heading
+            } %}
+          </div>
+          <div class="main__content__publish__info">
+            <section class="main__content__publish__author">
+              <section class="main__content__publish__author__img">
+                {% include '@atoms/image/image-rounded.twig' with {
+                  "imgSrc": "https://via.placeholder.com/32x32.png",
+                  "extra_classes": ["img__rounded"]
+                } %}
+              </section>
+              <section class="main__content__publish__author__name">
+                {% include '@atoms/text/paragraph/paragraph.twig' with {
+                  "text": "Cayla Brister"
+                } %}
+              </section>
+            </section>
+            <section class="main__content__publish__date">
+              {% include '@atoms/text/paragraph/paragraph.twig' with {
+                "extra_classes": ["paragraph-gray"],
+                "text": "20 July 2019"
+              } %}
+            </section>
+          </div>
+          <div class="main__content">
+            {% include '@molecules/blogcontent/blogcontent.twig' with {
+              "blog__contents": maincontent__contents
+            } %}
+          </div>
+          <div class="main__content__tag__wrapper">
+            <div class="main__content__tags">
+              {% include '@molecules/taglist/taglist.twig' with {
+                "extra_classes": [],
+                "extra_li_classes": [],
+                "tag__link__Classes": ["tag__link"],
+                "tags": maincontent__tags
+              } %}
+            </div>
+          </div>
+          {% endif %}
+          <div class="main__content__socials">
+            {% include '@atoms/text/paragraph/paragraph.twig' with {
+              "extra_classes": ["paragraph-gray", "main__content__socials__label"],
+              "text": "Share on:"
+            } %}
+            {% if social_icons %}
+              {{ social_icons }}
+            {% else %}
+              {% include '@molecules/social/social.twig' with {
+                "extra_classes": [],
+                "extra_li_classes": [],
+                "socialitemClasses": ["social__item"],
+                "icons": [
+                  {
+                      "linkUrl": "https://www.facebook.com",
+                      "linkText": "/images/facebook.png"
+                  },
+                  {
+                      "linkUrl": "https://twitter.com",
+                      "linkText": "/images/twitter.png"
+                  },
+                  {
+                      "linkUrl": "https://www.instagram.com",
+                      "linkText": "/images/instagram.png"
+                  }
+                ]
+              } %}
+            {% endif %}
+          </div>
+        </article>
+      </div>
+      <div class="block__author">
+        {% if authors_info %}
+          {{ authors_info }}
+        {% else %}
+          <div>
+            {% include '@molecules/authorinfo/authorinfo.twig' with {
+              "authors": maincontent__authors
+            } %}
+          </div>
+          {% endif %}
+      </div>
+    </div>
+    <div class="full__content__aside">
+      <aside class="layout__sidebar__first">
+        <div class="layout__sidebar__search">
+          {% if sidebar_searchform %}
+            {{ sidebar_searchform }}
+          {% else %}
+            {% include '@atoms/search/search.twig' with {
+              "extra_classes": ["search__form__sidebar"],
+              "searchforms": searchform
+            } %}
+          {% endif %}
+        </div>
+        {# <div class="layout__sidebar__categorylist__heading">
+          {% include '@atoms/text/heading/heading-4.twig' with {
+            "extra_classes":["categorylist__heading"],
+            "text": "This is heading 4"
+          } %}
+        </div> #}
+        <div class="layout__sidebar__category__heading">
+          {% include '@atoms/text/heading/heading-4.twig' with {
+            "extra_classes": [],
+            "text": "Categories"
+          } %}
+        </div>
+        <div class="layout__sidebar__categorylist">
+          {% if sidebar_categories %}
+            {{ sidebar_categories }}
+          {% else %}
+            {% include '@molecules/categorylistcount/categorylistcount.twig' with {
+              "extra_classes": [],
+              "extra_li_classes": [],
+              "categorylist__link__Classes": ["categorylist__link"],
+              "categorylist__count__Classes": ["categorylist__count"],
+              "categories": categories
+            } %}
+          {% endif %}
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>

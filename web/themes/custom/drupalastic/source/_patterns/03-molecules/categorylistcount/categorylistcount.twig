@@ -1,0 +1,47 @@
+{{ attach_library('drupalastic/base') }}
+
+{% set categorylist_wrapper_classes = [
+  'categorylist__ul',
+] %}
+{% set categorylist_li_classes = [
+  'categorylist__item',
+] %}
+{% if extra_classes %}
+  {% if extra_classes is iterable %}
+    {% for extra_class in extra_classes %}
+    {% set categorylist_wrapper_classes = categorylist_wrapper_classes|merge([extra_class]) %}
+    {% endfor %}
+  {% else %}
+    {% set categorylist_wrapper_classes = categorylist_wrapper_classes|merge([extra_classes]) %}
+  {% endif %}
+{% endif %}
+
+{% if extra_li_classes %}
+  {% if extra_li_classes is iterable %}
+    {% for extra_li_class in extra_li_classes %}
+    {% set categorylist_li_classes = categorylist_li_classes|merge([extra_li_class]) %}
+    {% endfor %}
+  {% else %}
+    {% set categorylist_li_classes = categorylist_li_classes|merge([extra_li_classes]) %}
+  {% endif %}
+{% endif %}
+
+<ul class="{{ categorylist_wrapper_classes|join(' ')|trim }}">
+  {% for category in categories %}
+    <li class="{{ categorylist_li_classes|join(' ')|trim }}">
+      <section class="category__term__name">
+        {% include '@atoms/link/link.twig' with {
+            "linkUrl": category.linkUrl,
+            "extra_classes": categorylist__link__Classes,
+            "linkText": category.linkText
+        } %}
+      </section>
+      <section class="category__term__count">
+        {% include '@atoms/text/paragraph/paragraph.twig' with {
+          "extra_classes": categorylist__count__Classes,
+          "text": category.count
+        } %}
+      </section>
+    </li>
+  {% endfor %}
+</ul>
