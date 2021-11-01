@@ -1,0 +1,37 @@
+{
+  "categories": [
+    {
+      "linkUrl": "#",
+      "linkText": "Principes",
+      "count": "7"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Nullam",
+      "count": "42"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Quaerendum",
+      "count": "73"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Deterruisset",
+      "count": "9"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Erroribus",
+      "count": "20"
+    }
+  ],
+  "searchform": [
+    {
+      "extra_classes": ["search__form__sidebar"],
+      "searchPlaceholder": "Search",
+      "searchValue": "",
+      "searchInputClass": "search__form__input"
+    }
+  ]
+}

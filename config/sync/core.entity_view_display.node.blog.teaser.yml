@@ -5,9 +5,13 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.blog.body
+    - field.field.node.blog.field_author_publish
     - field.field.node.blog.field_blog_large_image
     - field.field.node.blog.field_blog_thumb_image
     - field.field.node.blog.field_blog_title
+    - field.field.node.blog.field_categories
+    - field.field.node.blog.field_publish_date
+    - field.field.node.blog.field_tags
     - node.type.blog
   module:
     - image
@@ -35,6 +39,10 @@ content:
       image_style: ''
     third_party_settings: {  }
 hidden:
+  field_author_publish: true
   field_blog_large_image: true
   field_blog_title: true
+  field_categories: true
+  field_publish_date: true
+  field_tags: true
   links: true

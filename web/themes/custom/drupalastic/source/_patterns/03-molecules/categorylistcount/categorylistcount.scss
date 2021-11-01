@@ -1,0 +1,31 @@
+@import '../../config.all';
+
+.categorylist__ul {
+  @include list-clear-all;
+}
+
+.categorylist__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.category__term__name {
+  flex-basis: 80%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.category__term__count {
+  flex-basis: 20%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: right;
+}
+.categorylist__link {
+  font-family: var(--f-primary);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--c-black);
+  text-decoration: none;
+}

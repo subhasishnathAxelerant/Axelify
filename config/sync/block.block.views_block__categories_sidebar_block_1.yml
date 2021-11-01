@@ -1,0 +1,32 @@
+uuid: ce7a48e0-1403-4abe-92db-49f14ca4c416
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.categories_sidebar
+  module:
+    - node
+    - views
+  theme:
+    - drupalastic
+id: views_block__categories_sidebar_block_1
+theme: drupalastic
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:categories_sidebar-block_1'
+settings:
+  id: 'views_block:categories_sidebar-block_1'
+  label: Categories
+  provider: views
+  label_display: '0'
+  views_label: Categories
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      blog: blog
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

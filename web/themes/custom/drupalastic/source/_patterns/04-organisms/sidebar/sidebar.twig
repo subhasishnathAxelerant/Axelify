@@ -1,0 +1,36 @@
+{{ attach_library('drupalastic/base') }}
+{{ attach_library('drupalastic/categorylistcount') }}
+{{ attach_library('drupalastic/search') }}
+{{ attach_library('drupalastic/headings') }}
+
+<aside class="layout__sidebar__first">
+  <div class="layout__sidebar__search">
+    {% if sidebar_searchform %}
+      {{ sidebar_searchform }}
+    {% else %}
+      {% include '@atoms/search/search.twig' with {
+        "extra_classes": ["search__form__sidebar"],
+        "searchforms": searchform
+      } %}
+    {% endif %}
+  </div>
+  {# <div class="layout__sidebar__categorylist__heading">
+    {% include '@atoms/text/heading/heading-4.twig' with {
+      "extra_classes":["categorylist__heading"],
+      "text": "This is heading 4"
+    } %}
+  </div> #}
+  <div class="layout__sidebar__categorylist">
+    {% if sidebar_categories %}
+      {{ sidebar_categories }}
+    {% else %}
+      {% include '@molecules/categorylistcount/categorylistcount.twig' with {
+        "extra_classes": [],
+        "extra_li_classes": [],
+        "categorylist__link__Classes": ["categorylist__link"],
+        "categorylist__count__Classes": ["categorylist__count"],
+        "categories": categories
+      } %}
+    {% endif %}
+  </div>
+</aside>

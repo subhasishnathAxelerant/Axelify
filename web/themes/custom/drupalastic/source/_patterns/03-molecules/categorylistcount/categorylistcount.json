@@ -1,0 +1,33 @@
+{
+  "extra_classes":[],
+  "extra_li_classes":[],
+  "categorylist__link__Classes": ["categorylist__link"],
+  "categorylist__count__Classes": ["categorylist__count"],
+  "categories": [
+    {
+      "linkUrl": "#",
+      "linkText": "Principes",
+      "count": "7"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Nullam",
+      "count": "42"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Quaerendum",
+      "count": "73"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Deterruisset",
+      "count": "9"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Erroribus",
+      "count": "20"
+    }
+  ]
+}

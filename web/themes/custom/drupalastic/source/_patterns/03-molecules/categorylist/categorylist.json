@@ -1,0 +1,27 @@
+{
+  "extra_classes":[],
+  "extra_li_classes":[],
+  "category__link__Classes": "category__link",
+  "categories": [
+    {
+      "linkUrl": "#",
+      "linkText": "Eloquentiam"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Nullam"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Quaerendum"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Deterruisset"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Erroribus"
+    }
+  ]
+}

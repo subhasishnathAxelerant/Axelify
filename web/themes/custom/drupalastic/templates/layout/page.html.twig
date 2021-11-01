@@ -44,19 +44,18 @@
  */
 #}
 {#{{ dsm(page) }}#}
-
 <div class="layout-container">
   {% include '@organisms/header/header.twig' with {
     "drupal_logo": page.header.drupalastic_branding,
     "drupal_menu": page.header.drupalastic_main_menu
   } %}
 
-  {{ page.primary_menu }}
+  {# {{ page.primary_menu }}
   {{ page.secondary_menu }}
 
   {{ page.breadcrumb }}
 
-  {{ page.highlighted }}
+  {{ page.highlighted }} #}
 
   {# {{ page.help }} #}
 
@@ -67,38 +66,43 @@
       {{ page.content }}
     </div>{# /.layout-content #}
 
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
+    {% if page.sidebar %}
+      {# <aside class="layout-sidebar-first" role="complementary">
+        {{ page.sidebar }}
+      </aside> #}
+      {% include '@organisms/sidebar/sidebar.twig' with {
+        "sidebar_categories": page.sidebar.views_block__categories_sidebar_block_1,
+        "sidebar_searchform": page.sidebar.searchform,
+      } %}
     {% endif %}
 
-    {% if page.sidebar_second %}
+    {# {% if page.sidebar_second %}
       <aside class="layout-sidebar-second" role="complementary">
         {{ page.sidebar_second }}
       </aside>
-    {% endif %}
+    {% endif %} #}
 
   </main>
 
-  {% if page.footer %}
+  {#{% if page.footer %}
     <footer role="contentinfo">
       {{ page.footer }}
     </footer>
+  {% endif %}#}
+  {% if page.footer %}
+    {% include '@organisms/footer/footer.twig' with {
+      "drupal_logo": page.header.drupalastic_branding,
+      "footer__logo__img__class": "footer__logo__img",
+      "social_icons": page.footer.views_block__social_media_footer_block_1,
+      "footer__description": page.footer.footerdescription,
+      "footer__menu1__title": page.footer.causae['#cache'].keys[2],
+      "footer__menu2__title": page.footer.aperiri['#cache'].keys[2],
+      "footer__menu1": page.footer.causae,
+      "footer__menu2": page.footer.aperiri,
+      "latest__blogs": page.footer.views_block__footer_blog_block_1,
+      "footer__createdby": page.footer.createdby,
+      "footer__copyright": page.footer.copyright
+    } %}
   {% endif %}
-
-  {% include '@organisms/footer/footer.twig' with {
-    "drupal_logo": page.header.drupalastic_branding,
-    "footer__logo__img__class": "footer__logo__img",
-    "social_icons": page.footer.views_block__social_media_footer_block_1,
-    "footer__description": page.footer.footerdescription,
-    "footer__menu1__title": page.footer.causae['#cache'].keys[2],
-    "footer__menu2__title": page.footer.aperiri['#cache'].keys[2],
-    "footer__menu1": page.footer.causae,
-    "footer__menu2": page.footer.aperiri,
-    "latest__blogs": page.footer.views_block__footer_blog_block_1,
-    "footer__createdby": page.footer.createdby,
-    "footer__copyright": page.footer.copyright
-  } %}
 
 </div>{# /.layout-container #}

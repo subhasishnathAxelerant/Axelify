@@ -1,0 +1,15 @@
+{% set element_classes = [
+    'img',
+  ] %}
+
+  {% if extra_classes %}
+    {% if extra_classes is iterable %}
+      {% for extra_class in extra_classes %}
+        {% set element_classes = element_classes|merge([extra_class]) %}
+      {% endfor %}
+    {% else %}
+      {% set element_classes = element_classes|merge([extra_classes]) %}
+    {% endif %}
+  {% endif %}
+
+<img src="{{ imgSrc }}" class="{{ element_classes|join(' ')|trim }}" />

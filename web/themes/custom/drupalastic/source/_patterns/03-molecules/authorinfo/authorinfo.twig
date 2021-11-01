@@ -1,0 +1,22 @@
+{% for author in authors %}
+  <div class="block__author__views__row">
+    <div class="blog__author__image">
+      {% include '@atoms/image/image-rounded.twig' with {
+        "imgSrc": author.author_img,
+        "extra_classes": ["img__rounded", "img__authorinfo"]
+      } %}
+    </div>
+    <div class="blog__author__info">
+      {% include '@atoms/text/paragraph/paragraph.twig' with {
+        "text": author.author_designation
+      } %}
+      {% include '@atoms/text/heading/heading-4.twig' with {
+        "text": author.author_name
+      } %}
+      {% include '@atoms/text/paragraph/paragraph.twig' with {
+        "extra_classes": ["paragraph-gray"],
+        "text": author.author_bio,
+      } %}
+    </div>
+  </div>
+{% endfor %}

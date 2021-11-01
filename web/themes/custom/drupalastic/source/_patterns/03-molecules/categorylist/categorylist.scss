@@ -1,0 +1,16 @@
+@import '../../config.all';
+
+.categories__ul {
+  @include list-clear-all;
+  display: flex;
+}
+.categories__item {
+  padding: 0 5px;
+}
+.category__link {
+  font-family: var(--f-primary);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--c-black);
+  text-decoration: none;
+}
