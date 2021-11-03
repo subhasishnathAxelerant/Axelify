@@ -1,0 +1,58 @@
+uuid: 7bcefa84-73bc-46d7-b6b0-d745328ba4e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.subscription_gmap_block
+    - field.field.block_content.subscription_gmap_block.field_google_map
+    - field.field.block_content.subscription_gmap_block.field_subscription_frm
+    - field.field.block_content.subscription_gmap_block.field_subscription_main_heading
+    - field.field.block_content.subscription_gmap_block.field_subscription_sub_heading
+  module:
+    - webform
+id: block_content.subscription_gmap_block.default
+targetEntityType: block_content
+bundle: subscription_gmap_block
+mode: default
+content:
+  field_google_map:
+    weight: 28
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_subscription_frm:
+    weight: 27
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+  field_subscription_main_heading:
+    weight: 30
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_subscription_sub_heading:
+    weight: 29
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

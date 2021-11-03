@@ -75,6 +75,16 @@ paragraph:
     theme:
       dist/css/02-atoms/text/paragraph/paragraph.css: {}
 
+submap:
+  css:
+    theme:
+      dist/css/04-organisms/submap/submap.css: {}
+
+input:
+  css:
+    theme:
+      dist/css/02-atoms/input/input.css: {}
+
 blogcontent:
   css:
     theme:

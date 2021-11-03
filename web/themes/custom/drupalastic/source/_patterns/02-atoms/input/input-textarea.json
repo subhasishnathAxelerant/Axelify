@@ -1,0 +1,4 @@
+{
+  "extra_classes": ["input--textarea"],
+  "inputPlaceholder": "Message"
+}

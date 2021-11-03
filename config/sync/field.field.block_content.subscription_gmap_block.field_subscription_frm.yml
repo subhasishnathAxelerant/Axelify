@@ -1,0 +1,25 @@
+uuid: 99aa1291-3980-49c5-af40-d17becfdf181
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.subscription_gmap_block
+    - field.storage.block_content.field_subscription_frm
+  module:
+    - webform
+id: block_content.subscription_gmap_block.field_subscription_frm
+field_name: field_subscription_frm
+entity_type: block_content
+bundle: subscription_gmap_block
+label: subscription_frm
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform
