@@ -1,0 +1,25 @@
+uuid: fdfc6276-ddac-4cee-aaba-425ba4f18f98
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:subscription_gmap_block:6e964311-02fb-41aa-9421-813b88ff5b73'
+  module:
+    - block_content
+  theme:
+    - drupalastic
+id: subscriptionmapblock_2
+theme: drupalastic
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:6e964311-02fb-41aa-9421-813b88ff5b73'
+settings:
+  id: 'block_content:6e964311-02fb-41aa-9421-813b88ff5b73'
+  label: subscription-map-block
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

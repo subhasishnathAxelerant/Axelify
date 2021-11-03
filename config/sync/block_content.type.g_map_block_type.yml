@@ -1,0 +1,8 @@
+uuid: 30896c7f-2da0-4492-816f-5d0e943d251e
+langcode: en
+status: true
+dependencies: {  }
+id: g_map_block_type
+label: 'G-Map Block Type'
+revision: 0
+description: 'This block type is only for adding a stand alone G Map in any page of the site'

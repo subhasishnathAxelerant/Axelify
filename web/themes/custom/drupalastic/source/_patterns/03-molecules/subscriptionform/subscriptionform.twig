@@ -1,0 +1,20 @@
+<form>
+  <div class="js-form-item form-item">
+    {% include '@atoms/input/input-text.twig' with {
+      "extra_classes": ["input--text", "subform_email"],
+      "inputPlaceholder": "Email"
+    } %}
+  </div>
+  <div class="js-form-item form-item">
+    {% include '@atoms/input/input-textarea.twig' with {
+      "extra_classes": ["input--textarea", "subform_message"],
+      "inputPlaceholder": "Email"
+    } %}
+  </div>
+  <div class="subform_submit">
+    {% include '@atoms/input/input-submit.twig' with {
+      "extra_classes": ["input--submit", "input--submit--secondary", "subscription__submit"],
+      "inputValue": "Submit"
+    } %}
+  </div>
+</form>

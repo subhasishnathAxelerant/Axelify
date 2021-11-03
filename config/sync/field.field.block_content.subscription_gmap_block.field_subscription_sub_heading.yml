@@ -1,0 +1,19 @@
+uuid: be9aaa44-b851-4929-b1d4-21ed5630e61c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.subscription_gmap_block
+    - field.storage.block_content.field_subscription_sub_heading
+id: block_content.subscription_gmap_block.field_subscription_sub_heading
+field_name: field_subscription_sub_heading
+entity_type: block_content
+bundle: subscription_gmap_block
+label: 'Subscription sub heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,55 @@
+@import '../../config.all';
+
+.submap__wrapper {
+  @include container-fluid;
+  background: var(--c-primary);
+}
+.submap__content {
+  @include container;
+  display: flex;
+  padding: 100px 0 !important;
+  @include breakpoint($upto-desktop) {
+    flex-direction: column;
+    padding: 100px 0 65px 0;
+  }
+}
+.submap__content__map {
+  flex-basis: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  @include breakpoint($desktop) {
+    padding: 0 65px 0 0;
+  }
+}
+.submap__content__subscription {
+  flex-basis: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  @include breakpoint($desktop) {
+    padding: 0 0 0 65px;
+  }
+}
+.submap__form__subheading {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  @include breakpoint($upto-desktop) {
+    margin-top: 50px;
+  }
+}
+.submap__form__heading {
+  text-transform: capitalize;
+  padding-bottom: 50px;
+  @include breakpoint($upto-desktop) {
+    font-size: 40px;
+  }
+}
+.subform_email,
+.subform_message {
+  margin-bottom: 30px;
+}
+.subscription__submit {
+  width: 170px;
+}
