@@ -1,0 +1,29 @@
+uuid: 1beb2d3b-a69b-4192-a40b-29a81a81d2e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.g_map_block_type
+    - field.field.block_content.g_map_block_type.field_google_map
+id: block_content.g_map_block_type.default
+targetEntityType: block_content
+bundle: g_map_block_type
+mode: default
+content:
+  field_google_map:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

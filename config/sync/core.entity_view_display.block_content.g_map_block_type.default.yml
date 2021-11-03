@@ -1,0 +1,35 @@
+uuid: 15163cb3-e528-4e10-81fa-925c8e631f8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.g_map_block_type
+    - field.field.block_content.g_map_block_type.field_google_map
+  module:
+    - simple_gmap
+id: block_content.g_map_block_type.default
+targetEntityType: block_content
+bundle: g_map_block_type
+mode: default
+content:
+  field_google_map:
+    weight: 0
+    label: hidden
+    settings:
+      include_map: true
+      apikey: ''
+      iframe_width: 100%
+      iframe_height: '640'
+      iframe_title: 'Standalone G-Map'
+      static_scale: 1
+      link_text: 'View larger map'
+      zoom_level: 14
+      map_type: m
+      langcode: en
+      include_static_map: false
+      include_link: false
+      include_text: false
+    third_party_settings: {  }
+    type: simple_gmap
+    region: content
+hidden: {  }
