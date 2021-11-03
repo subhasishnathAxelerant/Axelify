@@ -24,7 +24,9 @@
   &--secondary {
     color: var(--c-secondary);
   }
-
+  &--white {
+    color: var(--c-white);
+  }
   &--m-h3 {
     @include breakpoint($upto-tablet) {
       @include heading-3;
@@ -40,4 +42,11 @@
 .heading-4 {
   font-size: 24px;
   line-height: 1.33;
+}
+.heading-5 {
+  font-size: 16px;
+  line-height: 1.2;
+  &--white {
+    color: var(--c-white);
+  }
 }

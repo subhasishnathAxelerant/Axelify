@@ -19,6 +19,7 @@ libraries:
   - drupalastic/footer
   - drupalastic/sidebar
   - drupalastic/blogcontent
+  - drupalastic/submap
 
 components:
   namespaces:
