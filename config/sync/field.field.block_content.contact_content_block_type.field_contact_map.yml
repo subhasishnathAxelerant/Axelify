@@ -1,0 +1,19 @@
+uuid: 1657b63d-b590-4bb9-b7e6-00dde45cf855
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_content_block_type
+    - field.storage.block_content.field_contact_map
+id: block_content.contact_content_block_type.field_contact_map
+field_name: field_contact_map
+entity_type: block_content
+bundle: contact_content_block_type
+label: 'Contact Map'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

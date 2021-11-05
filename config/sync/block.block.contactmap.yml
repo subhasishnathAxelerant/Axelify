@@ -1,0 +1,31 @@
+uuid: ed884faa-971f-4c78-a4d0-450570ea7c4d
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:g_map_block_type:ba95fde5-5cf7-4e77-9922-8a07f3cb8d55'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupalastic
+id: contactmap
+theme: drupalastic
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:ba95fde5-5cf7-4e77-9922-8a07f3cb8d55'
+settings:
+  id: 'block_content:ba95fde5-5cf7-4e77-9922-8a07f3cb8d55'
+  label: 'Contact Map'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /Contact
+    negate: false
+    context_mapping: {  }
