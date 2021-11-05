@@ -1,5 +1,14 @@
 @import '../../../config.all';
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+}
+
 .heading {
   font-family: var(--f-secondary);
   font-weight: 400;
@@ -11,6 +20,9 @@
   color: var(--c-black);
   &--primary {
     color: var(--c-primary);
+  }
+  &--white {
+    color: var(--c-white);
   }
 }
 .heading-2 {

@@ -1,0 +1,31 @@
+@import '../../config.all';
+
+.inline__subscription__webform {
+  @include flex-center-row;
+  @include breakpoint($upto-desktop) {
+    @include flex-h-left-v-center-column;
+    padding: 0 15px;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  .inline__email {
+    @include breakpoint($desktop) {
+      padding-right: 15px;
+    }
+    @include breakpoint($upto-desktop) {
+      margin-bottom: 16px;
+    }
+  }
+  .inline__subscribe {
+    width: 170px;
+    @include breakpoint($desktop) {
+      padding-left: 15px;
+    }
+  }
+  .form-item.inline__email {
+    @include breakpoint($upto-desktop) {
+      width: 100%;
+    }
+    width: 370px;
+  }
+}

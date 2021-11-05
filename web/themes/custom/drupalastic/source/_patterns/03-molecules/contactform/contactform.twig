@@ -1,0 +1,26 @@
+<form>
+    <div class="js-form-item form-item form-item-contact-name">
+      {% include '@atoms/input/input-text.twig' with {
+        "extra_classes": ["input--text", "contactform__name"],
+        "inputPlaceholder": "Your name"
+      } %}
+    </div>
+    <div class="js-form-item form-item form-item-contact-email">
+      {% include '@atoms/input/input-text.twig' with {
+        "extra_classes": ["input--text", "contactform__email"],
+        "inputPlaceholder": "Your email"
+      } %}
+    </div>
+    <div class="js-form-item form-item  form-item-contact-message">
+      {% include '@atoms/input/input-textarea.twig' with {
+        "extra_classes": ["input--textarea", "contact_message"],
+        "inputPlaceholder": "Your message"
+      } %}
+    </div>
+    <div class="subform_submit contact__form__submit">
+      {% include '@atoms/input/input-submit.twig' with {
+        "extra_classes": ["input--submit", "input--submit--primary", "contact__submit"],
+        "inputValue": "Submit"
+      } %}
+    </div>
+  </form>

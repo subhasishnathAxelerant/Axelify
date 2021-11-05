@@ -1,0 +1,14 @@
+<form class="inline__subscription__webform">
+  <div class="js-form-item form-item inline__email">
+    {% include '@atoms/input/input-text.twig' with {
+      "extra_classes": ["input--text", "inlinesubscription__email"],
+      "inputPlaceholder": "Email"
+    } %}
+  </div>
+  <div class="inline__subscribe">
+    {% include '@atoms/input/input-submit.twig' with {
+      "extra_classes": ["input--submit", "input--submit--primary", "inlinesubscription__submit"],
+      "inputValue": "Submit"
+    } %}
+  </div>
+</form>

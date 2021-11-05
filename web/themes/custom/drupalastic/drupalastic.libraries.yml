@@ -3,6 +3,8 @@ font-awesome:
     theme:
       https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css: { type: external }
 
+
+
 card:
   css:
     theme:
@@ -12,6 +14,16 @@ latestblog:
   css:
     theme:
       dist/css/03-molecules/latestblog/latestblog.css: {}
+
+inlinesubscription:
+  css:
+    theme:
+      dist/css/04-organisms/inlinesubscription/inlinesubscription.css: {}
+
+inlineform:
+  css:
+    theme:
+      dist/css/03-molecules/inlineform/inlineform.css: {}
 
 categorylistcount:
   css:
@@ -60,6 +72,10 @@ header:
   js:
     dist/js/04-organisms/header/header.js: {}
 
+main:
+  js:
+    dist/js/main.js: {}
+
 footer:
   css:
     theme:
@@ -89,6 +105,16 @@ blogcontent:
   css:
     theme:
       dist/css/03-molecules/blogcontent/blogcontent.css: {}
+
+contactcontent:
+  css:
+    theme:
+      dist/css/04-organisms/contactcontent/contactcontent.css: {}
+
+contactform:
+  css:
+    theme:
+      dist/css/03-molecules/contactform/contactform.css: {}
 
 maincontent:
   css:

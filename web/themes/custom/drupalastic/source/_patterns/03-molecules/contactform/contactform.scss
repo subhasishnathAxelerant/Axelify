@@ -1,0 +1,33 @@
+@import '../../config.all';
+
+.form-item-contact-name {
+  width: 50%;
+  float: left;
+  margin-bottom: 30px;
+  padding-right: 15px;
+  @include breakpoint($upto-desktop) {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 15px;
+  }
+}
+.form-item-contact-email {
+  width: 50%;
+  float: left;
+  margin-bottom: 30px;
+  padding-left: 15px;
+  @include breakpoint($upto-desktop) {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 15px;
+  }
+}
+.form-item-contact-message {
+  width: 100%;
+  clear: both;
+  margin-bottom: 30px;
+}
+.contact__form__submit {
+  width: 170px;
+  clear: both;
+}
