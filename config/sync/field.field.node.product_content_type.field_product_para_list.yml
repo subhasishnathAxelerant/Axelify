@@ -1,0 +1,31 @@
+uuid: 805c5abb-be2f-4839-a95e-6716936775f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_para_list
+    - node.type.product_content_type
+    - paragraphs.paragraphs_type.product_paragraph
+  module:
+    - entity_reference_revisions
+id: node.product_content_type.field_product_para_list
+field_name: field_product_para_list
+entity_type: node
+bundle: product_content_type
+label: 'Product Para List'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      product_paragraph: product_paragraph
+    target_bundles_drag_drop:
+      product_paragraph:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

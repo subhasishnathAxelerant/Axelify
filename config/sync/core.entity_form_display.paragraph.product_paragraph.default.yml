@@ -1,0 +1,63 @@
+uuid: 81718721-f7c3-491a-9c78-cdfd7a1554c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_paragraph.field_product_description
+    - field.field.paragraph.product_paragraph.field_product_image
+    - field.field.paragraph.product_paragraph.field_product_more_link
+    - field.field.paragraph.product_paragraph.field_product_title
+    - field.field.paragraph.product_paragraph.field_related_links
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.product_paragraph
+  module:
+    - image
+    - link
+id: paragraph.product_paragraph.default
+targetEntityType: paragraph
+bundle: product_paragraph
+mode: default
+content:
+  field_product_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_product_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_product_more_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_product_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_related_links:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true
