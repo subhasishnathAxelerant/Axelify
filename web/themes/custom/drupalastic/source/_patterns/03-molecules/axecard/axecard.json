@@ -1,0 +1,11 @@
+{
+  "image": { "src": "/images/type.jpg" },
+  "title": "Typewriter",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...",
+  "morelink": {"text": "More", "url": "#"},
+  "menu": [
+    {"text": "type 1", "url": "#"},
+    {"text": "type 2", "url": "#"},
+    {"text": "type 3", "url": "#"}
+  ]
+}

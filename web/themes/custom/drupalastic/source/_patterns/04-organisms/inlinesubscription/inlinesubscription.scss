@@ -1,0 +1,29 @@
+@import '../../config.all';
+
+.inlinesubscription__wrapper {
+  @include container-fluid;
+  background: var(--c-secondary-light);
+  padding: 80px 0 100px 0;
+}
+.inlinesubscription {
+  @include container;
+  @include flex-center-row;
+  @include breakpoint($upto-desktop) {
+    @include flex-center-column;
+  }
+}
+.inline__subscription__contents,
+.inline__subscription__webform__wrapper {
+  flex-basis: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  @include breakpoint($upto-desktop) {
+    flex-basis: 100%;
+    width: 100%;
+  }
+}
+.inline__subscription__subheading {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin-bottom: 10px;
+}

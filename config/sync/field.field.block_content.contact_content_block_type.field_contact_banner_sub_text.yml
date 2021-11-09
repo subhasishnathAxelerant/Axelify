@@ -1,0 +1,19 @@
+uuid: 35ddbd0d-cee9-4c35-b4b3-bbb1b036deab
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_content_block_type
+    - field.storage.block_content.field_contact_banner_sub_text
+id: block_content.contact_content_block_type.field_contact_banner_sub_text
+field_name: field_contact_banner_sub_text
+entity_type: block_content
+bundle: contact_content_block_type
+label: 'Contact Banner Sub Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

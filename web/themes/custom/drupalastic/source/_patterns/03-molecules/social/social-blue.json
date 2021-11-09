@@ -1,0 +1,19 @@
+{
+    "extra_classes":[],
+    "extra_li_classes":[],
+    "socialitemClasses": ["blue__social__item"],
+    "icons": [
+        {
+            "linkUrl": "https://www.facebook.com",
+            "linkText": "/images/facebook-white.png"
+        },
+        {
+            "linkUrl": "https://twitter.com",
+            "linkText": "/images/twitter-white.png"
+        },
+        {
+            "linkUrl": "https://www.instagram.com",
+            "linkText": "/images/instagram-white.png"
+        }
+    ]
+}

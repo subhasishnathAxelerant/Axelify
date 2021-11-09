@@ -1,0 +1,21 @@
+uuid: 50a05388-0723-4c6d-820d-1f2926494424
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_contact_email
+field_name: field_contact_email
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

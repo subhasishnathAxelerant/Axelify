@@ -1,0 +1,37 @@
+{
+  "cards": [
+    {
+      "image": { "src": "/images/type.jpg" },
+      "title": "Typewriter",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...",
+      "morelink": {"text": "More", "url": "#"},
+      "menu": [
+        {"text": "type 1", "url": "#"},
+        {"text": "type 2", "url": "#"},
+        {"text": "type 3", "url": "#"}
+      ]
+    },
+    {
+      "image": { "src": "/images/call.jpg" },
+      "title": "Rotary Phone",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...",
+      "morelink": {"text": "More", "url": "#"},
+      "menu": [
+        {"text": "call 1", "url": "#"},
+        {"text": "call 2", "url": "#"},
+        {"text": "call 3", "url": "#"}
+      ]
+    },
+    {
+      "image": { "src": "/images/click.jpg" },
+      "title": "Camera",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...",
+      "morelink": {"text": "More", "url": "#"},
+      "menu": [
+        {"text": "click 1", "url": "#"},
+        {"text": "click 2", "url": "#"},
+        {"text": "click 3", "url": "#"}
+      ]
+    }
+  ]
+}

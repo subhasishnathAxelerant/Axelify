@@ -7,3 +7,18 @@
 .footer__social__list__item {
   padding: 0 6px;
 }
+
+.blue__social__ul {
+  display: flex;
+  @include list-clear-all;
+}
+.blue__social__ul li,
+.blue__social__list__item {
+  padding: 16px;
+  height: 50px;
+  width: 50px;
+  background-color: var(--c-primary);
+  margin: 0 5px;
+  border-radius: 5px;
+  text-align: center;
+}

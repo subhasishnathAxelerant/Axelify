@@ -1,0 +1,23 @@
+{
+  "contact__banner__heading": "Contact",
+  "contact__banner__sub__heading": "Pro eu apeirian suavitate dissentiet",
+  "contact__form__heading": "Message",
+  "contact__info__heading": "Info",
+  "contact__social__icons": [
+    {
+      "linkUrl": "https://www.facebook.com",
+      "linkText": "/images/facebook-white.png"
+    },
+    {
+      "linkUrl": "https://twitter.com",
+      "linkText": "/images/twitter-white.png"
+    },
+    {
+      "linkUrl": "https://www.instagram.com",
+      "linkText": "/images/instagram-white.png"
+    }
+  ],
+  "contact__address": "123 Dicunt Ancillae, Mea Homero Persequeris USA",
+  "contact__phonenumber": "123-4567890123",
+  "contact__email": "info@gmail.com"
+}

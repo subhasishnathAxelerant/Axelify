@@ -1,0 +1,64 @@
+{% if contact_content %}
+  {{ contact_content }}
+{% else %}
+<div class="contact__banner">
+  <div class="contact__banner__content">
+    {% include '@atoms/text/heading/heading-1.twig' with {
+      "extra_classes": ["heading-1--white", "contact__banner__heading"],
+      "text": contact__banner__heading
+    } %}
+    {% include '@atoms/text/paragraph/paragraph.twig' with {
+      "extra_classes": ["paragraph-white", "contact__banner__sub__heading"],
+      "text": contact__banner__sub__heading
+    } %}
+  </div>
+</div>
+<div class="contact__content__wrapper">
+  <div class="contact__content">
+    <div class="contact__map">
+      <iframe class="gmap_iframe" width="100%" height="640" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=570&amp;height=464&amp;hl=en&amp;q=kolkata&amp;t=&amp;z=8&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    </div>
+    <div class="contact__form__info">
+      <div class="contact__form__wrapper">
+        {% include '@atoms/text/heading/heading-2.twig' with {
+          "extra_classes": ["contact__form__heading"],
+          "text": contact__form__heading
+        } %}
+        {% include '@molecules/contactform/contactform.twig' %}
+      </div>
+      <div class="contact__info__wrapper">
+        {% include '@atoms/text/heading/heading-2.twig' with {
+          "extra_classes": ["contact__info__heading"],
+          "text": contact__info__heading
+        } %}
+        <div class="contact__address">
+          {% include '@atoms/text/paragraph/paragraph.twig' with {
+            "extra_classes": ["paragraph-gray", "contact__address__text"],
+            "text": contact__address
+          } %}
+        </div>
+        <div class="contact__telephone">
+          <a href="tel:+{{ contact__phonenumber }}" class="contact__phone__link">
+            {% include '@atoms/text/paragraph/paragraph.twig' with {
+              "text": contact__phonenumber
+            } %}
+          </a>
+        </div>
+        <div class="contact__email">
+          <a href="mailto:{{ contact__email }}" class="contact__email__link">
+            {% include '@atoms/text/paragraph/paragraph.twig' with {
+              "text": contact__email
+            } %}
+          </a>
+        </div>
+        <div class="contact__socials">
+          {% include '@molecules/social/social-blue.twig' with {
+            "extra_classes": ["contact__social__list"],
+            "icons": contact__social__icons
+          } %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

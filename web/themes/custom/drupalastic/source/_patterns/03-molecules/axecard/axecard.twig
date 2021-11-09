@@ -1,0 +1,27 @@
+{{ attach_library('drupalastic/axecard') }}
+<div class="axecard">
+  <div class="axecard__img">
+    {% block image %}
+      {% include '@atoms/framed-image/framed-image.twig' with {
+        "src": image.src
+      } %}
+    {% endblock %}
+  </div>
+  <div class="axecard__body">
+    <h3 class="axecard__title">{{ title }}</h3>
+    <p class="axecard__description">
+      {{ description }}
+    </p>
+    {% block morelink %}
+      {% include '@atoms/axecard-link/axecard-link.twig' with {
+        "text": morelink.text,
+        "url": morelink.url
+      } %}
+    {% endblock %}
+    {% block menu %}
+      {% include '@molecules/link-list/link-list.twig' with {
+        "menu": menu
+      } %}
+    {% endblock %}
+  </div>
+</div>

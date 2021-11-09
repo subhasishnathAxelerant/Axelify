@@ -1,0 +1,14 @@
+{{ attach_library('drupalastic/axecard-list') }}
+<div class="axecard-list">
+  {% block axecardlist %}
+    {% for card in cards %}
+      {% include '@molecules/axecard/axecard.twig' with {
+        "image": card.image,
+        "title": card.title,
+        "description": card.description,
+        "morelink": card.morelink,
+        "menu": card.menu
+      } %}
+    {% endfor %}
+  {% endblock %}
+</div>

@@ -1,0 +1,25 @@
+uuid: 1334e7ed-e03e-47af-b715-fa409c59480a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.inline_subscription_block
+    - field.storage.block_content.field_inline_subscription_form
+  module:
+    - webform
+id: block_content.inline_subscription_block.field_inline_subscription_form
+field_name: field_inline_subscription_form
+entity_type: block_content
+bundle: inline_subscription_block
+label: 'Inline Subscription Form'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

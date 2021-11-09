@@ -49,7 +49,6 @@
     "drupal_logo": page.header.drupalastic_branding,
     "drupal_menu": page.header.drupalastic_main_menu
   } %}
-
   {# {{ page.primary_menu }}
   {{ page.secondary_menu }}
 
@@ -63,7 +62,18 @@
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">
-      {{ page.content }}
+      {% set url = url('<current>') %}
+        {% if '/Contact' in url|render|render %}
+          {#{{ dsm(url) }}#}
+          {% include '@organisms/contactcontent/contactcontent.twig' with {
+            "contact_content": page.content.contactcontentblock_2,
+          } %}
+          {% include '@organisms/inlinesubscription/inlinesubscription.twig' with {
+            "contact_inlinesubscription": page.content.inlinesubscriptionblock_2,
+          } %}
+        {% else %}
+          {{ page.content }}
+        {% endif %}
     </div>{# /.layout-content #}
 
     {% if page.sidebar %}

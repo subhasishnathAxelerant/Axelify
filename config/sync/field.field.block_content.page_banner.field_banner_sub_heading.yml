@@ -1,0 +1,19 @@
+uuid: 88f163ee-22cb-4f41-b946-c41f86458f8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.page_banner
+    - field.storage.block_content.field_banner_sub_heading
+id: block_content.page_banner.field_banner_sub_heading
+field_name: field_banner_sub_heading
+entity_type: block_content
+bundle: page_banner
+label: 'Banner Sub Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

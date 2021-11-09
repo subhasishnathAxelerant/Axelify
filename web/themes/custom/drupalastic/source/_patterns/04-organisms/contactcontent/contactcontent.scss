@@ -1,0 +1,149 @@
+@import '../../config.all';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+.contact__content__wrapper {
+  @include container-fluid;
+  background: var(--c-background);
+}
+.contact__banner {
+  @include container-fluid;
+  background: var(--c-primary);
+}
+.contact__banner__content {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0 !important;
+}
+.contact__content {
+  @include container;
+}
+.contact__map {
+  padding-top: 65px;
+  @include breakpoint($upto-desktop) {
+    padding-top: 30px;
+  }
+}
+.contact__form__info {
+  @include flex-center-row;
+  padding: 60px 0 80px 0;
+  @include breakpoint($upto-desktop) {
+    @include flex-center-column;
+  }
+}
+.contact__form__wrapper {
+  flex-basis: 75%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-right: 30px;
+  @include breakpoint($upto-desktop) {
+    padding-right: 0px;
+    flex-basis: 100%;
+    width: 100%;
+  }
+}
+.contact__info__wrapper {
+  flex-basis: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-left: 30px;
+  @include breakpoint($upto-desktop) {
+    padding-left: 0px;
+    padding-top: 75px;
+    flex-basis: 100%;
+    width: 100%;
+  }
+}
+.contact__address,
+.contact__telephone,
+.contact__email {
+  color: var(--c-black-50);
+  padding-left: 50px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.contact__telephone {
+  padding-top: 7px;
+}
+.contact__email {
+  padding-top: 7px;
+}
+.contact__address::before,
+.contact__telephone::before,
+.contact__email::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: var(--c-secondary);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: var(--c-background);
+  z-index: 1;
+}
+.contact__address::after,
+.contact__telephone::after,
+.contact__email::after {
+  content: '';
+  font-weight: 900;
+  color: var(--c-black);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(
+    45deg,
+    var(--c-primary),
+    var(--c-secondary-light)
+  );
+}
+.contact__address::before {
+  content: '\f041';
+  padding: 10px 12px;
+}
+.contact__telephone::before {
+  content: '\f879';
+  padding: 10px 10px;
+}
+.contact__email::before {
+  content: '\f658';
+  padding: 10px 10px;
+}
+.contact__form__heading,
+.contact__info__heading {
+  margin-bottom: 35px !important;
+}
+.contact__socials ul {
+  padding-top: 30px;
+  display: flex;
+  @include list-clear-all;
+}
+.contact__socials ul li {
+  padding: 16px;
+  height: 50px;
+  width: 50px;
+  background-color: var(--c-primary);
+  margin: 0 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+.contact__phone__link {
+  font-family: var(--f-primary);
+  color: var(--c-black);
+  font-size: 20px;
+  line-height: 32px;
+  text-decoration: none;
+}
+.contact__email__link {
+  font-family: var(--f-primary);
+  color: var(--c-black);
+  text-decoration: none;
+  font-weight: 700;
+}
+.gmap_iframe {
+  @include breakpoint($upto-desktop) {
+    height: 190px !important;
+  }
+}

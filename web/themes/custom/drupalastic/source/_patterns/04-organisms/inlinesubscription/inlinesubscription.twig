@@ -1,0 +1,26 @@
+{{ attach_library('drupalastic/base') }}
+{{ attach_library('drupalastic/paragraph') }}
+{{ attach_library('drupalastic/headings') }}
+{{ attach_library('drupalastic/input') }}
+
+{% if contact_inlinesubscription %}
+  {{ contact_inlinesubscription }}
+{% else %}
+<div class="inlinesubscription__wrapper">
+  <div class="inlinesubscription">
+    <div class="inline__subscription__contents">
+      {% include '@atoms/text/paragraph/paragraph.twig' with {
+        "extra_classes": ["inline__subscription__subheading"],
+        "text": inline_subscription_subheading
+      } %}
+      {% include '@atoms/text/heading/heading-2.twig' with {
+        "extra_classes": ["inline__subscription__heading"],
+        "text": inline_subscription_mainheading
+      } %}
+    </div>
+    <div class="inline__subscription__webform__wrapper">
+      {% include '@molecules/inlineform/inlineform.twig' %}
+    </div>
+  </div>
+</div>
+{% endif %}

@@ -1,0 +1,19 @@
+uuid: 9e6ea216-af25-41e1-8119-eb1135b8393d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_content_block_type
+    - field.storage.block_content.field_contact_form_heading
+id: block_content.contact_content_block_type.field_contact_form_heading
+field_name: field_contact_form_heading
+entity_type: block_content
+bundle: contact_content_block_type
+label: 'Contact Form Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
