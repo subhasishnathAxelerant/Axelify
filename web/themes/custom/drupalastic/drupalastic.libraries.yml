@@ -65,6 +65,31 @@ image:
     theme:
       dist/css/02-atoms/image/image.css: {}
 
+framed-image:
+  css:
+    theme:
+      dist/css/02-atoms/framed-image/framed-image.css: {}
+
+axecard-link:
+  css:
+    theme:
+      dist/css/02-atoms/axecard-link/axecard-link.css: {}
+
+link-list:
+  css:
+    theme:
+      dist/css/03-molecules/link-list/link-list.css: {}
+
+axecard:
+  css:
+    theme:
+      dist/css/03-molecules/axecard/axecard.css: {}
+
+axecard-list:
+  css:
+    theme:
+      dist/css/04-organisms/axecard-list/axecard-list.css: {}
+
 header:
   css:
     theme:

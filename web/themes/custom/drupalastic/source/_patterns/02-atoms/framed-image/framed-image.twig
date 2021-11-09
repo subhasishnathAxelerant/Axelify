@@ -1,0 +1,5 @@
+{{ attach_library('drupalastic/framed-image') }}
+
+<div {{ attributes ? attributes.addClass('img-frame') : 'class="img-frame"' }}>
+  <img {{ attributes.removeClass('img-frame') }} src="{{ src }}" class="img img--framed"/>
+</div>

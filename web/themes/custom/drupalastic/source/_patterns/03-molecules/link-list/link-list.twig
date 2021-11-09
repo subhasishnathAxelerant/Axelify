@@ -1,0 +1,12 @@
+{{ attach_library('drupalastic/link-list') }}
+
+<ul {{ attributes ? attributes.addClass('axecard__menu') : 'class="axecard__menu"' }}>
+  {% for item in menu %}
+    <li class="axecard__menuitem">
+      {% include "@atoms/axecard-link/axecard-link.twig" with {
+        url: item.url,
+        text: item.text
+      } %}
+    </li>
+  {% endfor %}
+</ul>

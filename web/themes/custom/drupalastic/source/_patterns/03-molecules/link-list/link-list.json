@@ -1,0 +1,16 @@
+{
+  "menu": [
+    {
+      "text": "type 1",
+      "url": "#"
+    },
+    {
+      "text": "type 2",
+      "url": "#"
+    },
+    {
+      "text": "type 3",
+      "url": "#"
+    }
+  ]
+}
