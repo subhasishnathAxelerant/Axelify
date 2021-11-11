@@ -54,6 +54,9 @@ h6 {
 .heading-4 {
   font-size: 24px;
   line-height: 1.33;
+  &--white {
+    color: var(--c-white);
+  }
 }
 .heading-5 {
   font-size: 16px;

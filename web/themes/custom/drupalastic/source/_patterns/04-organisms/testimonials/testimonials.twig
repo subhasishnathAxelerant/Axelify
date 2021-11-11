@@ -1,0 +1,24 @@
+{{ attach_library('drupalastic/testimonials') }}
+<div class="testimonials">
+  <div class="testimonials__container">
+    <div class="testimonials__slider--arrows">
+      <ul class="testimonials__slider--arrows__list">
+        <li class="prev"></li>
+        <li class="next"></li>
+      </ul>
+    </div>
+    <div class="testimonials__slider">
+      {% block testimonialslider %}
+        {% for testimonial in testimonials %}
+          {% include "@molecules/testimonial/testimonial.twig" with {
+            "testimonialimage": testimonial.testimonialimage,
+            "testimonialheading": testimonial.testimonialheading,
+            "testimonialbody": testimonial.testimonialbody,
+            "testimonialname": testimonial.testimonialname,
+            "testimonialorganization": testimonial.testimonialorganization
+          } %}
+        {% endfor %}
+      {% endblock %}
+    </div>
+  </div>
+</div>
