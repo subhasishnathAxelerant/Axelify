@@ -85,6 +85,20 @@ axecard:
     theme:
       dist/css/03-molecules/axecard/axecard.css: {}
 
+testimonial:
+  css:
+    theme:
+      dist/css/03-molecules/testimonial/testimonial.css: {}
+
+testimonials:
+  css:
+    theme:
+      dist/css/04-organisms/testimonials/testimonials.css: {}
+  js:
+    dist/js/04-organisms/testimonials/testimonials.js: {}
+  dependencies:
+    - drupalastic/slick
+
 axecard-list:
   css:
     theme:
@@ -96,6 +110,15 @@ header:
       dist/css/04-organisms/header/header.css: {}
   js:
     dist/js/04-organisms/header/header.js: {}
+
+slick:
+  css:
+    base:
+      /libraries/slick/slick.css: {}
+  js:
+    /libraries/slick/slick.js: {}
+  dependencies:
+    - core/jquery
 
 main:
   js:

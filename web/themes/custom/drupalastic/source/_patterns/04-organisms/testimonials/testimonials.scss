@@ -1,0 +1,78 @@
+@import '../../config.all';
+
+.testimonials {
+  background-color: var(--c-primary);
+  display: flex;
+  @include container-fluid;
+  padding: 115px 0 115px 0;
+  @include breakpoint($upto-desktop) {
+    padding: 80px 0 60px 0;
+  }
+}
+.testimonials__container {
+  @include container;
+}
+.testimonials__slider--arrows {
+  position: relative;
+  width: 10%;
+  float: left;
+  @include breakpoint($upto-tablet) {
+    width: 15%;
+  }
+}
+.testimonials__slider {
+  position: relative;
+  width: 90%;
+  float: left;
+  @include breakpoint($upto-tablet) {
+    width: 85%;
+  }
+}
+.prev.slick-arrow,
+.next.slick-arrow {
+  height: 50px;
+  width: 50px;
+  border: 1px solid var(--c-white-30);
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  @include breakpoint($upto-desktop) {
+    height: 40px;
+    width: 40px;
+  }
+}
+.prev.slick-arrow::before,
+.next.slick-arrow::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  color: var(--c-white);
+  font-size: 1.5rem;
+  top: 13px;
+  @include breakpoint($upto-desktop) {
+    font-size: 1rem;
+    top: 11px;
+  }
+}
+.prev.slick-arrow::before {
+  content: '\f053';
+  left: 16px;
+  @include breakpoint($upto-desktop) {
+    left: 15px;
+  }
+}
+.next.slick-arrow::before {
+  content: '\f054';
+  left: 19px;
+  @include breakpoint($upto-desktop) {
+    left: 16px;
+  }
+}
+.prev.slick-arrow {
+  margin-bottom: 15px;
+}
+.testimonials__slider--arrows__list {
+  @include flex-h-left-v-center-column;
+  height: 280px;
+  list-style: none;
+}

@@ -20,6 +20,7 @@ libraries:
   - drupalastic/sidebar
   - drupalastic/blogcontent
   - drupalastic/submap
+  - drupalastic/slick
 
 components:
   namespaces:

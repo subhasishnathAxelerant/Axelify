@@ -1,0 +1,36 @@
+{{ attach_library('drupalastic/testimonial') }}
+<div class="testimonial__slide__content">
+    <div class="testimonial__slide__image">
+      {% block testimonialimage %}
+        {% include "@atoms/image/image-rounded.twig" with {
+          "imgSrc": testimonialimage.src
+        } %}
+      {% endblock %}
+    </div>
+    <div class="testimonial__slide__text">
+      {% block testimonialheading %}
+        {% include "@atoms/text/heading/heading-5.twig" with {
+          "extra_classes": ["heading-5--white", "testimonial__slide__heading"],
+          "text": testimonialheading
+        } %}
+      {% endblock %}
+      {% block testimonialbody %}
+        {% include "@atoms/text/heading/heading-4.twig" with {
+          "extra_classes": ["heading-4--white", "testimonial__slide__body"],
+          "text": testimonialbody
+        } %}
+      {% endblock %}
+      {% block testimonialname %}
+        {% include "@atoms/text/paragraph/paragraph.twig" with {
+          "extra_classes": ["paragraph-white", "testimonial__slide__name"],
+          "text": testimonialname
+        } %}
+      {% endblock %}
+      {% block testimonialorganization %}
+        {% include "@atoms/text/paragraph/paragraph.twig" with {
+          "extra_classes": ["paragraph-semiwhite", "testimonial__slide__designation"],
+          "text": testimonialorganization
+        } %}
+      {% endblock %}
+    </div>
+</div>
