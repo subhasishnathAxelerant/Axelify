@@ -1,0 +1,39 @@
+{{ attach_library('drupalastic/people-list') }}
+<div class="people">
+  <div class="people__container">
+    <div class="people__header">
+      {% block peoplesubheading %}
+        {% include "@atoms/text/heading/heading-5.twig" with {
+          "extra_classes": ["people__subheading"],
+          "text": "scriptorem"
+        } %}
+      {% endblock %}
+      {% block peopleheading %}
+        {% include "@atoms/text/heading/heading-2.twig" with {
+          "extra_classes": ["heading-2--m-h3", "people__heading"],
+          "text": "Sit alii tantas"
+        } %}
+      {% endblock %}
+      {% block peopleheadinginfo %}
+        {% include "@atoms/text/paragraph/paragraph.twig" with {
+          "extra_classes": ["people__heading__info"],
+          "text": "Vix habeo scaevola percipitur ne, qui noster abhorreant ne, mea in dicant eligendi evertitur."
+        } %}
+      {% endblock %}
+    </div>
+    <div class="people__list">
+      {% block peoplelist %}
+        {% for people in peoples %}
+          {% include "@molecules/people/people.twig" with {
+            "peopleimage": people.peopleimage,
+            "peoplename": people.peoplename,
+            "peopledesignation": people.peopledesignation,
+            "peoplefacebookurl": people.peoplefacebookurl,
+            "peopletwitterurl": people.peopletwitterurl,
+            "peopleinstagramurl": people.peopleinstagramurl
+          } %}
+        {% endfor %}
+      {% endblock %}
+    </div>
+  </div>
+</div>

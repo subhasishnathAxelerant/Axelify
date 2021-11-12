@@ -1,0 +1,31 @@
+@import '../../config.all';
+.teamcard {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 35px 35px 25px 35px;
+  background-color: var(--c-white);
+  max-width: 100%;
+  @include breakpoint($upto-desktop) {
+    margin-bottom: 15px;
+  }
+}
+.teamcard__img {
+  text-align: center;
+}
+.teamcard__name {
+  padding: 20px 0 25px 0;
+}
+.teamcard__header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.teamcard__footer {
+  @include flex-space-between-row-center-column;
+  padding-top: 20px;
+}
+.teamcard__socials__list {
+  list-style: none;
+  @include flex-center-row;
+}
+.teamcard__social__item {
+  padding: 0 5px;
+}

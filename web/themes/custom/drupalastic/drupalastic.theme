@@ -13,3 +13,7 @@ function drupalastic_theme_suggestions_page_alter(array &$suggestions, array $va
     $suggestions[] = 'page__' . $node->bundle();
   }
 }
+
+function drupalastic_preprocess(&$variables, $hook) {
+  $variables['base_path'] = base_path();
+}

@@ -99,6 +99,16 @@ testimonials:
   dependencies:
     - drupalastic/slick
 
+people:
+  css:
+    theme:
+      dist/css/03-molecules/people/people.css: {}
+
+people-list:
+  css:
+    theme:
+      dist/css/04-organisms/people-list/people-list.css: {}
+
 axecard-list:
   css:
     theme:
