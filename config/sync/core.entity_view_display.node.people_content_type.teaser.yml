@@ -1,0 +1,40 @@
+uuid: 3d076698-a6e8-41b0-b3ac-7a0e60589e15
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.people_content_type.body
+    - field.field.node.people_content_type.field_people_para_list
+    - node.type.people_content_type
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.people_content_type.teaser
+targetEntityType: node
+bundle: people_content_type
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_people_para_list:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
