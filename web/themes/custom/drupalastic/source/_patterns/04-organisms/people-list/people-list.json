@@ -1,0 +1,28 @@
+{
+  "peoples": [
+    {
+      "peopleimage": { "src": "/images/people-1.png" },
+      "peoplename": "Athar Malakooti",
+      "peopledesignation": "Manager",
+      "peoplefacebookurl": "https://www.facebook.com/",
+      "peopletwitterurl": "https://twitter.com/",
+      "peopleinstagramurl": "https://www.instagram.com/"
+    },
+    {
+      "peopleimage": { "src": "/images/people-2.png" },
+      "peoplename": "Benito Noboa",
+      "peopledesignation": "Designer",
+      "peoplefacebookurl": "https://www.facebook.com/",
+      "peopletwitterurl": "https://twitter.com/",
+      "peopleinstagramurl": "https://www.instagram.com/"
+    },
+    {
+      "peopleimage": { "src": "/images/people-3.png" },
+      "peoplename": "Meng Ru",
+      "peopledesignation": "Developer",
+      "peoplefacebookurl": "https://www.facebook.com/",
+      "peopletwitterurl": "https://twitter.com/",
+      "peopleinstagramurl": "https://www.instagram.com/"
+    }
+  ]
+}

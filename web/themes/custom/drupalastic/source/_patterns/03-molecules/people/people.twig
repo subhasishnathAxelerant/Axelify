@@ -1,0 +1,63 @@
+{{ attach_library('drupalastic/people') }}
+<div class="teamcard">
+  <div class="teamcard__header">
+    <div class="teamcard__img">
+      {% block peopleimage %}
+        {% include "@atoms/image/image-rounded.twig" with {
+          "imgSrc": peopleimage.src,
+          "extra_classes": ["img__rounded"]
+        } %}
+      {% endblock %}
+    </div>
+    {% block peoplename %}
+      {% include "@atoms/text/heading/heading-4.twig" with {
+        "extra_classes": ["teamcard__name"],
+        "text": peoplename
+      } %}
+    {% endblock %}
+  </div>
+  <div class="teamcard__footer">
+    <div class="teamcard__designation">
+      {% block peopledesignation %}
+        {% include "@atoms/text/paragraph/paragraph.twig" with {
+          "extra_classes": ["paragraph-gray"],
+          "text": peopledesignation
+        } %}
+      {% endblock %}
+    </div>
+    <div class="teamcard__socials">
+      <ul class="teamcard__socials__list">
+        <li class="teamcard__social__item teamcard__social__item__facebook">
+          {% block peoplefacebookurl %}
+            {% include "@atoms/link/link-img.twig" with {
+              "extra_classes": ["link__img"],
+              "linkUrl": peoplefacebookurl,
+              "linkText": "/images/facebook.png",
+              "linkImgClass": "link__icon"
+            } %}
+          {% endblock %}
+        </li>
+        <li class="teamcard__social__item teamcard__social__item__twitter">
+          {% block peopletwitterurl %}
+            {% include "@atoms/link/link-img.twig" with {
+              "extra_classes": ["link__img"],
+              "linkUrl": peopletwitterurl,
+              "linkText": "/images/twitter.png",
+              "linkImgClass": "link__icon"
+            } %}
+          {% endblock %}
+        </li>
+        <li class="teamcard__social__item teamcard__social__item__instagram">
+          {% block peopleinstagramurl %}
+            {% include "@atoms/link/link-img.twig" with {
+              "extra_classes": ["link__img"],
+              "linkUrl": peopleinstagramurl,
+              "linkText": "/images/instagram.png",
+              "linkImgClass": "link__icon"
+            } %}
+          {% endblock %}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,81 @@
+uuid: 119a37dd-31e8-46c2-97b0-c7f68bcdbf55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.people_paragraph.field_people_designation
+    - field.field.paragraph.people_paragraph.field_people_facebook
+    - field.field.paragraph.people_paragraph.field_people_image
+    - field.field.paragraph.people_paragraph.field_people_instagram
+    - field.field.paragraph.people_paragraph.field_people_name
+    - field.field.paragraph.people_paragraph.field_people_twitter
+    - paragraphs.paragraphs_type.people_paragraph
+  module:
+    - image
+    - link
+id: paragraph.people_paragraph.default
+targetEntityType: paragraph
+bundle: people_paragraph
+mode: default
+content:
+  field_people_designation:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_people_facebook:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_people_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    type: image_url
+    region: content
+  field_people_instagram:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_people_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_people_twitter:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

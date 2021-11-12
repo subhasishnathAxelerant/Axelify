@@ -1,0 +1,23 @@
+uuid: b7f09224-e6c8-45b3-a032-47b155c88ced
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_people_twitter
+    - paragraphs.paragraphs_type.people_paragraph
+  module:
+    - link
+id: paragraph.people_paragraph.field_people_twitter
+field_name: field_people_twitter
+entity_type: paragraph
+bundle: people_paragraph
+label: 'People Twitter'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

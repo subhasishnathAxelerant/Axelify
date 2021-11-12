@@ -1,0 +1,10 @@
+uuid: e808a3af-9929-4f63-9d98-1aee573c7789
+langcode: en
+status: true
+dependencies: {  }
+id: people_paragraph
+label: 'People Paragraph'
+icon_uuid: null
+icon_default: null
+description: 'Fields required for peoples'
+behavior_plugins: {  }

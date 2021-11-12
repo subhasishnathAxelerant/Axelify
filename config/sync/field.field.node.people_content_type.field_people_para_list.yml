@@ -1,0 +1,34 @@
+uuid: 5f17f10b-b72c-48de-ab0c-2751c2c33473
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_people_para_list
+    - node.type.people_content_type
+    - paragraphs.paragraphs_type.people_paragraph
+  module:
+    - entity_reference_revisions
+id: node.people_content_type.field_people_para_list
+field_name: field_people_para_list
+entity_type: node
+bundle: people_content_type
+label: 'People Para List'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      people_paragraph: people_paragraph
+    target_bundles_drag_drop:
+      people_paragraph:
+        enabled: true
+        weight: 3
+      product_paragraph:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

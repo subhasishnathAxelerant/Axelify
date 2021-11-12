@@ -1,0 +1,39 @@
+uuid: 451092da-f81a-4a40-88b3-0602850a3e30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.people_content_type.body
+    - field.field.node.people_content_type.field_people_para_list
+    - node.type.people_content_type
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.people_content_type.default
+targetEntityType: node
+bundle: people_content_type
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_people_para_list:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

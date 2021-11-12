@@ -1,0 +1,41 @@
+@import '../../config.all';
+
+.people {
+  @include container-fluid;
+  background-color: var(--c-background);
+  padding: 50px 0 50px 0;
+}
+.people__container {
+  @include container;
+}
+.people__header {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.people__subheading {
+  font-family: var(--f-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  padding-bottom: 20px;
+}
+.people__heading {
+  padding-bottom: 30px;
+}
+.people__heading__info {
+  font-size: 20px;
+  @include breakpoint($desktop) {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+.people__list {
+  @include flex-center-column;
+  @include breakpoint($desktop) {
+    @include flex-center-row;
+  }
+}
+.teamcard:nth-of-type(2) {
+  @include breakpoint($desktop) {
+    margin: 0 30px;
+  }
+}

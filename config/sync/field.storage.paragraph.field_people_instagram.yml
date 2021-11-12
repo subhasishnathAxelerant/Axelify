@@ -1,0 +1,19 @@
+uuid: 37f1a315-57cb-423b-8535-a1c5190d650a
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_people_instagram
+field_name: field_people_instagram
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
