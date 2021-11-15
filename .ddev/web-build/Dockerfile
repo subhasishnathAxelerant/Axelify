@@ -4,3 +4,4 @@ ARG BASE_IMAGE
 FROM $BASE_IMAGE
 RUN curl -sSL --fail https://deb.nodesource.com/setup_16.x | bash -
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y -o Dpkg::Options::="--force-confold" --no-install-recommends --no-install-suggests nodejs build-essential
+RUN npm i -g npm@7.20.5
