@@ -99,6 +99,15 @@ testimonials:
   dependencies:
     - drupalastic/slick
 
+portfolio-slider:
+  css:
+    theme:
+      dist/css/04-organisms/portfolio-slider/portfolio-slider.css: {}
+  js:
+    dist/js/04-organisms/portfolio-slider/portfolio-slider.js: {}
+  dependencies:
+    - drupalastic/slick
+
 people:
   css:
     theme:
