@@ -1,0 +1,63 @@
+{{ attach_library('drupalastic/portfolio-slider') }}
+<div class="portfolio">
+  <div class="portfolio__container">
+    <div class="portfolio__back-home">
+      {% block portfoliobackurl %}
+        {% include "@atoms/link/link.twig" with {
+          "extra_classes": ["portfolio__back-home__link"],
+          "linkUrl": portfolioBackUrl,
+          "linkText": portfolioBackUrlText
+        } %}
+      {% endblock %}
+    </div>
+    {% block portfolioheading %}
+      {% include "@atoms/text/heading/heading-1.twig" with {
+        "extra_classes": ["portfolio__heading"],
+        "text": portfolioheading
+      } %}
+    {% endblock %}
+    <div class="portfolio__text">
+      <section class="portfolio__info">
+        {% block portfolioinfo %}
+          {% include "@atoms/text/paragraph/paragraph.twig" with {
+            "extra_classes": [],
+            "text": portfolioinfo
+          } %}
+        {% endblock %}
+      </section>
+      <section class="portfolio__site">
+        {% block portfoliourl %}
+          {% include "@atoms/button/button.twig" with {
+            "btn_link": portfoliourl,
+            "btn_class": "btn--outline--blue portfolio__site__link",
+            "btn_text": "Visit Site"
+          } %}
+        {% endblock %}
+      </section>
+    </div>
+    <div class="portfolio__slider-lg">
+      {% block portfolioSliderlg %}
+        {% for portfolioimage in portfolioimages %}
+          <div>
+            {% include "@atoms/image/image-banner.twig" with {
+              "imgSrc": portfolioimage.src,
+              "extra_classes": "portfolio__slider-lg__img"
+            } %}
+          </div>
+        {% endfor %}
+      {% endblock %}
+    </div>
+    <div class="portfolio__slider-nav">
+      {% block portfolioSlidernav %}
+        {% for portfolioimage in portfolioimages %}
+        <div>
+          {% include "@atoms/image/image-banner.twig" with {
+            "imgSrc": portfolioimage.src,
+            "extra_classes": "portfolio__slider-nav__img"
+          } %}
+        </div>
+        {% endfor %}
+      {% endblock %}
+    </div>
+  </div>
+</div>
