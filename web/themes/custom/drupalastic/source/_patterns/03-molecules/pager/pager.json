@@ -1,0 +1,31 @@
+{
+  "pagers": [
+    {
+      "pager__item__text": "« First"
+    },
+    {
+      "pager__item__text": "«"
+    },
+    {
+      "pager__item__text": "1"
+    },
+    {
+      "pager__item__text": "2"
+    },
+    {
+      "pager__item__text": ".."
+    },
+    {
+      "pager__item__text": "99"
+    },
+    {
+      "pager__item__text": "100"
+    },
+    {
+      "pager__item__text": "»"
+    },
+    {
+      "pager__item__text": "Last »"
+    }
+  ]
+}

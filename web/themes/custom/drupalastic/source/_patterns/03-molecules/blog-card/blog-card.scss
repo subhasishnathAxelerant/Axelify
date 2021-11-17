@@ -1,0 +1,68 @@
+@import '../../config.all';
+
+.blog__card__container {
+  width: 100%;
+  background: var(--c-white);
+  box-shadow: 0px 2px 4px var(--c-grey);
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.blog__card__image__wrapper {
+  padding-bottom: 30px;
+}
+.blog__card__heading {
+  padding: 15px 0;
+}
+.blog__card__author__img {
+  width: 32px;
+  height: 32px;
+}
+.blog__card__image {
+  width: 100%;
+  height: auto;
+}
+.blog__card__info {
+  padding-bottom: 20px;
+}
+.blog__card__footer {
+  padding-top: 20px;
+  border-top: 1px solid var(--c-grey-light);
+  @include flex-space-between-row-center-column;
+  @include breakpoint($upto-desktop) {
+    @include flex-center-column-reverse;
+  }
+}
+.blog__card__date__author {
+  @include flex-center-row;
+  @include breakpoint($upto-desktop) {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.blog__card__author {
+  @include flex-center-row;
+}
+.blog__card__author__name {
+  padding: 0 10px 0 15px;
+}
+.blog__card__link {
+  position: relative;
+  font-size: 16px;
+  a {
+    text-decoration: none;
+  }
+  @include breakpoint($upto-desktop) {
+    margin-top: 30px;
+  }
+}
+.blog__card__link::after {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f054';
+  font-weight: 900;
+  position: absolute;
+  color: var(--c-black);
+  font-size: 1rem;
+  top: 2px;
+  right: -15px;
+}

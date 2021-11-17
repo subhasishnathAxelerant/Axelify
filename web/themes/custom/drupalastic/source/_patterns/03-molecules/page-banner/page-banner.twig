@@ -1,0 +1,17 @@
+{{ attach_library('drupalastic/page-banner') }}
+<div class="page__banner">
+  <div class="page__banner__content">
+    {% block pagebanner %}
+      {% include '@atoms/text/heading/heading-1.twig' with {
+        "extra_classes": ["heading-1--white", "page__banner__heading"],
+        "text": page__banner__heading
+      } %}
+    {% endblock %}
+    {% block pagesubbanner %}
+      {% include '@atoms/text/paragraph/paragraph.twig' with {
+        "extra_classes": ["paragraph-white", "page__banner__sub__heading"],
+        "text": page__banner__sub__heading
+      } %}
+    {% endblock %}
+  </div>
+</div>

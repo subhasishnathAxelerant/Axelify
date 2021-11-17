@@ -1,0 +1,15 @@
+@import '../../config.all';
+.page__banner {
+  @include container-fluid;
+  background: var(--c-primary);
+}
+.page__banner__content {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0 !important;
+}
+.page__banner__heading {
+  text-align: center;
+}

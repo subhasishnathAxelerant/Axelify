@@ -118,6 +118,31 @@ people-list:
     theme:
       dist/css/04-organisms/people-list/people-list.css: {}
 
+page-banner:
+  css:
+    theme:
+      dist/css/03-molecules/page-banner/page-banner.css: {}
+
+pager-item:
+  css:
+    theme:
+      dist/css/02-atoms/pager-item/pager-item.css: {}
+
+pager:
+  css:
+    theme:
+      dist/css/03-molecules/pager/pager.css: {}
+
+blog-card:
+  css:
+    theme:
+      dist/css/03-molecules/blog-card/blog-card.css: {}
+
+bloglist-content:
+  css:
+    theme:
+      dist/css/04-organisms/bloglist-content/bloglist-content.css: {}
+
 axecard-list:
   css:
     theme:
