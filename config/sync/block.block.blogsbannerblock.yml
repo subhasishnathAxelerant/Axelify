@@ -1,0 +1,31 @@
+uuid: d0cfdba8-1e91-4698-b35a-0f2b532c7fe3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:page_banner:d2462ec9-86dd-4bef-b7ef-2586808e0e7c'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupalastic
+id: blogsbannerblock
+theme: drupalastic
+region: content
+weight: -20
+provider: null
+plugin: 'block_content:d2462ec9-86dd-4bef-b7ef-2586808e0e7c'
+settings:
+  id: 'block_content:d2462ec9-86dd-4bef-b7ef-2586808e0e7c'
+  label: 'Blogs Banner Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /Blogs
+    negate: false
+    context_mapping: {  }

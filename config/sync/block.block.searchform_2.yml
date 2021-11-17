@@ -1,0 +1,27 @@
+uuid: 50b7e09e-c9e3-4f93-ac52-57af56774398
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+    - system
+  theme:
+    - drupalastic
+id: searchform_2
+theme: drupalastic
+region: sidebar
+weight: -17
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /Blogs
+    negate: false
+    context_mapping: {  }
