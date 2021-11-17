@@ -3,6 +3,9 @@
 .categories__ul {
   @include list-clear-all;
   display: flex;
+  @include breakpoint($upto-desktop) {
+    flex-direction: column;
+  }
 }
 .categories__item {
   padding: 0 5px;

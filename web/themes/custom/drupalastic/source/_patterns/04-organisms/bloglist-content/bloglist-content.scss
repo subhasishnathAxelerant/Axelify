@@ -1,0 +1,51 @@
+@import '../../config.all';
+.bloglist__content__wrapper {
+  @include container-fluid;
+  background-color: var(--c-background);
+  padding-top: 65px;
+}
+.bloglist__content {
+  @include container;
+  display: flex;
+  @include breakpoint($upto-desktop) {
+    flex-direction: column;
+  }
+}
+.bloglist__content__main {
+  flex-basis: 75%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-right: 66px;
+  padding-bottom: 70px;
+  @include breakpoint($upto-desktop) {
+    padding: {
+      top: 30px;
+      right: 0;
+    }
+  }
+}
+.bloglist__content__aside {
+  flex-basis: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  @include breakpoint($upto-desktop) {
+    padding-bottom: 50px;
+  }
+}
+.bloglist__content__main {
+  .blog__card__container:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.bloglist__pager {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  justify-content: center;
+}
+.layout__sidebar__category__heading {
+  padding-top: 60px;
+}
+.layout__sidebar__categorylist {
+  padding-top: 40px;
+}

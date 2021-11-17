@@ -1,0 +1,77 @@
+{{ attach_library('drupalastic/blog-card') }}
+<article class="blog__card__container">
+  <div class="blog__card__image__wrapper">
+    {% block blogcardimage %}
+      {% include "@atoms/image/image-banner.twig" with {
+        "imgSrc": blog__card__image,
+        "extra_classes": ["blog__card__image"]
+      } %}
+    {% endblock %}
+  </div>
+  <div class="blog__card__categories">
+    {% block blogcardcategories %}
+      {% include '@molecules/categorylist/categorylist.twig' with {
+        "extra_classes": [],
+        "extra_li_classes": [],
+        "category__link__Classes": ["category__link"],
+        "categories": blog__card__categories
+      } %}
+    {% endblock %}
+  </div>
+  <div class="blog__card__heading">
+    {% block blogcardheading %}
+      {% include '@atoms/text/heading/heading-2.twig' with {
+        "extra_classes": [],
+        "text": blog__card__heading
+      } %}
+    {% endblock %}
+  </div>
+  <section class="blog__card__info">
+    {% block blogcardinfo %}
+      {% include "@atoms/text/paragraph/paragraph.twig" with {
+        "extra_classes": ["paragraph-gray"],
+        "text": blog__card__info
+      } %}
+    {% endblock %}
+  </section>
+  <section class="blog__card__footer">
+    <div class="blog__card__link">
+      {% block blogcardlink %}
+        {% include "@atoms/link/link.twig" with {
+          "linkText": blog__card__linkText,
+          "linkUrl": blog__card__linkUrl,
+          "extra_classes": ["text-black"],
+        } %}
+      {% endblock %}
+    </div>
+    <div class="blog__card__date__author">
+      <section class="blog__card__date">
+        {% block blogcarddate %}
+          {% include '@atoms/text/paragraph/paragraph.twig' with {
+            "extra_classes": ["paragraph-gray"],
+            "text": blog__card__date
+          } %}
+        {% endblock %}
+      </section>
+      {% block blogcardauthor %}
+        <section class="blog__card__author">
+          <section class="blog__card__author__name">
+            {% block blogcardauthorname %}
+              {% include '@atoms/text/paragraph/paragraph.twig' with {
+                "text": blog__card__author__name
+              } %}
+            {% endblock %}
+          </section>
+          <section class="blog__card__author__img">
+            {% block blogcardauthorimg %}
+              {% include '@atoms/image/image-rounded.twig' with {
+                "imgSrc": blog__card__author__img,
+                "extra_classes": ["img__rounded"]
+              } %}
+            {% endblock %}
+          </section>
+        </section>
+      {% endblock %}
+    </div>
+  </section>
+</article>

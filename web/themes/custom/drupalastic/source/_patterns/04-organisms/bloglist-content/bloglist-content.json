@@ -1,0 +1,164 @@
+{
+  "categories": [
+    {
+      "linkUrl": "#",
+      "linkText": "Principes",
+      "count": "7"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Nullam",
+      "count": "42"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Quaerendum",
+      "count": "73"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Deterruisset",
+      "count": "9"
+    },
+    {
+      "linkUrl": "#",
+      "linkText": "Erroribus",
+      "count": "20"
+    }
+  ],
+  "searchform": [
+    {
+      "extra_classes": ["search__form__sidebar"],
+      "searchPlaceholder": "Search",
+      "searchValue": "",
+      "searchInputClass": "search__form__input"
+    }
+  ],
+  "blogcards": [
+    {
+      "blog__card__image": "https://via.placeholder.com/770x416.png",
+      "blog__card__categories": [
+        {
+          "linkUrl": "#",
+          "linkText": "Eloquentiam"
+        },
+        {
+          "linkUrl": "#",
+          "linkText": "Nullam"
+        },
+        {
+          "linkUrl": "#",
+          "linkText": "Quaerendum"
+        },
+        {
+          "linkUrl": "#",
+          "linkText": "Deterruisset"
+        },
+        {
+          "linkUrl": "#",
+          "linkText": "Erroribus"
+        }
+      ],
+      "blog__card__heading": "Ea cum vide impetus deserunt",
+      "blog__card__info": "Altera integre suavitate per an, alienum phaedrum te sea. Ex sea causae dolores, nam et doming dicunt feugait. Ea mel scripta aperiri postulant. Ut sed affert audire, no alienum quaestio mea. Vidit maiestatis his ut, principes persecuti maiestatis mei ex, mei ei tollit epicurei invenire.",
+      "blog__card__linkUrl": "#",
+      "blog__card__linkText": "Learn more",
+      "blog__card__date": "20 July 2019",
+      "blog__card__author__img": "https://via.placeholder.com/32x32.png",
+      "blog__card__author__name": "Cayla Brister"
+    },
+    {
+      "blog__card__image": "https://via.placeholder.com/770x416.png",
+      "blog__card__categories": [
+        {
+          "linkUrl": "#",
+          "linkText": "Eloquentiam"
+        },
+        {
+          "linkUrl": "#",
+          "linkText": "Nullam"
+        },
+        {
+          "linkUrl": "#",
+          "linkText": "Quaerendum"
+        },
+        {
+          "linkUrl": "#",
+          "linkText": "Deterruisset"
+        },
+        {
+          "linkUrl": "#",
+          "linkText": "Erroribus"
+        }
+      ],
+      "blog__card__heading": "Ea cum vide impetus deserunt",
+      "blog__card__info": "Altera integre suavitate per an, alienum phaedrum te sea. Ex sea causae dolores, nam et doming dicunt feugait. Ea mel scripta aperiri postulant. Ut sed affert audire, no alienum quaestio mea. Vidit maiestatis his ut, principes persecuti maiestatis mei ex, mei ei tollit epicurei invenire.",
+      "blog__card__linkUrl": "#",
+      "blog__card__linkText": "Learn more",
+      "blog__card__date": "20 July 2019",
+      "blog__card__author__img": "https://via.placeholder.com/32x32.png",
+      "blog__card__author__name": "Cayla Brister"
+    },
+    {
+      "blog__card__image": "https://via.placeholder.com/770x416.png",
+      "blog__card__categories": [
+        {
+          "linkUrl": "#",
+          "linkText": "Eloquentiam"
+        },
+        {
+          "linkUrl": "#",
+          "linkText": "Nullam"
+        },
+        {
+          "linkUrl": "#",
+          "linkText": "Quaerendum"
+        },
+        {
+          "linkUrl": "#",
+          "linkText": "Deterruisset"
+        },
+        {
+          "linkUrl": "#",
+          "linkText": "Erroribus"
+        }
+      ],
+      "blog__card__heading": "Ea cum vide impetus deserunt",
+      "blog__card__info": "Altera integre suavitate per an, alienum phaedrum te sea. Ex sea causae dolores, nam et doming dicunt feugait. Ea mel scripta aperiri postulant. Ut sed affert audire, no alienum quaestio mea. Vidit maiestatis his ut, principes persecuti maiestatis mei ex, mei ei tollit epicurei invenire.",
+      "blog__card__linkUrl": "#",
+      "blog__card__linkText": "Learn more",
+      "blog__card__date": "20 July 2019",
+      "blog__card__author__img": "https://via.placeholder.com/32x32.png",
+      "blog__card__author__name": "Cayla Brister"
+    }
+  ],
+  "pagers": [
+    {
+      "pager__item__text": "« First"
+    },
+    {
+      "pager__item__text": "«"
+    },
+    {
+      "pager__item__text": "1"
+    },
+    {
+      "pager__item__text": "2"
+    },
+    {
+      "pager__item__text": ".."
+    },
+    {
+      "pager__item__text": "99"
+    },
+    {
+      "pager__item__text": "100"
+    },
+    {
+      "pager__item__text": "»"
+    },
+    {
+      "pager__item__text": "Last »"
+    }
+  ]
+}

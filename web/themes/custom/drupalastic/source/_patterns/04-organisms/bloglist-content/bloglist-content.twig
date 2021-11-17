@@ -1,0 +1,64 @@
+{{ attach_library('drupalastic/bloglist-content') }}
+{% block bloglistbanner %}
+  {% include '@molecules/page-banner/page-banner.twig' with {
+      "page__banner__heading": "Blog",
+      "page__banner__sub__heading": "Quo luptatum evertitur ex"
+  } %}
+{% endblock %}
+<div class="bloglist__content__wrapper">
+  <div class="bloglist__content">
+    <div class="bloglist__content__main">
+        {% block bloglist %}
+          {% for blogcard in blogcards %}
+            {% include "@molecules/blog-card/blog-card.twig" with {
+              "blog__card__image": blogcard.blog__card__image,
+              "blog__card__categories": blogcard.blog__card__categories,
+              "blog__card__heading": blogcard.blog__card__heading,
+              "blog__card__info": blogcard.blog__card__info,
+              "blog__card__linkUrl": blogcard.blog__card__linkUrl,
+              "blog__card__linkText": blogcard.blog__card__linkText,
+              "blog__card__date": blogcard.blog__card__date,
+              "blog__card__author__img": blogcard.blog__card__author__img,
+              "blog__card__author__name": blogcard.blog__card__author__name
+            } %}
+          {% endfor %}
+        {% endblock %}
+      <div class="bloglist__pager">
+        {% block bloglistpager %}
+          {% include '@molecules/pager/pager.twig' with {
+            "pager__item__text": pagers
+          } %}
+        {% endblock %}
+      </div>
+    </div>
+    <div class="bloglist__content__aside">
+      <aside class="layout__sidebar__first">
+        <div class="layout__sidebar__search">
+          {% block bloglistsidebarsearch %}
+            {% include '@atoms/search/search.twig' with {
+              "extra_classes": ["search__form__sidebar"],
+              "searchforms": searchform
+            } %}
+          {% endblock %}
+        </div>
+        <div class="layout__sidebar__category__heading">
+          {% include '@atoms/text/heading/heading-4.twig' with {
+            "extra_classes": [],
+            "text": "Categories"
+          } %}
+        </div>
+        <div class="layout__sidebar__categorylist">
+          {% block bloglistsidebarcategorylist %}
+            {% include '@molecules/categorylistcount/categorylistcount.twig' with {
+              "extra_classes": [],
+              "extra_li_classes": [],
+              "categorylist__link__Classes": ["categorylist__link"],
+              "categorylist__count__Classes": ["categorylist__count"],
+              "categories": categories
+            } %}
+          {% endblock %}
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+{{ attach_library('drupalastic/pager') }}
+<ul class="pager__items">
+  {% block pagers %}
+    {% for pager in pagers %}
+      {% include "@atoms/pager-item/pager-item.twig" with {
+        "pager__item__text": pager.pager__item__text
+      } %}
+    {% endfor %}
+  {% endblock %}
+</ul>
